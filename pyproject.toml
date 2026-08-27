@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "renai-localizer"
+version = "0.1.0"
+description = "本地化任意 Ren'Py 游戏的 AI 工具"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "RenAI Localizer Contributors" },
+]
+keywords = ["renpy", "localization", "translation", "llm", "ai"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Localization",
+]
+
+dependencies = [
+    "typer>=0.12",
+    "openai>=1.30",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+
+# NOTE: CLI 入口将在 Sprint 1 实现 cli.py 后添加。
+# [project.scripts]
+# renai-localize = "renai_localizer.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/renai_localizer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
