@@ -34,15 +34,15 @@ dev = [
     "mypy>=1.10",
 ]
 
-# NOTE: CLI 入口将在 Sprint 1 实现 cli.py 后添加。
-# [project.scripts]
-# renai-localize = "renai_localizer.cli:app"
+[project.scripts]
+renai-localize = "renai_localizer.cli:app"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/renai_localizer"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 100
