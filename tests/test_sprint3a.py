@@ -16,6 +16,7 @@ import ast
 import json
 from pathlib import Path
 
+import pytest
 from typer.testing import CliRunner
 
 from renai_localizer.cli import app
@@ -310,35 +311,37 @@ def test_cli_generate_tl(tmp_path: Path) -> None:
     assert "已生成" in res.output
 
 
-def test_cli_generate_tl_default_output_dir() -> None:
+def test_cli_generate_tl_default_output_dir(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     # 不指定 -o：默认 .cache/<source 父目录名>/tl/（不写入游戏目录）。
+    monkeypatch.chdir(tmp_path)
     runner = CliRunner()
-    with runner.isolated_filesystem():
-        data = {
-            "schema_version": 1,
-            "source": ".cache/sample/rpy",
-            "units": [
-                {
-                    "id": "menu-001",
-                    "kind": "menu_choice",
-                    "text": "Go West",
-                    "line": 1,
-                    "source": "script.rpy",
-                    "speaker": None,
-                    "context": None,
-                }
-            ],
-        }
-        Path("extracted.json").write_text(
-            json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
-        res = runner.invoke(app, ["generate-tl", "extracted.json", "--language", "schinese"])
-        assert res.exit_code == 0, res.output
+    data = {
+        "schema_version": 1,
+        "source": ".cache/sample/rpy",
+        "units": [
+            {
+                "id": "menu-001",
+                "kind": "menu_choice",
+                "text": "Go West",
+                "line": 1,
+                "source": "script.rpy",
+                "speaker": None,
+                "context": None,
+            }
+        ],
+    }
+    Path("extracted.json").write_text(
+        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    res = runner.invoke(app, ["generate-tl", "extracted.json", "--language", "schinese"])
+    assert res.exit_code == 0, res.output
 
-        target = Path(".cache") / "sample" / "tl" / "schinese" / "strings.rpy"
-        assert target.exists()
-        assert target.read_text(encoding="utf-8").startswith("translate schinese strings:\n\n")
-        assert "schinese" in res.output
+    target = Path(".cache") / "sample" / "tl" / "schinese" / "strings.rpy"
+    assert target.exists()
+    assert target.read_text(encoding="utf-8").startswith("translate schinese strings:\n\n")
+    assert "schinese" in res.output
 
 
 def test_cli_generate_tl_missing_file(tmp_path: Path) -> None:
