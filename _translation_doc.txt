@@ -637,4 +637,36 @@ Sprint 3.5 补充结论（文本值保真：转义与空白折叠）：
    - 与 Ren'Py 语义核对结论：Lexer.string() 先折叠后 dequote、
      _()/__() 按 Python 求值，二者均已对齐；翻译标识符 MD5 前提（文本值
      与 lexed 值一致）成立。
+
+Sprint 3A 补充结论（Writer 骨架与字符串翻译通道 menu_choice + string）：
+
+8. 字符串翻译通道（只读引用 renpy/translation/__init__.py 与 renpy/config.py）：
+  - 菜单选项与 _() / __() 标记字符串同走「字符串翻译」通道：tl 文件中的
+    translate <lang> strings: 块，每对 old "..." / new "..."，运行时按值
+    匹配（Menu 的选项标签注册进 additional_strings；write_updated_strings
+    写出 old/new）。
+  - 写出 old/new 必须复刻 quote_unicode()（translation/__init__.py 378–389
+    行）：转义顺序固定 —— \ → \\、" → \"、\a \b \f \n \r \t \v，不可调换。
+  - old_substitutions = True（renpy/config.py:480）：菜单选项在注册字符串
+    翻译前做 s.replace("%%", "%")（translation/__init__.py:143–144）；
+    _() 标记 string 不做该替换（Python 表达式的字符串不会被格式化替换）。
+  - 对白（say / extend）不走 strings 通道，其翻译标识符（MD5）生成留待
+    Sprint 3B，本次不实现。
+
+9. Writer 去重规则（本实现约定，docstring 已说明）：
+  - 按 old 值（menu_choice 已做 %%→% 之后的规范值）去重，相同 old 只保留
+    一条，以第一次出现的单元为准；重复条目的 new 取第一条对应单元经
+    Translator 的翻译结果（直通模式下 new == old，无差别）。
+  - 输出顺序 = 去重后条目第一次出现的顺序（稳定）。
+  - 直通模式：new == old；预留 Translator protocol
+    （translate(units) -> dict[str, str]，按 unit id 返回新文本），后续接
+    LLM 时无需改 Writer 结构。
+
+10. 真实语料冒烟（Scarlet Hollow extracted.json，generate-tl 直通）：
+   - 去重前 menu_choice + string = 14,480（menu_choice 13,757 / string 723）。
+   - 去重后唯一 old = 10,238（%% → % 与跨种类相同 old 合并后）。
+   - 输出 .cache/scarlet_hollow/tl/schinese/strings.rpy，1,700,355 字节；
+     非空行 = 10,238×2 + 1（头部 translate schinese strings:）= 20,477；
+     每对 old/new 结构完整、无空 old、直通 new == old 全部校验通过。
+   - 输出目录默认 .cache/<语料源目录名>/tl/，游戏目录保持只读。
  

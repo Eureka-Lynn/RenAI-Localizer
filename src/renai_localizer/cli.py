@@ -13,6 +13,7 @@ import typer
 from renai_localizer import __version__
 from renai_localizer.extractor import RpyExtractor
 from renai_localizer.models import ExtractionResult, TranslationUnit
+from renai_localizer.writer import collect_string_entries, write_strings_tl
 
 app = typer.Typer(
     help="RenAI Localizer — 本地化任意 Ren'Py 游戏的 AI 工具。",
@@ -112,6 +113,66 @@ def extract(
         "stats": result.stats(),
     }
     _write_payload(payload, output_file, result.units, result.stats(), verbose)
+
+
+@app.command("generate-tl")
+def generate_tl(
+    input_file: Annotated[
+        Path,
+        typer.Argument(
+            help="extract 命令产出的 extracted.json（含 units 数组，元素须有 id/kind/text）。"
+        ),
+    ],
+    language: Annotated[
+        str,
+        typer.Option("--language", help="目标语言代码，如 schinese / piglatin。"),
+    ] = "schinese",
+    output_dir: Annotated[
+        Path | None,
+        typer.Option(
+            "--output-dir",
+            "-o",
+            help="输出根目录（默认 .cache/<语料名>/tl/，不会写入游戏目录）。"
+            "实际输出到 <output_dir>/<language>/strings.rpy。",
+        ),
+    ] = None,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="输出去重前后统计。")] = False,
+) -> None:
+    """从 extracted.json 生成 Ren'Py 字符串翻译文件（strings.rpy）。
+
+    只处理 ``menu_choice`` / ``string`` 两类单元（走字符串翻译通道）；
+    按 old 值去重后写入 ``translate <language> strings:`` 块。
+    翻译暂为直通（new == old），结构为后续接入 Translator / LLM 预留。
+    """
+    if not input_file.exists():
+        typer.echo(f"错误：路径不存在：{input_file}", err=True)
+        raise typer.Exit(code=1)
+
+    try:
+        payload = json.loads(input_file.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        typer.echo(f"错误：无法读取提取结果 {input_file}：{exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    try:
+        result = ExtractionResult.model_validate(payload)
+    except Exception as exc:  # noqa: BLE001 - 对用户展示解析错误
+        typer.echo(f"错误：{input_file} 不是合法的提取结果：{exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    entries = collect_string_entries(result)
+    dedup_total = len(entries)
+
+    # 默认输出目录：.cache/<语料源目录名>/tl/（如 .cache/scarlet_hollow/tl/），
+    # 与解包语料的 source（如 .cache/scarlet_hollow/rpy）保持对应；不回写游戏目录。
+    source_dir = Path(result.source).parent.name or "game"
+    out_root = output_dir or Path(".cache") / source_dir / "tl"
+    target = write_strings_tl(out_root, language, result)
+    size = target.stat().st_size
+    typer.echo(f"已生成 {target}（{size} 字节，{dedup_total} 条唯一字符串）")
+    if verbose:
+        typer.echo(f"  units: {len(result.units)}（menu_choice+string {len(entries)} 去重后）")
+        typer.echo(f"  stats: {result.stats()}")
 
 
 @app.callback()

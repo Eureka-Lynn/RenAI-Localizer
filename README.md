@@ -2,7 +2,7 @@
 
 本地化任意 Ren'Py 游戏的 AI 工具。
 
-> ⚠️ 项目处于早期开发阶段（Sprint 3.5 完成：文本值保真修复 —— 转义与空白折叠语义与 Ren'Py 8.0.3 源码对齐），目前实现了「解包 `.rpa` → 读取 `.rpy` → 提取文本 → 输出 JSON」。
+> ⚠️ 项目处于早期开发阶段（Sprint 3A 完成：Writer 骨架与字符串翻译通道 —— 从 `extracted.json` 生成 Ren'Py 合法 `strings.rpy`），目前实现了「解包 `.rpa` → 读取 `.rpy` → 提取文本 → 输出 JSON → 生成 tl 文件（直通）」。
 
 ## 项目文档
 
@@ -15,6 +15,7 @@
 - [x] Sprint 2：提取器完善（覆盖更多 `.rpy` 语法场景）
 - [x] Sprint 3：unrpa 选择性解包 + 提取器收尾修复 + 真实语料冒烟测试
 - [x] Sprint 3.5：文本值保真修复（转义与空白折叠语义对齐 Ren'Py）
+- [x] Sprint 3A：Writer 骨架与字符串翻译通道（`generate-tl` 输出 `strings.rpy`）
 
 ## 快速开始（开发环境）
 
@@ -103,6 +104,58 @@ renai-localize extract .cache/scarlet_hollow/rpy -o extracted.json -v
 }
 ```
 
+## 使用：生成翻译文件（Sprint 3A）
+
+从 `extracted.json` 生成 Ren'Py 字符串翻译文件（`strings.rpy`），只处理
+`menu_choice`（菜单选项）与 `string`（`_()` / `__()` 标记）两类单元 ——
+它们都走 **字符串翻译通道**（`translate <lang> strings:` 块）；对白
+（say / extend）的翻译标识符生成留待 Sprint 3B，本次不处理。
+
+```bash
+renai-localize generate-tl extracted.json --language schinese -v
+
+# 输出：<输出目录>/schinese/strings.rpy
+# 默认输出目录：.cache/<语料源目录名>/tl/（如 .cache/scarlet_hollow/tl/），
+# 只写入项目本地，绝不写入游戏目录
+```
+
+| 参数 | 说明 |
+|------|------|
+| `--language` | 目标语言代码，默认 `schinese`（需是 Ren'Py 合法标识符） |
+| `-o, --output-dir` | 输出根目录；默认 `.cache/<语料源目录名>/tl/` |
+| `-v, --verbose` | 输出去重前后统计 |
+
+### 输出格式
+
+`strings.rpy` 是 Ren'Py 合法的 tl 文件（`translate <lang> strings:` 块，
+运行时按 old 值匹配）：
+
+```renpy
+translate schinese strings:
+
+    old "Eileen"
+    new "Eileen"
+
+    old "Go West"
+    new "Go West"
+
+    old "Head East"
+    new "Head East"
+```
+
+### 与 Ren'Py 8.0.3 源码的对齐（只读引用）
+
+- **`old` / `new` 写出复刻 `quote_unicode()`**（`renpy/translation/__init__.py`
+  378–389 行）：转义 `\`→`\\`、`"`→`\"`、`\a\b\f\n\r\t\v`，顺序固定不可调换。
+- **`old_substitutions`**（`renpy/config.py:480`）：菜单选项在注册字符串翻译前
+  做 `s.replace("%%", "%")`（`translation/__init__.py:143–144`）；
+  `_()` 标记 string **不**做该替换。
+- **去重**：按 old 值（menu_choice 已做 `%%`→`%` 后的规范值）去重，相同 old
+  只保留一条，以第一次出现的单元为准；输出顺序稳定。
+- **翻译接口预留**：new 值当前为直通（`new == old`），Writer 通过
+  `Translator` protocol（`translate(units) -> dict[str, str]`，按 unit id 返回
+  新文本）接入后续 LLM，无需改 Writer 结构。
+
 ### 支持提取的语法（Sprint 3）
 
 - **对白（say 语句）**：`e "Hello"`、`"Narrator"`、单引号 `e 'Hi'`
@@ -134,7 +187,9 @@ renai-localize extract .cache/scarlet_hollow/rpy -o extracted.json -v
 - 资源引用语句 `shader` / `font` / `voice` 已跳过（Sprint 3 修复，不再误提取）
 - raw 字符串（`r"..."`）与三引号对白中的 monologue 分段（语料中无此场景，
   继续列入已知限制）
-- 字符串拼接求值、翻译标识符（`id`）生成、文本去重
+- 字符串拼接求值、翻译标识符（`id`）生成（Sprint 3B）
+  （注：字符串翻译通道的按 old 值去重已由 `generate-tl` 实现）
+- 对白（say / extend）的翻译文件生成（Sprint 3B，走对话翻译标识符通道）
 
 ## 测试与代码质量
 
@@ -145,4 +200,5 @@ ruff format --check .           # 格式检查
 mypy src tests                  # 类型检查（strict）
 ```
 
-> 业务功能（AI 翻译、翻译文件生成）将在后续 Sprint 中实现。
+> 业务功能（AI 翻译接入 Translator / LLM、对白翻译文件生成）将在后续 Sprint 中实现。
+> 字符串翻译文件（`generate-tl`）已由 Sprint 3A 打通，当前为直通模式（`new == old`）。
