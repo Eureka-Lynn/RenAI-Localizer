@@ -4,6 +4,9 @@
 - 保留语句关键字（``play`` / ``queue`` / ``stop`` / ``show`` / ``scene`` /
   ``camera`` / ``window`` / ``voice`` / ``shader`` / ``font``）开头的行
   整体跳过（关键字后可跟字符串字面量，但不是对白）
+- 关键字行上的 ``_()`` / ``__()`` 标记字符串（如 ``show text _("...")`` /
+  ``play music _("...")``）仍提取为 ``string`` 单元（Ren'Py ``scanstrings``
+  全文件扫描 ``_()``，与语句类型无关）；关键字行上的普通字符串仍不提取
 - ``image`` / ``transform`` / ``style`` 块内 ATL 引号行与样式属性行
   （``color`` / ``thumb`` / ``background`` / ``layout`` / ``size_group`` /
   ``unscrollable`` 等）不提取
@@ -40,8 +43,33 @@ def test_statement_keywords_not_dialogue() -> None:
         "audio/voice.ogg",
         "distortion_perlin",
         "gui/fonts/KelmscottRomanNF.ttf",
+        "Not marked",
     ]:
         assert text not in texts, f"{text!r} 不应被提取"
+
+
+def test_marked_strings_on_keyword_lines_extracted() -> None:
+    # 关键字行上的 _() 标记字符串是 string 单元（Ren'Py scanstrings 全文件
+    # 扫描 _()，与语句类型无关）。
+    result = _extract()
+    strings = [u for u in result.units if u.kind == TextKind.STRING]
+    texts = {u.text for u in strings}
+    assert "Warning line one.\nWarning line two." in texts
+    assert "queue intro" in texts
+    # 关键字行上的普通字符串不应混入 string 单元。
+    assert "Not marked" not in texts
+
+
+def test_marked_strings_on_keyword_lines_are_string_kind() -> None:
+    # 正例单元必须是 string 单元（而非 dialogue），且来源行号正确。
+    result = _extract()
+    units = [u for u in result.units if u.text == "Warning line one.\nWarning line two."]
+    assert len(units) == 1
+    assert units[0].kind == TextKind.STRING
+    assert units[0].speaker is None
+    units = [u for u in result.units if u.text == "queue intro"]
+    assert len(units) == 1
+    assert units[0].kind == TextKind.STRING
 
 
 def test_atl_image_block_not_dialogue() -> None:
@@ -86,5 +114,6 @@ def test_single_line_image_and_style_unaffected() -> None:
 
 def test_stats() -> None:
     result = _extract()
-    # 2 条对白（语句后 / 块后）+ 1 条 _("Eileen") 标记字符串。
-    assert result.stats() == {"dialogue": 2, "string": 1}
+    # 2 条对白（语句后 / 块后）+ 3 条标记字符串
+    # （_("Eileen") + 关键字行上的 show text _() / play music _()）。
+    assert result.stats() == {"dialogue": 2, "string": 3}

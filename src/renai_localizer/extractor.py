@@ -16,12 +16,15 @@
   ``play`` / ``queue`` / ``stop`` / ``show`` / ``scene`` / ``camera`` /
   ``window`` / ``voice`` / ``shader`` / ``font`` 开头的行是语句，关键字后
   可跟字符串字面量但不是对白（``play music "x"`` / ``show text "..."`` /
-  ``scene "..."`` / ``voice "..."``），整行跳过
+  ``scene "..."`` / ``voice "..."``），整行跳过；但关键字行上的 ``_()`` /
+  ``__()`` 标记字符串（如 ``show text _("...")``）仍要提取——Ren'Py 的
+  ``scanstrings`` 全文件扫描 ``_()``，无论出现在哪条语句里都是可翻译
+  字符串，不随语句关键字一起被跳过
 - ``image`` / ``transform`` / ``style`` 块（以冒号结尾的定义行）内不存在
   say 语句：ATL 行与样式属性（``color "#000"`` / ``thumb "..."`` /
-  ``background "..."`` 等）不是可翻译文本，块内统一跳过（含 ``_()`` 标记，
-  此类块内通常没有标记字符串）；单行 ``image x = ...`` / ``style x is y``
-  不受影响
+  ``background "..."`` 等）不是可翻译文本，块内不提取 say，但 ``_()`` /
+  ``__()`` 标记字符串仍提取（与 Ren'Py 语义一致；当前语料无此情况）；
+  单行 ``image x = ...`` / ``style x is y`` 不受影响
 - 空文本过滤：提取结果中空串 / 纯空白的单元一律丢弃（兜底）
 
 文本值保真（Sprint 3.5）：提取出的 ``TranslationUnit.text`` 等于 Ren'Py
@@ -484,13 +487,19 @@ class RpyExtractor:
                     continue
 
             # ATL 块（image/transform/style）：块内不存在 say 语句（ATL 行、
-            # 样式属性字符串不是对白），统一跳过（含 _()/__() 标记；此类块内
-            # 通常没有标记字符串）。
+            # 样式属性字符串不是对白），不提取 say，但 _()/__() 标记字符串
+            # 仍要提取（与 Ren'Py scanstrings 语义一致）；无标记则整行跳过。
             if atl_indent is not None:
                 if indent <= atl_indent:
                     atl_indent = None
                 else:
-                    i += 1
+                    marked = self._collect_marked(raw, i, lines, source, counters)
+                    if marked is not None:
+                        marked_units, last = marked
+                        units.extend(marked_units)
+                        i = last + 1
+                    else:
+                        i += 1
                     continue
 
             # $ 语句（含行尾 \ 的续行）整体跳过。
@@ -551,9 +560,18 @@ class RpyExtractor:
 
             # 保留语句关键字（play/queue/stop/show/scene/camera/window 及
             # voice/shader/font）：这些关键字开头的行是 Ren'Py 语句（镜像
-            # parser.py 的语句分发），关键字后可跟字符串字面量但不是对白。
+            # parser.py 的语句分发），关键字后可跟字符串字面量但不是对白，
+            # 不提取 say；但 _()/__() 标记字符串（如 show text _("...")）
+            # 在 Ren'Py 中无论出现在哪条语句里都是可翻译字符串，仍要提取；
+            # 无标记则整行跳过。
             if _STATEMENT_KEYWORD_RE.match(stripped):
-                i += 1
+                marked = self._collect_marked(raw, i, lines, source, counters)
+                if marked is not None:
+                    marked_units, last = marked
+                    units.extend(marked_units)
+                    i = last + 1
+                else:
+                    i += 1
                 continue
 
             marked = self._collect_marked(raw, i, lines, source, counters)

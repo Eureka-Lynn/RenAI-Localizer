@@ -23,6 +23,13 @@ label start:
     shader "distortion_perlin"
     font "gui/fonts/KelmscottRomanNF.ttf"
 
+    # --- 关键字行上的 _() 标记字符串仍要提取（正例）---
+    # Ren'Py scanstrings 全文件扫描 _()，与语句类型无关。
+    show text _("Warning line one.\nWarning line two.")
+    play music _("queue intro")
+    # 关键字行上的普通字符串（未标记）仍不提取。
+    show text "Not marked"
+
     # --- 块结束后的对白仍要提取 ---
     e "Dialogue after statements."
 
