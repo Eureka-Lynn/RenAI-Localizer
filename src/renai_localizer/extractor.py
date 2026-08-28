@@ -22,13 +22,28 @@
 一致（详见 ``_unescape_say`` / ``_unescape_python`` / ``_unescape_triple``
 的 docstring），确保后续生成的翻译标识符（MD5）与游戏内一致。
 
+say 语句结构字段（Sprint 3B）：``say_who`` / ``say_attributes`` /
+``say_temporary_attributes`` / ``say_with`` / ``say_arguments`` /
+``say_nointeract`` / ``say_id`` 完整解析并填充，与 Ren'Py ``ast.Say``
+各属性一一对应，供 ``dialogue.say_get_code()`` 精确重建 ``Say.get_code()``：
+
+- ``centered "x"`` → say_who="centered"；``nvl "x"`` → say_who="nvl"；
+  ``nvl centered "x"`` → say_who="nvl" + say_attributes=("centered",)
+- ``e "x" with Dissolve(0.5, alpha=True)`` → say_with="Dissolve(0.5, alpha=True)"
+- ``e "x" (test=1)`` → say_arguments="(test=1)"
+- ``e "x" nointeract`` → say_nointeract=True
+- ``e "x" id custom_abc`` → say_id="custom_abc"
+
+``speaker`` 字段保持既有语义（叙述 / ``centered`` / ``nvl`` / ``extend``
+均为 ``None``），与 Sprint 2/3/3.5 测试一致。
+
 暂不支持（见 README「已知限制」）：
 
 - ``python`` 块 / ``$`` 语句内的字符串
 - ``define`` / ``default`` 中的裸字符串（未用 ``_()`` / ``__()`` 标记）
 - ``_p()`` / ``___()`` 标记的字符串（后续 Sprint）
 - raw 字符串（``r"..."``）与三引号对白中的 monologue 分段
-- 字符串拼接求值、翻译标识符生成、文本去重
+- 字符串拼接求值、翻译标识符生成（Sprint 3B 由 ``dialogue`` 模块负责）、文本去重
 """
 
 from __future__ import annotations
@@ -40,13 +55,13 @@ from pathlib import Path
 
 from renai_localizer.models import ExtractionResult, TextKind, TranslationUnit
 
-# say 语句起始：可选 say 变体 + 可选说话者 + 字符串字面量起始。
-# 注意变体（nvl centered / centered / nvl）优先匹配，避免把 centered / nvl 误认为 speaker。
-_SAY_START_RE = re.compile(
-    r"^\s*(?:(?P<variant>nvl centered|centered|nvl)\s+)?"
-    r"(?:(?P<speaker>[A-Za-z_]\w*)\s+)?"
-    r'(?P<quote>"""|\'\'\'|"|\')'
-)
+# who 表达式起始：简单表达式（允许点号，如 m.e），对应 Ren'Py
+# ``Lexer.say_expression()`` 常见形态（完整 simple_expression 的复杂形态
+# 不在语料中，继续列入已知限制）。
+_SAY_WHO_RE = re.compile(r"[A-Za-z_][\w.]*")
+
+# say 属性组件：可带 ``-`` 前缀，对应 ``image_name_component`` 语义。
+_SAY_ATTR_RE = re.compile(r"-?[\w.]+")
 
 # 对白续写：``extend "..."``。extend 不是说话者，续写内容归属于当前
 # 说话者（speaker 为 None），尾部子句处理与普通 say 一致。
@@ -56,12 +71,6 @@ _EXTEND_START_RE = re.compile(r'^\s*extend\s+(?P<quote>"""|\'\'\'|"|\')')
 # 资源路径 / 音频引用，不是可翻译文本，必须整体跳过（含可选跨行三引号，
 # 但资源引用通常为单行短路径）。
 _RESOURCE_STMT_RE = re.compile(r"^\s*(?:shader|font|voice)\s+")
-
-# say 语句尾部（字符串闭合之后）：条件括号 / id 子句 / with 子句 / 注释。
-# id 子句的内容不进入提取文本，仅用于 Ren'Py 的翻译标识。
-_SAY_TAIL_RE = re.compile(
-    r"(?:\s*\([^)]*\))?(?:\s+id\s+[\w.:]+:?)?(?:\s+with\s+[\w.]+)?\s*(?:#.*)?$"
-)
 
 # 菜单选项：支持单引号 / 双引号，以及 "if 条件" / "(条件)" 变体。
 _MENU_CHOICE_RE = re.compile(
@@ -95,6 +104,18 @@ _PY_ESCAPE_RE = re.compile(
 def _indent(line: str) -> int:
     """返回行首缩进字符数（空格与制表符各计 1）。"""
     return len(line) - len(line.lstrip(" \t"))
+
+
+def _skip_ws(s: str, pos: int) -> int:
+    """跳过空格与制表符，返回新位置。"""
+    while pos < len(s) and s[pos] in " \t":
+        pos += 1
+    return pos
+
+
+def _is_word_char(s: str, i: int) -> bool:
+    """``s[i]`` 是否属于词字符（用于关键字边界判断，防止 ``with_foo`` 误命中 ``with``）。"""
+    return i < len(s) and (s[i].isalnum() or s[i] in "_.")
 
 
 def _unescape_say(content: str) -> str:
@@ -247,14 +268,149 @@ def _match_string_literal(
         scan_from = 0
 
 
+def _read_balanced_parens(s: str, pos: int) -> tuple[str | None, int]:
+    """从 ``s[pos] == '('`` 读取到配对的 ``)``。
+
+    返回 ``(原文, 结束位置)``；未闭合时返回 ``(None, pos)``。
+    """
+    depth = 0
+    q = pos
+    while q < len(s):
+        ch = s[q]
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return s[pos : q + 1], q + 1
+        q += 1
+    return None, pos
+
+
+def _read_simple_expression(s: str, pos: int) -> tuple[str | None, int]:
+    """读取一个简单表达式（``with`` 子句实参，如 ``dissolve`` / ``Dissolve(0.5, alpha=True)``）。
+
+    返回 ``(原文, 结束位置)``；无法解析时返回 ``(None, pos)``。
+    """
+    pos = _skip_ws(s, pos)
+    m = _SAY_WHO_RE.match(s, pos)
+    if m is None:
+        return None, pos
+    # ``m.end()`` 返回绝对位置（相对整个 ``s``），不能再加 ``pos``。
+    end = m.end()
+    p = _skip_ws(s, end)
+    if s.startswith("(", p):
+        args, p2 = _read_balanced_parens(s, p)
+        if args is None:
+            return None, pos
+        end = p2
+    return s[pos:end], end
+
+
+def _read_id(s: str, pos: int) -> tuple[str | None, int]:
+    """读取 ``id`` 子句的标识符（``[\\w.:]+``，允许行尾冒号）。
+
+    返回 ``(标识符, 结束位置)``；无法解析时返回 ``(None, pos)``。
+    """
+    pos = _skip_ws(s, pos)
+    m = re.match(r"[A-Za-z_][\w.:]*", s[pos:])
+    if m is None:
+        return None, pos
+    name = m.group(0)
+    end = pos + m.end()
+    if name.endswith(":"):
+        name = name[:-1]
+    return name, end
+
+
+@dataclass(frozen=True)
+class _SayTail:
+    """say 尾部子句的解析结果（对应 ``finish_say`` 的循环产物）。"""
+
+    nointeract: bool = False
+    with_expr: str | None = None
+    arguments: str | None = None
+    identifier: str | None = None
+
+
+def _parse_say_tail(rest: str) -> _SayTail | None:
+    """解析 say 字符串闭合之后的尾部子句（模拟 ``finish_say`` 循环）。
+
+    支持按任意顺序出现的 ``nointeract`` / ``with <expr>`` / ``id <name>`` /
+    ``(<arguments>)`` 子句，其后可跟行尾注释；重复子句或出现其它 token
+    视为非法尾部（返回 ``None``）。
+    """
+    pos = 0
+    n = len(rest)
+    nointeract = False
+    with_expr: str | None = None
+    arguments: str | None = None
+    identifier: str | None = None
+
+    while True:
+        pos = _skip_ws(rest, pos)
+        if pos >= n or rest[pos] == "#":
+            break
+
+        if rest.startswith("nointeract", pos) and not _is_word_char(rest, pos + len("nointeract")):
+            nointeract = True
+            pos += len("nointeract")
+            continue
+
+        if rest.startswith("with", pos) and not _is_word_char(rest, pos + len("with")):
+            if with_expr is not None:
+                return None
+            pos += len("with")
+            expr, pos = _read_simple_expression(rest, pos)
+            if expr is None:
+                return None
+            with_expr = expr
+            continue
+
+        if rest.startswith("id", pos) and not _is_word_char(rest, pos + len("id")):
+            if identifier is not None:
+                return None
+            pos += len("id")
+            name, pos = _read_id(rest, pos)
+            if name is None:
+                return None
+            identifier = name
+            continue
+
+        if rest[pos] == "(":
+            if arguments is not None:
+                return None
+            args, pos = _read_balanced_parens(rest, pos)
+            if args is None:
+                return None
+            arguments = args
+            continue
+
+        return None
+
+    return _SayTail(
+        nointeract=nointeract,
+        with_expr=with_expr,
+        arguments=arguments,
+        identifier=identifier,
+    )
+
+
 @dataclass(frozen=True)
 class _SayMatch:
-    """一条 say 语句的匹配结果。"""
+    """一条 say 语句的匹配结果（含 Sprint 3B 的 say 结构字段）。"""
 
     text: str
     speaker: str | None
     last_index: int
     valid_tail: bool
+    say_who: str | None = None
+    say_attributes: tuple[str, ...] | None = None
+    say_temporary_attributes: tuple[str, ...] | None = None
+    say_with: str | None = None
+    say_arguments: str | None = None
+    say_nointeract: bool = False
+    say_id: str | None = None
 
 
 class RpyExtractor:
@@ -384,6 +540,13 @@ class RpyExtractor:
                             source=source,
                             speaker=None,
                             context=current_label,
+                            say_who=extend.say_who,
+                            say_attributes=extend.say_attributes,
+                            say_temporary_attributes=extend.say_temporary_attributes,
+                            say_with=extend.say_with,
+                            say_arguments=extend.say_arguments,
+                            say_nointeract=extend.say_nointeract,
+                            say_id=extend.say_id,
                         )
                     )
                 i = extend.last_index + 1
@@ -401,6 +564,13 @@ class RpyExtractor:
                             source=source,
                             speaker=say.speaker,
                             context=current_label,
+                            say_who=say.say_who,
+                            say_attributes=say.say_attributes,
+                            say_temporary_attributes=say.say_temporary_attributes,
+                            say_with=say.say_with,
+                            say_arguments=say.say_arguments,
+                            say_nointeract=say.say_nointeract,
+                            say_id=say.say_id,
                         )
                     )
                 i = say.last_index + 1
@@ -422,8 +592,9 @@ class RpyExtractor:
     def _match_extend(self, raw: str, index: int, lines: list[str]) -> _SayMatch | None:
         """匹配一行对白续写 ``extend "..."``。
 
-        续写归属于当前说话者（speaker 为 ``None``），尾部 ``id`` / ``with`` /
-        注释与普通 say 一致处理。
+        续写归属于当前说话者（speaker 为 ``None``），``say_who`` 为
+        ``"extend"``；尾部 ``nointeract`` / ``with`` / ``id`` / 参数 / 注释
+        与普通 say 一致处理。
         """
         m = _EXTEND_START_RE.match(raw)
         if m is None:
@@ -432,36 +603,90 @@ class RpyExtractor:
         if lit is None:
             return None
         text, last, after, multi = lit
-        rest = lines[last][after:]
-        valid_tail = _SAY_TAIL_RE.match(rest) is not None
+        tail = _parse_say_tail(lines[last][after:])
         unescaped = _unescape_triple(text) if multi else _unescape_say(text)
         return _SayMatch(
             text=unescaped,
             speaker=None,
             last_index=last,
-            valid_tail=valid_tail,
+            valid_tail=tail is not None,
+            say_who="extend",
+            say_with=tail.with_expr if tail is not None else None,
+            say_arguments=tail.arguments if tail is not None else None,
+            say_nointeract=tail.nointeract if tail is not None else False,
+            say_id=tail.identifier if tail is not None else None,
         )
 
     def _match_say(self, raw: str, index: int, lines: list[str]) -> _SayMatch | None:
-        """匹配一行 say 语句（含变体、id 子句、跨行三引号）。"""
+        """匹配一行 say 语句（含变体、属性、id 子句、跨行三引号）。
+
+        who / 属性 / 临时属性的解析与 Ren'Py ``say_statement`` 一致：
+        第一个表达式词是 who（``centered`` / ``nvl`` 变体同样作为 who），
+        其后连续的属性组件（``say_attributes``），``@`` 后为临时属性
+        （``say_temporary_attributes``），再匹配字符串字面量与尾部子句。
+        """
         # extend / shader / font / voice 等关键字开头由前置分支拦截，
-        # 这里无需重复处理；_SAY_START_RE 只匹配合法说话者。
-        m = _SAY_START_RE.match(raw)
-        if m is None:
-            return None
-        speaker = m.group("speaker")
-        lit = _match_string_literal(lines, index, m.start("quote"))
+        # 这里无需重复处理。
+        pos = _indent(raw)
+        rest = raw[pos:]
+
+        who: str | None = None
+        attrs: tuple[str, ...] | None = None
+        temp_attrs: tuple[str, ...] | None = None
+        lit_pos = pos
+
+        who_m = _SAY_WHO_RE.match(rest)
+        if who_m is not None:
+            who = who_m.group(0)
+            p = _skip_ws(rest, who_m.end())
+            attr_list: list[str] = []
+            while not rest.startswith(('"""', "'''", '"', "'"), p):
+                am = _SAY_ATTR_RE.match(rest, p)
+                if am is None:
+                    break
+                attr_list.append(am.group(0))
+                p = _skip_ws(rest, am.end())
+            if attr_list:
+                attrs = tuple(attr_list)
+            # @ 临时属性（在字符串之前，如 e @ flash "x"）。
+            if rest.startswith("@", p):
+                p += 1
+                tmp: list[str] = []
+                p = _skip_ws(rest, p)
+                while not rest.startswith(('"""', "'''", '"', "'"), p):
+                    am = _SAY_ATTR_RE.match(rest, p)
+                    if am is None:
+                        break
+                    tmp.append(am.group(0))
+                    p = _skip_ws(rest, am.end())
+                if tmp:
+                    temp_attrs = tuple(tmp)
+            # ``p`` 是相对于 ``rest`` 子串的位置，``_match_string_literal``
+            # 需要绝对列位置，必须加上缩进 ``pos`` 换算。
+            lit_pos = pos + p
+        # else：无 who，单参数叙述 say（"..."）。
+
+        lit = _match_string_literal(lines, index, lit_pos)
         if lit is None:
             return None
         text, last, after, multi = lit
-        rest = lines[last][after:]
-        valid_tail = _SAY_TAIL_RE.match(rest) is not None
+        tail = _parse_say_tail(lines[last][after:])
         unescaped = _unescape_triple(text) if multi else _unescape_say(text)
+
+        # speaker 保持既有语义：叙述与 centered/nvl 变体均为 None。
+        speaker = None if who in (None, "centered", "nvl") else who
         return _SayMatch(
             text=unescaped,
             speaker=speaker,
             last_index=last,
-            valid_tail=valid_tail,
+            valid_tail=tail is not None,
+            say_who=who,
+            say_attributes=attrs,
+            say_temporary_attributes=temp_attrs,
+            say_with=tail.with_expr if tail is not None else None,
+            say_arguments=tail.arguments if tail is not None else None,
+            say_nointeract=tail.nointeract if tail is not None else False,
+            say_id=tail.identifier if tail is not None else None,
         )
 
     def _collect_marked(
@@ -525,6 +750,13 @@ class RpyExtractor:
         source: str,
         speaker: str | None,
         context: str | None,
+        say_who: str | None = None,
+        say_attributes: tuple[str, ...] | None = None,
+        say_temporary_attributes: tuple[str, ...] | None = None,
+        say_with: str | None = None,
+        say_arguments: str | None = None,
+        say_nointeract: bool = False,
+        say_id: str | None = None,
     ) -> TranslationUnit:
         seq = counters.get(kind.value, 0) + 1
         counters[kind.value] = seq
@@ -536,4 +768,11 @@ class RpyExtractor:
             source=source,
             speaker=speaker,
             context=context,
+            say_who=say_who,
+            say_attributes=say_attributes,
+            say_temporary_attributes=say_temporary_attributes,
+            say_with=say_with,
+            say_arguments=say_arguments,
+            say_nointeract=say_nointeract,
+            say_id=say_id,
         )

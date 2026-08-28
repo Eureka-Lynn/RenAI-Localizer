@@ -48,10 +48,46 @@ class TranslationUnit(BaseModel):
     """来源文件路径。"""
 
     speaker: str | None = None
-    """说话者标识符；叙述文本为 ``None``。"""
+    """说话者标识符；叙述文本为 ``None``。
+
+    Sprint 3B 约定：保持该字段既有语义不变 —— 叙述（无 who）与
+    ``extend`` 续写均为 ``None``；``centered`` / ``nvl`` / ``extend``
+    的说话者信息见 ``say_who``（"centered" / "nvl" / "extend"）。
+    """
 
     context: str | None = None
     """上下文，例如所在的 ``label`` 名称。"""
+
+    # ------------------------------------------------------------------
+    # Sprint 3B：对话翻译标识符复刻所需的 say 语句结构字段。
+    # 仅 ``kind == DIALOGUE`` 的单元填充；menu_choice / string 一律为
+    # None / False。这些字段与 Ren'Py ``ast.Say`` 的属性一一对应，
+    # 供 ``dialogue.say_get_code()`` 精确重建 ``Say.get_code()``。
+    # ------------------------------------------------------------------
+
+    say_who: str | None = None
+    """原始 who 表达式文本（如 ``e`` / ``centered`` / ``nvl`` / ``extend``）。
+
+    叙述（无 who）为 ``None``。``nvl centered "x"`` 时为 ``"nvl"``
+    （centered 信息在 ``say_attributes``）。"""
+
+    say_attributes: tuple[str, ...] | None = None
+    """who 后紧跟的字符属性（如 ``e happy "x"`` → ``("happy",)``）。"""
+
+    say_temporary_attributes: tuple[str, ...] | None = None
+    """``@`` 后的临时属性（如 ``e "x" @ flash`` → ``("flash",)``）。"""
+
+    say_with: str | None = None
+    """``with`` 子句后的原始表达式文本（如 ``Dissolve(2.0)`` / ``dissolve``）。"""
+
+    say_arguments: str | None = None
+    """say 参数原文（如 ``(test=1)``，含外层括号）。"""
+
+    say_nointeract: bool = False
+    """是否带 ``nointeract`` 子句。"""
+
+    say_id: str | None = None
+    """显式 ``id`` 子句的标识符（如 ``custom_abc``）；无则 ``None``。"""
 
 
 class ExtractionResult(BaseModel):

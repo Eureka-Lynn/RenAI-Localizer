@@ -11,6 +11,11 @@ from typing import Annotated
 import typer
 
 from renai_localizer import __version__
+from renai_localizer.dialogue import (
+    build_dialogue_tl_all,
+    collect_dialogue_units,
+    normalize_sources,
+)
 from renai_localizer.extractor import RpyExtractor
 from renai_localizer.models import ExtractionResult, TranslationUnit
 from renai_localizer.writer import collect_string_entries, write_strings_tl
@@ -138,10 +143,15 @@ def generate_tl(
     ] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="输出去重前后统计。")] = False,
 ) -> None:
-    """从 extracted.json 生成 Ren'Py 字符串翻译文件（strings.rpy）。
+    """从 extracted.json 生成 Ren'Py 翻译文件（字符串 + 对话两个通道）。
 
-    只处理 ``menu_choice`` / ``string`` 两类单元（走字符串翻译通道）；
-    按 old 值去重后写入 ``translate <language> strings:`` 块。
+    字符串通道：只处理 ``menu_choice`` / ``string`` 两类单元，按 old 值
+    去重后写入 ``translate <language> strings:`` 块（``strings.rpy``）。
+
+    对话通道（Sprint 3B）：处理 ``dialogue`` 单元，按源文件镜像目录结构
+    生成 ``<输出目录>/<language>/<源文件相对路径>.rpy``，标识符复刻
+    Ren'Py 自动生成算法（MD5 + label 前缀 + 冲突后缀 + 显式 id 覆盖）。
+
     翻译暂为直通（new == old），结构为后续接入 Translator / LLM 预留。
     """
     if not input_file.exists():
@@ -160,18 +170,49 @@ def generate_tl(
         typer.echo(f"错误：{input_file} 不是合法的提取结果：{exc}", err=True)
         raise typer.Exit(code=1) from exc
 
-    entries = collect_string_entries(result)
-    dedup_total = len(entries)
+    # 绝对 source 规范化为相对路径，防止对话输出覆盖源文件（见 dialogue.normalize_sources）。
+    normalized = normalize_sources(result)
+    if isinstance(normalized, ExtractionResult):
+        result = normalized
 
     # 默认输出目录：.cache/<语料源目录名>/tl/（如 .cache/scarlet_hollow/tl/），
     # 与解包语料的 source（如 .cache/scarlet_hollow/rpy）保持对应；不回写游戏目录。
     source_dir = Path(result.source).parent.name or "game"
     out_root = output_dir or Path(".cache") / source_dir / "tl"
+
+    # ---- 字符串通道（Sprint 3A，行为保持不变）----
+    entries = collect_string_entries(result)
+    dedup_total = len(entries)
     target = write_strings_tl(out_root, language, result)
     size = target.stat().st_size
     typer.echo(f"已生成 {target}（{size} 字节，{dedup_total} 条唯一字符串）")
+
+    # ---- 对话通道（Sprint 3B）----
+    dialogue_units = collect_dialogue_units(result)
+    dialogue_files = build_dialogue_tl_all(result, language)
+    if dialogue_files:
+        # 按源文件路径排序写出（保持稳定输出顺序），镜像源目录结构。
+        for source_path, text in sorted(dialogue_files.items()):
+            rel = Path(source_path)
+            if rel.suffix != ".rpy":
+                rel = rel.with_suffix(".rpy")
+            d_target = out_root / language / rel
+            d_target.parent.mkdir(parents=True, exist_ok=True)
+            d_target.write_text(text, encoding="utf-8")
+    if dialogue_units:
+        typer.echo(
+            f"已生成对话翻译 {len(dialogue_units)} 个对白块 → "
+            f"{out_root}/{language}/（按源文件镜像）"
+        )
+
     if verbose:
+        by_file: dict[str, int] = {}
+        for u in dialogue_units:
+            by_file[u.source] = by_file.get(u.source, 0) + 1
         typer.echo(f"  units: {len(result.units)}（menu_choice+string {len(entries)} 去重后）")
+        typer.echo(f"  对白块总数: {len(dialogue_units)}")
+        for source_path, count in sorted(by_file.items()):
+            typer.echo(f"    {source_path}: {count}")
         typer.echo(f"  stats: {result.stats()}")
 
 
