@@ -13,10 +13,17 @@ from pydantic import BaseModel, Field
 
 
 class TextKind(StrEnum):
-    """待翻译文本的种类。"""
+    """待翻译文本的种类。
+
+    - ``dialogue``：say 语句对白（含 ``centered`` / ``nvl`` 变体）
+    - ``menu_choice``：menu 块中的选项文本
+    - ``string``：被 ``_()`` / ``__()`` 标记的可翻译字符串（Sprint 2 新增，
+      常见于 ``define`` / ``default`` 中的角色名与界面文本）
+    """
 
     DIALOGUE = "dialogue"
     MENU_CHOICE = "menu_choice"
+    STRING = "string"
 
 
 class TranslationUnit(BaseModel):
@@ -29,7 +36,7 @@ class TranslationUnit(BaseModel):
     """唯一标识符，例如 ``dialogue-001``。"""
 
     kind: TextKind
-    """文本种类（对白 / 菜单选项）。"""
+    """文本种类（对白 / 菜单选项 / 标记字符串）。"""
 
     text: str
     """待翻译的原文，保留 Ren'Py 插值占位符（如 ``[name]``）。"""
@@ -51,6 +58,9 @@ class ExtractionResult(BaseModel):
     """一次文本提取的完整结果。"""
 
     schema_version: int = 1
+    # Sprint 2 新增 TextKind.STRING 时保持 schema_version = 1：
+    # JSON 结构与字段含义均未变化，仅 units 中可能出现新的 kind 值
+    # （"string"），对既有消费者向后兼容，因此无需升级 schema。
     source: str
     units: list[TranslationUnit] = Field(default_factory=list)
 

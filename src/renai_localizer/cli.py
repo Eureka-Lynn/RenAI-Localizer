@@ -12,6 +12,7 @@ import typer
 
 from renai_localizer import __version__
 from renai_localizer.extractor import RpyExtractor
+from renai_localizer.models import ExtractionResult, TranslationUnit
 
 app = typer.Typer(
     help="RenAI Localizer — 本地化任意 Ren'Py 游戏的 AI 工具。",
@@ -31,9 +32,55 @@ def _version_callback(value: bool) -> None:
         raise typer.Exit()
 
 
+def _write_payload(
+    payload: dict[str, object],
+    output_file: Path,
+    units: list[TranslationUnit],
+    stats: dict[str, int],
+    verbose: bool,
+) -> None:
+    """写 JSON 并输出摘要。"""
+    output_file.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(f"已提取 {len(units)} 条文本 → {output_file}")
+    if verbose:
+        for kind, count in stats.items():
+            typer.echo(f"  {kind}: {count}")
+
+
+def _extract_directory(directory: Path, encoding: str) -> ExtractionResult:
+    """递归处理目录下所有 ``.rpy``，合并为一个结果。
+
+    每个单元的 ``source`` 为相对目录的相对路径，便于跨文件引用；
+    ``line`` 保留文件内行号。合并后 id 全局重新编号。
+    """
+    files = sorted(directory.rglob("*.rpy"))
+    extractor = RpyExtractor()
+    counters: dict[str, int] = {}
+    merged: list[TranslationUnit] = []
+    for file_path in files:
+        result = extractor.extract_file(file_path, encoding=encoding)
+        for unit in result.units:
+            seq = counters.get(unit.kind.value, 0) + 1
+            counters[unit.kind.value] = seq
+            merged.append(
+                unit.model_copy(
+                    update={
+                        "id": f"{unit.kind.value}-{seq:03d}",
+                        "source": str(file_path.relative_to(directory)),
+                    }
+                )
+            )
+    return ExtractionResult(source=str(directory), units=merged)
+
+
 @app.command("extract")
 def extract(
-    input_file: Annotated[Path, typer.Argument(help="要提取的 Ren'Py .rpy 脚本文件。")],
+    input_file: Annotated[
+        Path, typer.Argument(help="要提取的 Ren'Py .rpy 脚本文件或包含 .rpy 的目录。")
+    ],
     output: Annotated[
         Path | None,
         typer.Option("--output", "-o", help="输出 JSON 文件路径；默认与输入文件同名（.json）。"),
@@ -41,30 +88,30 @@ def extract(
     encoding: Annotated[str, typer.Option("--encoding", help="读取脚本文件使用的编码。")] = "utf-8",
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="输出提取统计信息。")] = False,
 ) -> None:
-    """从 Ren'Py .rpy 脚本中提取待翻译文本，并保存为结构化 JSON。"""
+    """从 Ren'Py .rpy 脚本中提取待翻译文本，并保存为结构化 JSON。
+
+    ``input_file`` 为文件时处理单个脚本；为目录时递归处理其中所有 ``.rpy``，
+    合并输出为一个 JSON，每个单元的 ``source`` 为相对目录的路径。
+    """
 
     if not input_file.exists():
-        typer.echo(f"错误：文件不存在：{input_file}", err=True)
+        typer.echo(f"错误：路径不存在：{input_file}", err=True)
         raise typer.Exit(code=1)
 
-    result = RpyExtractor().extract_file(input_file, encoding=encoding)
+    if input_file.is_dir():
+        result = _extract_directory(input_file, encoding)
+        output_file = output or input_file.with_suffix(".json")
+    else:
+        result = RpyExtractor().extract_file(input_file, encoding=encoding)
+        output_file = output or input_file.with_suffix(".json")
 
-    output_file = output or input_file.with_suffix(".json")
     payload = {
         "schema_version": result.schema_version,
         "source": result.source,
         "units": [unit.model_dump(mode="json") for unit in result.units],
         "stats": result.stats(),
     }
-    output_file.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    typer.echo(f"已提取 {len(result.units)} 条文本 → {output_file}")
-    if verbose:
-        for kind, count in result.stats().items():
-            typer.echo(f"  {kind}: {count}")
+    _write_payload(payload, output_file, result.units, result.stats(), verbose)
 
 
 @app.callback()

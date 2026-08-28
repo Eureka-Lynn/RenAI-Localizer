@@ -47,19 +47,26 @@ def test_extract_fixture_menu_choices() -> None:
 
 def test_extract_context_label() -> None:
     result = _extract_fixture()
-    assert all(u.context == "start" for u in result.units)
+    # 对白与菜单选项位于 label start 内；define 处的 string 单元无 label 上下文。
+    for u in result.units:
+        if u.kind in (TextKind.DIALOGUE, TextKind.MENU_CHOICE):
+            assert u.context == "start"
+        else:
+            assert u.context is None
 
 
 def test_extract_skips_code_and_comments() -> None:
     texts = {u.text for u in _extract_fixture().units}
-    # define 中的字符串不属于待翻译文本。
-    assert "Eileen" not in texts
+    # Sprint 1 时 define 中的裸字符串不属于待翻译文本；Sprint 2 起，
+    # fixture 将角色名改写为 _("Eileen")（Ren'Py 标记可翻译字符串的标准做法，
+    # 用于角色显示名的本地化），因此 "Eileen" 现在应被提取为 kind="string"。
+    assert "Eileen" in texts
     assert "pass" not in texts
 
 
 def test_stats() -> None:
     result = _extract_fixture()
-    assert result.stats() == {"dialogue": 6, "menu_choice": 3}
+    assert result.stats() == {"dialogue": 6, "menu_choice": 3, "string": 1}
 
 
 def test_extract_empty_script() -> None:
@@ -82,11 +89,15 @@ def test_json_roundtrip() -> None:
         "stats": result.stats(),
     }
     loaded = json.loads(json.dumps(payload, ensure_ascii=False))
-    assert loaded["stats"] == {"dialogue": 6, "menu_choice": 3}
-    assert loaded["units"][0]["kind"] == "dialogue"
-    assert loaded["units"][0]["id"] == "dialogue-001"
-    assert loaded["units"][-1]["id"] == "dialogue-006"
-    assert loaded["units"][-1]["text"] == 'Farewell. "Take care of yourself."'
+    assert loaded["stats"] == {"dialogue": 6, "menu_choice": 3, "string": 1}
+    # 单元按行号顺序排列：第 4 行的 _("Eileen") 最先被提取。
+    assert loaded["units"][0]["kind"] == "string"
+    assert loaded["units"][0]["id"] == "string-001"
+    assert loaded["units"][0]["text"] == "Eileen"
+    dialogues = [u for u in loaded["units"] if u["kind"] == "dialogue"]
+    assert dialogues[0]["id"] == "dialogue-001"
+    assert dialogues[-1]["id"] == "dialogue-006"
+    assert dialogues[-1]["text"] == 'Farewell. "Take care of yourself."'
     menu_ids = [u["id"] for u in loaded["units"] if u["kind"] == "menu_choice"]
     assert menu_ids == ["menu_choice-001", "menu_choice-002", "menu_choice-003"]
 
@@ -101,5 +112,5 @@ def test_cli_extract(tmp_path: Path) -> None:
     data = json.loads(output.read_text(encoding="utf-8"))
     assert data["schema_version"] == 1
     assert data["source"] == str(FIXTURE)
-    assert data["stats"] == {"dialogue": 6, "menu_choice": 3}
-    assert data["units"][0]["text"] == "Welcome to Scarlet Hollow."
+    assert data["stats"] == {"dialogue": 6, "menu_choice": 3, "string": 1}
+    assert data["units"][0]["text"] == "Eileen"

@@ -566,9 +566,75 @@ any memorized choice made by the user.
  Along with the use of string translations for dialogue, unsanctioned
 translators may be interested in using the techniques described above
 to translate images and styles. 
-            Previous 
-         Next    
-  Built with  Sphinx  using a
-     theme 
+            Previous
+         Next
+   Built with  Sphinx  using a
+      theme
     provided by  Read the Docs .
+
+-------------------------------------------------------------------------------
+Sprint 2 补充结论（RenAI Localizer 开发记录）
+-------------------------------------------------------------------------------
+
+1. 字符串转义规则（Sprint 3.5 已按 Ren'Py 8.0.3 源码语义修正，见
+   renpy/parser.py Lexer.string() / Lexer.triple_string() 与
+   renpy/translation/__init__.py create_translate()）：
+   - say / 菜单选项（单行字符串）按 Lexer.string() 语义：
+     先折叠连续空白（\s+ → 单空格），再 dequote：
+     \n → 换行、\{ → {{、\[ → [[、\% → %%、\uXXXX → 对应字符、
+     其它 \x → x（去掉反斜杠保留字符本身）。
+   - say 三引号按 Lexer.triple_string() 语义：先做 *\n * → \n
+     （去掉换行两侧水平空白）；monologue 分段暂不实现（语料无此场景）。
+   - _() / __() 是 Python 表达式，按 Python 字符串转义规则还原
+     （\n → 换行、\t → 制表符、\\ → 反斜杠、\" / \'、\r\a\b\f\v、
+     \0 八进制、\x\u\U\N；未知转义原样保留）。
+   - 提取出的 TranslationUnit.text 必须等于 Ren'Py 运行时（lexed /
+     Python 求值后）的规范文本值：create_translate() 的对白翻译标识符
+     = MD5(get_code() + "\r\n")，get_code() 用 encode_say_string(lexed_value)，
+     因此文本值不一致会导致翻译静默失效。
+   - 已知限制：raw 字符串（r"..."）与三引号对白的 monologue 分段暂不扩展支持。
+
+2. 多行字符串（三引号 """...""" / '''...'''）：
+   - 可跨行，内容按行保留换行；TranslationUnit.line 记录起始行。
+
+3. 可翻译字符串标记（Ren'Py 文档 "Menu and String Translations" 一节）：
+   - _() 单下划线：标记字符串为可翻译，返回原字符串，显示时翻译。
+   - __() 双下划线：立即翻译为当前语言。
+   - ___() 与 _p()：本 Sprint 不提取（后续 Sprint 考虑）。
+   - 裸 define/default 字符串（如 define e = Character("Eileen")）不会被
+     Ren'Py 加入字符串翻译表；只有 _()/__() 包裹的字符串才是可翻译的。
+
+4. say 语句的 id 子句：
+   - 语法：e "text" id start_xxx（可选尾随冒号）。
+   - id 是 Ren'Py 手动指定翻译标识的手段（文档 "Tips" 一节），
+     内容不进入待翻译文本。
+
+5. say 变体：
+   - centered "..." / nvl "..." / nvl centered "..." 均为叙述性语句，
+     不能把 centered / nvl 当作 speaker（Sprint 1 的正则会误判，Sprint 2 已修正）。
+
+6. 冒烟测试（Scarlet Hollow / archive.rpa 真实脚本）最终结论：
+   - archive.rpa 内确有 199 个明文 .rpy（约 19MB），已用 unrpa 选择性解包
+     直接解出真实游戏脚本作为语料，不再需要退而求其次使用
+     renpy/common/*.rpy。
+   - screen 块中的属性字符串（如 style_group ""、scrollbars "vertical"、
+     style_suffix "radio_button"）不是对白，不应提取；
+     屏幕内只提取 _() / __() 标记的字符串。
+   - init python 变体（init -1500 python hide: 等）与普通 python 块一样，
+     块内字符串（含 _() 标记）不提取。
+   - python 块内允许出现缩进为 0 的空行与注释行，不因此提前结束块状态。
+
+Sprint 3.5 补充结论（文本值保真：转义与空白折叠）：
+
+7. 冒烟测试（真实语料 extracted.json，与基线对比）：
+   - 总数仍为 81,705（dialogue 67,225 / menu 13,757 / string 723），
+     单元数量、种类、顺序均不变（只改值，不改提取范围）。
+   - 值变化共 2,271 条，全部来自两类语义修正：
+     * 145 条 \n 结尾对白 / 含 \n 的 string 变为真换行；
+     * 2,126 条含连续双空格的对白 / 菜单选项折叠为单空格。
+   - 空文本 / shader / font / voice 误提取仍为 0。
+   - 抽查 flashback.rpy 286 行以真换行结尾。
+   - 与 Ren'Py 语义核对结论：Lexer.string() 先折叠后 dequote、
+     _()/__() 按 Python 求值，二者均已对齐；翻译标识符 MD5 前提（文本值
+     与 lexed 值一致）成立。
  

@@ -30,3 +30,6 @@ Thumbs.db
 # 本地测试产物
 *.log
 tests/fixtures/*.json
+
+# 解包缓存（游戏归档解出的真实语料等，体积大且含版权内容，不提交）
+.cache/

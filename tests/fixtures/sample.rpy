@@ -1,7 +1,7 @@
 # RenAI Localizer 测试夹具
 # 模拟 Ren'Py 脚本中最常见的可本地化文本场景。
 
-define e = Character("Eileen")
+define e = Character(_("Eileen"))
 
 label start:
 

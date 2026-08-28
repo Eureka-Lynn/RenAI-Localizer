@@ -25,6 +25,7 @@ dependencies = [
     "openai>=1.30",
     "pydantic>=2.7",
     "pydantic-settings>=2.2",
+    "unrpa>=2.3",
 ]
 
 [project.optional-dependencies]
@@ -54,3 +55,8 @@ select = ["E", "F", "I", "UP", "B"]
 [tool.mypy]
 python_version = "3.11"
 strict = true
+
+[[tool.mypy.overrides]]
+# unrpa 未提供类型标记（import-untyped），依赖方已做薄封装，无需严格检查其内部。
+module = "unrpa"
+ignore_missing_imports = true
