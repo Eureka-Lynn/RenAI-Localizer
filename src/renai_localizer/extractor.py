@@ -12,8 +12,16 @@
 - 菜单选项（menu 块）：``"Choice":`` / ``"Choice" if cond:`` / 单引号变体
 - 可翻译字符串标记：``_("...")`` / ``__("...")``（``kind="string"``，
   常见于 ``define`` / ``default`` 中的角色名与界面文本）
-- 资源引用语句跳过：``shader "..."`` / ``font "..."`` / ``voice "..."``
-  是资源路径 / 音频引用，不是可翻译文本
+- Ren'Py 保留语句关键字拦截（镜像 ``renpy/parser.py`` 的语句分发）：
+  ``play`` / ``queue`` / ``stop`` / ``show`` / ``scene`` / ``camera`` /
+  ``window`` / ``voice`` / ``shader`` / ``font`` 开头的行是语句，关键字后
+  可跟字符串字面量但不是对白（``play music "x"`` / ``show text "..."`` /
+  ``scene "..."`` / ``voice "..."``），整行跳过
+- ``image`` / ``transform`` / ``style`` 块（以冒号结尾的定义行）内不存在
+  say 语句：ATL 行与样式属性（``color "#000"`` / ``thumb "..."`` /
+  ``background "..."`` 等）不是可翻译文本，块内统一跳过（含 ``_()`` 标记，
+  此类块内通常没有标记字符串）；单行 ``image x = ...`` / ``style x is y``
+  不受影响
 - 空文本过滤：提取结果中空串 / 纯空白的单元一律丢弃（兜底）
 
 文本值保真（Sprint 3.5）：提取出的 ``TranslationUnit.text`` 等于 Ren'Py
@@ -67,10 +75,20 @@ _SAY_ATTR_RE = re.compile(r"-?[\w.]+")
 # 说话者（speaker 为 None），尾部子句处理与普通 say 一致。
 _EXTEND_START_RE = re.compile(r'^\s*extend\s+(?P<quote>"""|\'\'\'|"|\')')
 
-# 资源引用语句：``shader "..."`` / ``font "..."`` / ``voice "..."`` 是
-# 资源路径 / 音频引用，不是可翻译文本，必须整体跳过（含可选跨行三引号，
-# 但资源引用通常为单行短路径）。
-_RESOURCE_STMT_RE = re.compile(r"^\s*(?:shader|font|voice)\s+")
+# Ren'Py 保留语句关键字（镜像 ``renpy/parser.py`` 的语句分发）：这些关键字
+# 开头的行是语句，关键字后可跟字符串字面量（``play music "x"`` /
+# ``show text "..."`` / ``voice "..."``），但不是对白，必须整体跳过。
+# 这些关键字是 Ren'Py 保留字，不能用作说话者 / 变量名，因此 ``\\b`` 词
+# 边界后拦截整行是安全的（``show_foo`` 这类标识符不命中）。
+_STATEMENT_KEYWORD_RE = re.compile(
+    r"^\s*(?:play|queue|stop|show|scene|camera|window|voice|shader|font)\b"
+)
+
+# image / transform / style 块：以冒号结尾的定义行（``image bg fire:`` /
+# ``transform flip:`` / ``style default:``）进入块状态，块内 ATL 行与样式
+# 属性不是对白，统一跳过。``image x = ...`` / ``style x is y`` 这类无冒号
+# 的单行定义不受影响。
+_ATL_BLOCK_START_RE = re.compile(r"^\s*(?:image|transform|style)\b.*:\s*(?:#.*)?$")
 
 # 菜单选项：支持单引号 / 双引号，以及 "if 条件" / "(条件)" 变体。
 _MENU_CHOICE_RE = re.compile(
@@ -426,6 +444,7 @@ class RpyExtractor:
         menu_indents: list[int] = []
         python_indent: int | None = None
         screen_indent: int | None = None
+        atl_indent: int | None = None
 
         i = 0
         total = len(lines)
@@ -464,6 +483,16 @@ class RpyExtractor:
                         i += 1
                     continue
 
+            # ATL 块（image/transform/style）：块内不存在 say 语句（ATL 行、
+            # 样式属性字符串不是对白），统一跳过（含 _()/__() 标记；此类块内
+            # 通常没有标记字符串）。
+            if atl_indent is not None:
+                if indent <= atl_indent:
+                    atl_indent = None
+                else:
+                    i += 1
+                    continue
+
             # $ 语句（含行尾 \ 的续行）整体跳过。
             if stripped.startswith("$"):
                 i += 1
@@ -482,6 +511,13 @@ class RpyExtractor:
 
             if _SCREEN_START_RE.match(stripped):
                 screen_indent = indent
+                i += 1
+                continue
+
+            # image/transform/style 块入口：以冒号结尾的定义行进入块状态。
+            # 单行 image x = ... / style x is y（无冒号）不受影响。
+            if _ATL_BLOCK_START_RE.match(raw):
+                atl_indent = indent
                 i += 1
                 continue
 
@@ -513,9 +549,10 @@ class RpyExtractor:
                     i += 1
                     continue
 
-            # 资源引用语句（shader / font / voice）：整行跳过。
-            # 注意：style 块内的属性（缩进）与 transform 内的 shader 都在此匹配。
-            if _RESOURCE_STMT_RE.match(stripped):
+            # 保留语句关键字（play/queue/stop/show/scene/camera/window 及
+            # voice/shader/font）：这些关键字开头的行是 Ren'Py 语句（镜像
+            # parser.py 的语句分发），关键字后可跟字符串字面量但不是对白。
+            if _STATEMENT_KEYWORD_RE.match(stripped):
                 i += 1
                 continue
 
@@ -625,7 +662,8 @@ class RpyExtractor:
         其后连续的属性组件（``say_attributes``），``@`` 后为临时属性
         （``say_temporary_attributes``），再匹配字符串字面量与尾部子句。
         """
-        # extend / shader / font / voice 等关键字开头由前置分支拦截，
+        # extend / play / queue / stop / show / scene / camera / window /
+        # voice / shader / font 等保留语句关键字开头由前置分支拦截，
         # 这里无需重复处理。
         pos = _indent(raw)
         rest = raw[pos:]
