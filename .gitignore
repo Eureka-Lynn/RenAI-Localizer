@@ -1,0 +1,48 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+.env
+.env.*
+
+# Editor and OS metadata
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local extraction/build scratch data
+.cache/
+compare.json
+*.tmp
+*.part
+
+# Full Scarlet Hollow source and generated evidence are kept locally.
+# Keep the small metadata and analysis documents in this directory tracked.
+scarlet_hollow_official/game/
+scarlet_hollow_official/official_snapshot.json
+scarlet_hollow_official/occurrences.jsonl
+scarlet_hollow_official/coverage-report.json
+scarlet_hollow_official/mtool-export.json
+scarlet_hollow_official/mtool-alignment.json
+scarlet_hollow_official/legacy_snapshot.json
+scarlet_hollow_official/official-vs-legacy-full.json
+scarlet_hollow_official/*.log
+
+# Large generated context output; schema and bounded summary fixtures remain trackable.
+data/reader_context_fixture.json
+
+# Compiled Ren'Py artifacts
+**/*.rpyc
+**/*.rpyb
+official_validation/game/cache/
+official_validation/game/saves/
+official_validation/*.log

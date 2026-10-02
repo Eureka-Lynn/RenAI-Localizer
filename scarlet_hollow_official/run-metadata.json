@@ -1,0 +1,22 @@
+{
+  "target": "Scarlet Hollow",
+  "language": "schinese",
+  "renpy_version": "8.0.3.22090809",
+  "runtime_executable": "F:/SteamLibrary/steamapps/common/ScarletHollow/ScarletHollow.exe",
+  "runtime_source": "F:/SteamLibrary/steamapps/common/ScarletHollow/renpy",
+  "command_file": "renpy-command.txt",
+  "source_policy": "199 .rpy source files copied individually from the old project's .cache/scarlet_hollow/rpy into this isolated game directory; no old .cache was copied wholesale and the old project was not modified.",
+  "official_output": "game/tl/schinese",
+  "official_output_files": 185,
+  "official_blocks": 68342,
+  "multi_statement_blocks": 173,
+  "maximum_statements_in_block": 1280,
+  "official_text_occurrences": 76435,
+  "official_statements_with_empty_text": 2259,
+  "official_snapshot": "official_snapshot.json",
+  "runtime_log": "log.txt",
+  "official_command_log": "official-command.log",
+  "exit_code": 0,
+  "runtime_note": "log.txt contains a nonfatal Steam initialization warning; script loading, translation initialization, and tl generation completed.",
+  "generated_at": "2026-10-02"
+}

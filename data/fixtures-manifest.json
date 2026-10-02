@@ -1,0 +1,20 @@
+{
+  "policy": "small, auditable fixtures only; never copy legacy .cache",
+  "fixtures": [
+    {"path": "tests/fixtures/sample.rpy", "purpose": "say, menu, marked string, interpolation"},
+    {"path": "tests/fixtures/sprint3b.rpy", "purpose": "say identifier and multi-form statement regression"},
+    {"path": "data/prompt_fixtures.json", "purpose": "selected Scarlet Hollow occurrence single-unit and context-aware prompt fixtures"},
+    {"path": "data/reader_context_schema.json", "purpose": "Stage 3 source-traceable Reader Context contracts"},
+    {"path": "data/story_bible_fixture.json", "purpose": "bounded Stage 3 story bible with unknown interpretive fields"},
+    {"path": "data/character_cards_fixture.json", "purpose": "source-backed character identities with unresolved facts"},
+    {"path": "data/scene_summaries_fixture.json", "purpose": "selected Scarlet Hollow scene contracts"},
+    {"path": "data/timeline_fixture.json", "purpose": "empty until reviewed timeline evidence exists"},
+    {"path": "data/glossary_fixture.json", "purpose": "deterministic source-term candidates without translations"},
+    {"path": "data/reader_context_fixture.json", "purpose": "occurrence-level bounded reader contexts"},
+    {"path": "data/stage12_acceptance_report.json", "purpose": "auditable Stage 1/2 contract acceptance results"}
+  ],
+  "external_baseline": {
+    "path": "external/ManualTransFile.json",
+    "handling": "read-only external MTool extraction baseline supplied explicitly to a command; source==target is expected; not copied, deleted, or rewritten"
+  }
+}

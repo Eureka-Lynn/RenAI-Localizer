@@ -1,0 +1,45 @@
+{
+  "project": "Scarlet Hollow",
+  "version": null,
+  "story_overview": null,
+  "confirmed_world_facts": [],
+  "confirmed_themes": [],
+  "unresolved_questions": [
+    "Story overview requires a reviewed reading pass.",
+    "World facts and themes have not been asserted in Stage 3."
+  ],
+  "source_refs": [
+    {
+      "source_file": "game/scripts/_day_1/script.rpy",
+      "source_line": 892,
+      "block_id": "bus_6a66a01f",
+      "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0"
+    },
+    {
+      "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+      "source_line": 13,
+      "block_id": "tuesday_diner_d95c1fd3",
+      "occurrence_id": "tuesday_diner_d95c1fd3@game/scripts/_day_2/tuesday_diner.rpy:13:0"
+    },
+    {
+      "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+      "source_line": 25,
+      "block_id": "wednesday_start_b3925e23",
+      "occurrence_id": "wednesday_start_b3925e23@game/scripts/_day_3/wednesday_start.rpy:25:0"
+    },
+    {
+      "source_file": "game/scripts/_day_4/thursday_start.rpy",
+      "source_line": 13,
+      "block_id": "thursday_start_e948aa64",
+      "occurrence_id": "thursday_start_e948aa64@game/scripts/_day_4/thursday_start.rpy:13:0"
+    }
+  ],
+  "confidence": null,
+  "provenance": {
+    "kind": "official_snapshot_only",
+    "extraction_backend": "official",
+    "source_snapshot": "official_snapshot.json",
+    "renpy_version": "8.0.3.22090809",
+    "llm_used": false
+  }
+}

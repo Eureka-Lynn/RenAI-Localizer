@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "occurrence": "game/script.rpy:6:0|game/script.rpy:6:1",
+      "source": "game/script.rpy",
+      "line": 6,
+      "official": "Hello from official extraction.",
+      "legacy": "Hello from official extraction.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:9:1|game/script.rpy:9:2",
+      "source": "game/script.rpy",
+      "line": 9,
+      "official": "This is a narration line.",
+      "legacy": "This is a narration line.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:14:2|game/script.rpy:14:4",
+      "source": "game/script.rpy",
+      "line": 14,
+      "official": "The first path is selected.",
+      "legacy": "The first path is selected.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:16:3|game/script.rpy:16:6",
+      "source": "game/script.rpy",
+      "line": 16,
+      "official": "Repeated dialogue.",
+      "legacy": "Repeated dialogue.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:20:4|game/script.rpy:20:7",
+      "source": "game/script.rpy",
+      "line": 20,
+      "official": "Dialogue after menu.",
+      "legacy": "Dialogue after menu.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:23:5|game/script.rpy:24:8",
+      "source": "game/script.rpy",
+      "line": 23,
+      "official": "This is an NVL-style narrator line.",
+      "legacy": "This is an NVL-style narrator line.",
+      "mtool": null,
+      "status": "text-match-location-diff"
+    },
+    {
+      "occurrence": "game/script.rpy:32:6|game/script.rpy:32:9",
+      "source": "game/script.rpy",
+      "line": 32,
+      "official": "Repeated dialogue.",
+      "legacy": "Repeated dialogue.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:33:7|game/script.rpy:33:10",
+      "source": "game/script.rpy",
+      "line": 33,
+      "official": "Repeated dialogue.",
+      "legacy": "Repeated dialogue.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:36:8|game/script.rpy:36:11",
+      "source": "game/script.rpy",
+      "line": 36,
+      "official": "Explicit identifier dialogue.",
+      "legacy": "Explicit identifier dialogue.",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:1:9|game/script.rpy:1:0",
+      "source": "game/script.rpy",
+      "line": 1,
+      "official": "Eileen",
+      "legacy": "Eileen",
+      "mtool": null,
+      "status": "match"
+    },
+    {
+      "occurrence": "game/script.rpy:12:10|game/script.rpy:13:3",
+      "source": "game/script.rpy",
+      "line": 12,
+      "official": "Choose the first path",
+      "legacy": "Choose the first path",
+      "mtool": null,
+      "status": "text-match-location-diff"
+    },
+    {
+      "occurrence": "game/script.rpy:12:11|game/script.rpy:15:5",
+      "source": "game/script.rpy",
+      "line": 12,
+      "official": "Choose the repeated path",
+      "legacy": "Choose the repeated path",
+      "mtool": null,
+      "status": "text-match-location-diff"
+    },
+    {
+      "occurrence": "game/script.rpy:28:12",
+      "source": "game/script.rpy",
+      "line": 28,
+      "official": "Marked string one",
+      "legacy": null,
+      "mtool": null,
+      "status": "legacy-missing"
+    },
+    {
+      "occurrence": "game/script.rpy:29:13",
+      "source": "game/script.rpy",
+      "line": 29,
+      "official": "Marked string two",
+      "legacy": null,
+      "mtool": null,
+      "status": "legacy-missing"
+    }
+  ],
+  "grouping_differences": [
+    {
+      "official_identifier": "start_3013da9a",
+      "official_source": "game/script.rpy",
+      "official_line": 23,
+      "official_statement_count": 2,
+      "legacy_block_count": 1,
+      "legacy_statement_counts": [
+        1
+      ],
+      "status": "legacy-under-grouped"
+    }
+  ],
+  "summary": {
+    "occurrences": 14,
+    "official_legacy_differences": 0,
+    "text_match_location_differences": 3,
+    "legacy_missing": 2,
+    "official_missing": 0,
+    "legacy_under_grouped": 1,
+    "mtool_entries": 179884
+  },
+  "mtool_alignment": {
+    "schema": "text->text",
+    "occurrences": 14,
+    "exact_text_matches": 0,
+    "missing_text": 14,
+    "source_index_available": false,
+    "line_index_available": false,
+    "occurrence_index_available": false,
+    "ambiguous_texts": [
+      "Repeated dialogue."
+    ],
+    "required_extra_index": [
+      "source",
+      "line",
+      "occurrence"
+    ]
+  },
+  "diagnostics": []
+}

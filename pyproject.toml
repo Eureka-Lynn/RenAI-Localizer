@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "renai-localizer-v2"
+version = "0.1.0"
+description = "Official-extraction-first Ren'Py story-context localization architecture"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+renai-localizer-v2 = "renai_localizer_v2.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/renai_localizer_v2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

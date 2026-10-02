@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RenAI Localizer v2 Reader Context Layer",
+  "description": "Source-traceable Stage 3 contracts. Interpretive fields remain nullable until reviewed.",
+  "type": "object",
+  "required": ["story_bible", "character_cards", "scene_summaries", "timeline", "glossary", "reader_contexts"],
+  "properties": {
+    "story_bible": {"$ref": "#/$defs/storyBible"},
+    "character_cards": {"type": "array", "items": {"$ref": "#/$defs/characterCard"}},
+    "scene_summaries": {"type": "array", "items": {"$ref": "#/$defs/sceneSummary"}},
+    "timeline": {"type": "array", "items": {"$ref": "#/$defs/timelineEvent"}},
+    "glossary": {"type": "array", "items": {"$ref": "#/$defs/glossaryEntry"}},
+    "reader_contexts": {"type": "array", "items": {"$ref": "#/$defs/readerContext"}},
+    "metadata": {"type": "object"}
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "required": ["source_file", "source_line"],
+      "properties": {
+        "source_file": {"type": "string", "minLength": 1},
+        "source_line": {"type": "integer", "minimum": 1},
+        "block_id": {"type": ["string", "null"]},
+        "occurrence_id": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "storyBible": {
+      "type": "object",
+      "required": ["project", "version", "story_overview", "confirmed_world_facts", "confirmed_themes", "unresolved_questions", "source_refs", "confidence", "provenance"],
+      "properties": {
+        "project": {"type": "string"},
+        "version": {"type": ["string", "null"]},
+        "story_overview": {"type": ["string", "null"]},
+        "confirmed_world_facts": {"type": "array", "items": {"type": "string"}},
+        "confirmed_themes": {"type": "array", "items": {"type": "string"}},
+        "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"$ref": "#/$defs/sourceRef"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "provenance": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "characterCard": {
+      "type": "object",
+      "required": ["character_id", "name", "aliases", "known_role", "personality", "speech_style", "relationships", "known_facts", "source_refs", "confidence", "unresolved_items"],
+      "properties": {
+        "character_id": {"type": "string"},
+        "name": {"type": "string"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "known_role": {"type": ["string", "null"]},
+        "personality": {"type": ["string", "null"]},
+        "speech_style": {"type": ["string", "null"]},
+        "relationships": {"type": "array", "items": {"type": "string"}},
+        "known_facts": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "unresolved_items": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "sceneSummary": {
+      "type": "object",
+      "required": ["scene_id", "source_file", "label", "scene_goal", "participants", "important_events", "emotional_state", "foreshadowing", "terminology", "source_refs", "confidence", "unresolved_items"],
+      "properties": {
+        "scene_id": {"type": "string"},
+        "source_file": {"type": "string"},
+        "label": {"type": ["string", "null"]},
+        "scene_goal": {"type": ["string", "null"]},
+        "participants": {"type": "array", "items": {"type": "string"}},
+        "important_events": {"type": "array", "items": {"type": "string"}},
+        "emotional_state": {"type": ["string", "null"]},
+        "foreshadowing": {"type": "array", "items": {"type": "string"}},
+        "terminology": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"$ref": "#/$defs/sourceRef"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "unresolved_items": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "timelineEvent": {
+      "type": "object",
+      "required": ["event_id", "description", "participants", "temporal_relation", "source_refs", "confidence", "unresolved_items"],
+      "properties": {
+        "event_id": {"type": "string"},
+        "description": {"type": "string"},
+        "participants": {"type": "array", "items": {"type": "string"}},
+        "temporal_relation": {"type": ["string", "null"]},
+        "source_refs": {"type": "array", "items": {"$ref": "#/$defs/sourceRef"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "unresolved_items": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "glossaryEntry": {
+      "type": "object",
+      "required": ["source_term", "candidate_translation", "category", "related_characters", "source_refs", "confidence", "alternatives", "notes"],
+      "properties": {
+        "source_term": {"type": "string"},
+        "candidate_translation": {"type": ["string", "null"]},
+        "category": {"type": "string"},
+        "related_characters": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "alternatives": {"type": "array", "items": {"type": "string"}},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "readerContext": {
+      "type": "object",
+      "required": ["occurrence_id", "story_bible_refs", "character_card_refs", "scene_summary_ref", "relevant_timeline_events", "relevant_glossary_entries", "local_context", "unresolved_questions", "confidence", "source_refs"],
+      "properties": {
+        "occurrence_id": {"type": "string"},
+        "story_bible_refs": {"type": "array", "items": {"type": "string"}},
+        "character_card_refs": {"type": "array", "items": {"type": "string"}},
+        "scene_summary_ref": {"type": ["string", "null"]},
+        "relevant_timeline_events": {"type": "array", "items": {"type": "string"}},
+        "relevant_glossary_entries": {"type": "array", "items": {"type": "string"}},
+        "local_context": {"type": "object"},
+        "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}}
+      },
+      "additionalProperties": false
+    }
+  }
+}

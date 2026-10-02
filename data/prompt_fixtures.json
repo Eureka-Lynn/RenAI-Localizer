@@ -1,0 +1,268 @@
+{
+  "single_unit_prompt": [
+    {
+      "prompt_type": "single_unit_prompt",
+      "target_language": "Simplified Chinese",
+      "system": "You translate one Ren'Py text occurrence. Preserve variables, Ren'Py text tags, percent signs, backslashes, newlines, and the statement structure exactly. Return exactly one JSON object with exactly these keys: occurrence_id (string), translation (string), notes (array of strings). Do not return markdown, commentary, or any other keys.",
+      "user": {
+        "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0",
+        "source_text": "{i}You jolt awake as the bus hits a particularly nasty bump. You feel like you’d only just managed to start drifting off, and now here you are, awake again and still exhausted.{/i}",
+        "speaker": null,
+        "label": "bus",
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 892
+      },
+      "response_schema": {
+        "occurrence_id": "...",
+        "translation": "...",
+        "notes": []
+      }
+    },
+    {
+      "prompt_type": "single_unit_prompt",
+      "target_language": "Simplified Chinese",
+      "system": "You translate one Ren'Py text occurrence. Preserve variables, Ren'Py text tags, percent signs, backslashes, newlines, and the statement structure exactly. Return exactly one JSON object with exactly these keys: occurrence_id (string), translation (string), notes (array of strings). Do not return markdown, commentary, or any other keys.",
+      "user": {
+        "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+        "source_text": "{i}For a moment, you’re hazy on the details of where exactly 'here' is, confusing this bus with the many others that came before it. But as your mind continues to reassert its existence in the waking world, the past few days come back into focus.{/i}",
+        "speaker": null,
+        "label": "bus",
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 894
+      },
+      "response_schema": {
+        "occurrence_id": "...",
+        "translation": "...",
+        "notes": []
+      }
+    }
+  ],
+  "context_aware_prompt": [
+    {
+      "prompt_type": "context_aware_prompt",
+      "target_language": "Simplified Chinese",
+      "system": "You translate one Ren'Py text occurrence. Preserve variables, Ren'Py text tags, percent signs, backslashes, newlines, and the statement structure exactly. Return exactly one JSON object with exactly these keys: occurrence_id (string), translation (string), notes (array of strings). Do not return markdown, commentary, or any other keys.",
+      "user": {
+        "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0",
+        "source_text": "{i}You jolt awake as the bus hits a particularly nasty bump. You feel like you’d only just managed to start drifting off, and now here you are, awake again and still exhausted.{/i}",
+        "speaker": null,
+        "label": "bus",
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 892
+      },
+      "response_schema": {
+        "occurrence_id": "...",
+        "translation": "...",
+        "notes": []
+      },
+      "context": {
+        "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0",
+        "current_label": "bus",
+        "previous_blocks": [],
+        "next_blocks": [
+          {
+            "context_key": "bus_83aa9726@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_83aa9726",
+            "official_identifier": "bus_83aa9726",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 894,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0"
+            ],
+            "source_texts": [
+              "{i}For a moment, you’re hazy on the details of where exactly 'here' is, confusing this bus with the many others that came before it. But as your mind continues to reassert its existence in the waking world, the past few days come back into focus.{/i}"
+            ]
+          },
+          {
+            "context_key": "bus_807a3578@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_807a3578",
+            "official_identifier": "bus_807a3578",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 896,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_807a3578@game/scripts/_day_1/script.rpy:896:0"
+            ],
+            "source_texts": [
+              "{i}The long-lost cousin, the bad news, the twenty-six hours of bus rides with countless late-night stops in seedy depots that would have felt unsafe even in the middle of the day. You wouldn’t normally find yourself traveling like this, but your cousin bought the tickets.{/i}"
+            ]
+          },
+          {
+            "context_key": "bus_7f544b1f@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_7f544b1f",
+            "official_identifier": "bus_7f544b1f",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 898,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_7f544b1f@game/scripts/_day_1/script.rpy:898:0"
+            ],
+            "source_texts": [
+              "{i}The funeral of Pearlanne Scarlet— your cousin's mother and your aunt— seemed like something you shouldn't ignore, even considering your own late mother’s rocky relationship with this side of the family.{/i}"
+            ]
+          }
+        ],
+        "current_speaker": null,
+        "scene_file": "game/scripts/_day_1/script.rpy",
+        "recent_same_speaker": [],
+        "variables": [],
+        "renpy_tags": [
+          "{i}",
+          "{/i}"
+        ],
+        "related_mtool_source_text": [],
+        "term_candidates": [
+          "You"
+        ],
+        "term_sources": [
+          {
+            "term": "You",
+            "source": "source_text",
+            "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": "892"
+          }
+        ],
+        "source_refs": [
+          {
+            "occurrence_id": "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 892,
+            "block_id": "bus_6a66a01f",
+            "statement_index": 0
+          }
+        ],
+        "diagnostics": []
+      }
+    },
+    {
+      "prompt_type": "context_aware_prompt",
+      "target_language": "Simplified Chinese",
+      "system": "You translate one Ren'Py text occurrence. Preserve variables, Ren'Py text tags, percent signs, backslashes, newlines, and the statement structure exactly. Return exactly one JSON object with exactly these keys: occurrence_id (string), translation (string), notes (array of strings). Do not return markdown, commentary, or any other keys.",
+      "user": {
+        "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+        "source_text": "{i}For a moment, you’re hazy on the details of where exactly 'here' is, confusing this bus with the many others that came before it. But as your mind continues to reassert its existence in the waking world, the past few days come back into focus.{/i}",
+        "speaker": null,
+        "label": "bus",
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 894
+      },
+      "response_schema": {
+        "occurrence_id": "...",
+        "translation": "...",
+        "notes": []
+      },
+      "context": {
+        "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+        "current_label": "bus",
+        "previous_blocks": [
+          {
+            "context_key": "bus_6a66a01f@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_6a66a01f",
+            "official_identifier": "bus_6a66a01f",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 892,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0"
+            ],
+            "source_texts": [
+              "{i}You jolt awake as the bus hits a particularly nasty bump. You feel like you’d only just managed to start drifting off, and now here you are, awake again and still exhausted.{/i}"
+            ]
+          }
+        ],
+        "next_blocks": [
+          {
+            "context_key": "bus_807a3578@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_807a3578",
+            "official_identifier": "bus_807a3578",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 896,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_807a3578@game/scripts/_day_1/script.rpy:896:0"
+            ],
+            "source_texts": [
+              "{i}The long-lost cousin, the bad news, the twenty-six hours of bus rides with countless late-night stops in seedy depots that would have felt unsafe even in the middle of the day. You wouldn’t normally find yourself traveling like this, but your cousin bought the tickets.{/i}"
+            ]
+          },
+          {
+            "context_key": "bus_7f544b1f@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_7f544b1f",
+            "official_identifier": "bus_7f544b1f",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 898,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_7f544b1f@game/scripts/_day_1/script.rpy:898:0"
+            ],
+            "source_texts": [
+              "{i}The funeral of Pearlanne Scarlet— your cousin's mother and your aunt— seemed like something you shouldn't ignore, even considering your own late mother’s rocky relationship with this side of the family.{/i}"
+            ]
+          },
+          {
+            "context_key": "bus_d1afc4b0@game/scripts/_day_1/script.rpy",
+            "block_id": "bus_d1afc4b0",
+            "official_identifier": "bus_d1afc4b0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 901,
+            "label": "bus",
+            "speaker": null,
+            "occurrence_ids": [
+              "bus_d1afc4b0@game/scripts/_day_1/script.rpy:901:0"
+            ],
+            "source_texts": [
+              "{i}(Mystical) But it was also more than just the social pressure of the invitation that pushed you to accept it. Something has been tugging you back to this place your entire life. There was no choice to be made, because you were always going to find your way here. So when your cousin called, you knew what had to be done.{/i}"
+            ]
+          }
+        ],
+        "current_speaker": null,
+        "scene_file": "game/scripts/_day_1/script.rpy",
+        "recent_same_speaker": [],
+        "variables": [],
+        "renpy_tags": [
+          "{i}",
+          "{/i}"
+        ],
+        "related_mtool_source_text": [],
+        "term_candidates": [
+          "For",
+          "But"
+        ],
+        "term_sources": [
+          {
+            "term": "For",
+            "source": "source_text",
+            "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": "894"
+          },
+          {
+            "term": "But",
+            "source": "source_text",
+            "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": "894"
+          }
+        ],
+        "source_refs": [
+          {
+            "occurrence_id": "bus_83aa9726@game/scripts/_day_1/script.rpy:894:0",
+            "source_file": "game/scripts/_day_1/script.rpy",
+            "source_line": 894,
+            "block_id": "bus_83aa9726",
+            "statement_index": 0
+          }
+        ],
+        "diagnostics": []
+      }
+    }
+  ]
+}

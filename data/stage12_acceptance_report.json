@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Stage 1/2 strict acceptance after necessary fixes",
+  "production_source": "OfficialStaticBackend / official snapshot only",
+  "llm_called": false,
+  "vector_database_used": false,
+  "old_project_modified": false,
+  "checks": {
+    "official_blocks": 68342,
+    "official_occurrences": 76435,
+    "official_unique_texts": 55651,
+    "mtool_keys": 179884,
+    "occurrence_required_fields": true,
+    "source_and_translation_separate": true,
+    "untranslated_translation_null": true,
+    "untranslated_raw_translation_null": true,
+    "occurrence_ids_unique": true,
+    "duplicate_source_texts_preserved": true,
+    "multi_statement_blocks": 173,
+    "context_windows_same_source_file": true,
+    "mtool_duplicates_are_candidates": true,
+    "prompt_contract_validation": true,
+    "validator_rejects_non_object_response": true,
+    "context_index_occurrences": 76435,
+    "existing_occurrences_jsonl_lines": 76435,
+    "selected_reader_context_occurrences": 2911,
+    "occurrences_evidence_schema_v2": true,
+    "coverage_report_counts_preserved": true
+  },
+  "real_data_samples": {
+    "duplicate_dialogue_occurrences": true,
+    "multi_statement_blocks": 173,
+    "menu_source_coverage": "present in official strings blocks and selected scene occurrence counts",
+    "nvl_source_snapshot": 0,
+    "voice_source_snapshot": 0,
+    "nvl_validation_fixture": 1,
+    "voice_validation_fixture": 1,
+    "variable_occurrences": 3099,
+    "markup_occurrences": 28902,
+    "strings_blocks": 173
+  },
+  "fixed_findings": [
+    {
+      "file": "src/renai_localizer_v2/coverage.py",
+      "line": 134,
+      "problem": "Untranslated official template copied source text into translated_text and raw code into raw_translated_code.",
+      "requires_fix": true,
+      "fixed": true,
+      "result": "Both fields remain null until a target differs from source."
+    },
+    {
+      "file": "src/renai_localizer_v2/context.py",
+      "line": 110,
+      "problem": "Context window could cross source-file boundaries.",
+      "requires_fix": true,
+      "fixed": true,
+      "result": "Previous and next blocks are partitioned by source_file; full selected fixture audit found zero cross-scene entries."
+    },
+    {
+      "file": "src/renai_localizer_v2/coverage.py",
+      "line": 165,
+      "problem": "Text-only MTool matches could be mistaken for occurrence-level matches.",
+      "requires_fix": true,
+      "fixed": true,
+      "result": "Repeated source text is marked text_candidate_ambiguous with mtool_candidates and diagnostics."
+    },
+    {
+      "file": "src/renai_localizer_v2/validation.py",
+      "line": 67,
+      "problem": "Direct Python list response could raise TypeError instead of being rejected.",
+      "requires_fix": true,
+      "fixed": true,
+      "result": "Non-object responses now return response_not_object."
+    }
+  ],
+  "validation_commands": [
+    "ruff check src",
+    "python -m compileall -q src",
+    "python -m json.tool data/reader_context_schema.json",
+    "python -m renai_localizer_v2 reader-fixtures ...",
+    "real Scarlet Hollow snapshot occurrence and fixture invariant scripts"
+  ]
+}

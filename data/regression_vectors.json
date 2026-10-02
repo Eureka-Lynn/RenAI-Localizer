@@ -1,0 +1,13 @@
+{
+  "source": "legacy tests/test_sprint3b.py::test_identifier_verified_vectors",
+  "algorithm": "md5((Ren'Py Say.get_code() + '\\r\\n').encode('utf-8')).hexdigest()[:8]",
+  "vectors": [
+    {"label": "start", "code": "e \"Hello world.\"", "identifier": "start_d38c8818"},
+    {"label": null, "code": "\"Narrator line.\"", "identifier": "27d809bc"},
+    {"label": "start", "code": "centered \"A centered line.\"", "identifier": "start_eded8ff7"},
+    {"label": "start", "code": "e \"Hello\" with dissolve", "identifier": "start_c4c0b0f8"},
+    {"label": "start", "code": "e \"Test\" (test=1)", "identifier": "start_31d6f3dd"},
+    {"label": "start", "code": "e \"No interact\" nointeract", "identifier": "start_dc8d3ad9"},
+    {"label": "start", "code": "extend \" second half.\"", "identifier": "start_b20c726a"}
+  ]
+}

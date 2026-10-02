@@ -1,0 +1,1 @@
+F:\SteamLibrary\steamapps\common\ScarletHollow\ScarletHollow.exe D:\RenAI Localizer-v2\official_validation translate schinese --no-todo

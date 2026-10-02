@@ -1,0 +1,1984 @@
+[
+  {
+    "character_id": "avery",
+    "name": "avery",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 57,
+        "block_id": "tuesday_diner_menu_fce5b0c1",
+        "occurrence_id": "tuesday_diner_menu_fce5b0c1@game/scripts/_day_2/tuesday_diner.rpy:57:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 72,
+        "block_id": "tuesday_diner_menu_04cd0d9a",
+        "occurrence_id": "tuesday_diner_menu_04cd0d9a@game/scripts/_day_2/tuesday_diner.rpy:72:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 74,
+        "block_id": "tuesday_diner_menu_5ee3ec7e",
+        "occurrence_id": "tuesday_diner_menu_5ee3ec7e@game/scripts/_day_2/tuesday_diner.rpy:74:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 78,
+        "block_id": "tuesday_diner_menu_2355ddde",
+        "occurrence_id": "tuesday_diner_menu_2355ddde@game/scripts/_day_2/tuesday_diner.rpy:78:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 84,
+        "block_id": "tuesday_diner_menu_00094a8c",
+        "occurrence_id": "tuesday_diner_menu_00094a8c@game/scripts/_day_2/tuesday_diner.rpy:84:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 87,
+        "block_id": "tuesday_diner_menu_05cdacf1",
+        "occurrence_id": "tuesday_diner_menu_05cdacf1@game/scripts/_day_2/tuesday_diner.rpy:87:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 90,
+        "block_id": "tuesday_diner_menu_3d901669",
+        "occurrence_id": "tuesday_diner_menu_3d901669@game/scripts/_day_2/tuesday_diner.rpy:90:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 92,
+        "block_id": "tuesday_diner_menu_f94ab4b9",
+        "occurrence_id": "tuesday_diner_menu_f94ab4b9@game/scripts/_day_2/tuesday_diner.rpy:92:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 94,
+        "block_id": "tuesday_diner_menu_ad045aca",
+        "occurrence_id": "tuesday_diner_menu_ad045aca@game/scripts/_day_2/tuesday_diner.rpy:94:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 119,
+        "block_id": "tuesday_avery_menu_4de8e36f",
+        "occurrence_id": "tuesday_avery_menu_4de8e36f@game/scripts/_day_2/tuesday_diner.rpy:119:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 137,
+        "block_id": "tuesday_avery_about_e2fae5b4",
+        "occurrence_id": "tuesday_avery_about_e2fae5b4@game/scripts/_day_2/tuesday_diner.rpy:137:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 142,
+        "block_id": "tuesday_avery_about_b22210c4",
+        "occurrence_id": "tuesday_avery_about_b22210c4@game/scripts/_day_2/tuesday_diner.rpy:142:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 159,
+        "block_id": "tuesday_avery_about_e0198e12",
+        "occurrence_id": "tuesday_avery_about_e0198e12@game/scripts/_day_2/tuesday_diner.rpy:159:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 161,
+        "block_id": "tuesday_avery_about_676bbaac",
+        "occurrence_id": "tuesday_avery_about_676bbaac@game/scripts/_day_2/tuesday_diner.rpy:161:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 163,
+        "block_id": "tuesday_avery_about_65bd2efa",
+        "occurrence_id": "tuesday_avery_about_65bd2efa@game/scripts/_day_2/tuesday_diner.rpy:163:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 165,
+        "block_id": "tuesday_avery_about_d28d47db",
+        "occurrence_id": "tuesday_avery_about_d28d47db@game/scripts/_day_2/tuesday_diner.rpy:165:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 176,
+        "block_id": "tuesday_avery_about_a3d6382b",
+        "occurrence_id": "tuesday_avery_about_a3d6382b@game/scripts/_day_2/tuesday_diner.rpy:176:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 179,
+        "block_id": "tuesday_avery_about_f8506e40",
+        "occurrence_id": "tuesday_avery_about_f8506e40@game/scripts/_day_2/tuesday_diner.rpy:179:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 181,
+        "block_id": "tuesday_avery_about_afc017b3",
+        "occurrence_id": "tuesday_avery_about_afc017b3@game/scripts/_day_2/tuesday_diner.rpy:181:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 196,
+        "block_id": "tuesday_avery_about_b22210c4_1",
+        "occurrence_id": "tuesday_avery_about_b22210c4_1@game/scripts/_day_2/tuesday_diner.rpy:196:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "bothopossums",
+    "name": "bothopossums",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 444,
+        "block_id": "wednesday_dustin_enlightened_5cc05887",
+        "occurrence_id": "wednesday_dustin_enlightened_5cc05887@game/scripts/_day_3/wednesday_start.rpy:444:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 653,
+        "block_id": "thursday_tta_squatter_default_join_5cc05887",
+        "occurrence_id": "thursday_tta_squatter_default_join_5cc05887@game/scripts/_day_4/thursday_start.rpy:653:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "bs",
+    "name": "bs",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 906,
+        "block_id": "bus_61a3c5ad",
+        "occurrence_id": "bus_61a3c5ad@game/scripts/_day_1/script.rpy:906:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 916,
+        "block_id": "bus_a2d9f68e",
+        "occurrence_id": "bus_a2d9f68e@game/scripts/_day_1/script.rpy:916:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 920,
+        "block_id": "bus_d1ec6c55",
+        "occurrence_id": "bus_d1ec6c55@game/scripts/_day_1/script.rpy:920:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 932,
+        "block_id": "bus_a392b38a",
+        "occurrence_id": "bus_a392b38a@game/scripts/_day_1/script.rpy:932:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 934,
+        "block_id": "bus_88b13cbe",
+        "occurrence_id": "bus_88b13cbe@game/scripts/_day_1/script.rpy:934:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 939,
+        "block_id": "bus_e8e29bbe",
+        "occurrence_id": "bus_e8e29bbe@game/scripts/_day_1/script.rpy:939:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 945,
+        "block_id": "bus_7ab3d7df",
+        "occurrence_id": "bus_7ab3d7df@game/scripts/_day_1/script.rpy:945:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 952,
+        "block_id": "bus_4c580156",
+        "occurrence_id": "bus_4c580156@game/scripts/_day_1/script.rpy:952:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 961,
+        "block_id": "bus_9680f642",
+        "occurrence_id": "bus_9680f642@game/scripts/_day_1/script.rpy:961:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 970,
+        "block_id": "bus_2_cab8f414",
+        "occurrence_id": "bus_2_cab8f414@game/scripts/_day_1/script.rpy:970:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 974,
+        "block_id": "bus_2_ce7635ba",
+        "occurrence_id": "bus_2_ce7635ba@game/scripts/_day_1/script.rpy:974:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 978,
+        "block_id": "bus_2_2d4e5a4e",
+        "occurrence_id": "bus_2_2d4e5a4e@game/scripts/_day_1/script.rpy:978:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 982,
+        "block_id": "bus_2_644a883b",
+        "occurrence_id": "bus_2_644a883b@game/scripts/_day_1/script.rpy:982:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 986,
+        "block_id": "bus_2_9062db8a",
+        "occurrence_id": "bus_2_9062db8a@game/scripts/_day_1/script.rpy:986:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 990,
+        "block_id": "bus_2_f3960734",
+        "occurrence_id": "bus_2_f3960734@game/scripts/_day_1/script.rpy:990:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1003,
+        "block_id": "bus_2_cdd44567",
+        "occurrence_id": "bus_2_cdd44567@game/scripts/_day_1/script.rpy:1003:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1005,
+        "block_id": "bus_2_4cd56dad",
+        "occurrence_id": "bus_2_4cd56dad@game/scripts/_day_1/script.rpy:1005:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1015,
+        "block_id": "bus_2_b79cb62a",
+        "occurrence_id": "bus_2_b79cb62a@game/scripts/_day_1/script.rpy:1015:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1022,
+        "block_id": "bus_2_b4b8f8c9",
+        "occurrence_id": "bus_2_b4b8f8c9@game/scripts/_day_1/script.rpy:1022:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1024,
+        "block_id": "bus_2_efd584bf",
+        "occurrence_id": "bus_2_efd584bf@game/scripts/_day_1/script.rpy:1024:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "bugs",
+    "name": "bugs",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2900,
+        "block_id": "tour_bathroom_783ec70d",
+        "occurrence_id": "tour_bathroom_783ec70d@game/scripts/_day_1/script.rpy:2900:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2932,
+        "block_id": "tour_bathroom_783ec70d_1",
+        "occurrence_id": "tour_bathroom_783ec70d_1@game/scripts/_day_1/script.rpy:2932:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "bus_driver",
+    "name": "bus_driver",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1125,
+        "block_id": "bus_3_53e5839b",
+        "occurrence_id": "bus_3_53e5839b@game/scripts/_day_1/script.rpy:1125:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1421,
+        "block_id": "bus_6_f10e8384",
+        "occurrence_id": "bus_6_f10e8384@game/scripts/_day_1/script.rpy:1421:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "cat",
+    "name": "cat",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2699,
+        "block_id": "froufrou_tour_approach_d7dc1d81",
+        "occurrence_id": "froufrou_tour_approach_d7dc1d81@game/scripts/_day_1/script.rpy:2699:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5159,
+        "block_id": "monday_fridge_explore_b6e70651",
+        "occurrence_id": "monday_fridge_explore_b6e70651@game/scripts/_day_1/script.rpy:5159:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5174,
+        "block_id": "monday_fridge_explore_b6e70651_1",
+        "occurrence_id": "monday_fridge_explore_b6e70651_1@game/scripts/_day_1/script.rpy:5174:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5283,
+        "block_id": "monday_fridge_explore_f665b0f3",
+        "occurrence_id": "monday_fridge_explore_f665b0f3@game/scripts/_day_1/script.rpy:5283:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5628,
+        "block_id": "monday_explore_cabinet_939b124f",
+        "occurrence_id": "monday_explore_cabinet_939b124f@game/scripts/_day_1/script.rpy:5628:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "chef",
+    "name": "chef",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 35,
+        "block_id": "tuesday_diner_menu_706cdd46",
+        "occurrence_id": "tuesday_diner_menu_706cdd46@game/scripts/_day_2/tuesday_diner.rpy:35:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "dustin",
+    "name": "dustin",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4178,
+        "block_id": "monday_opossum_convo_8021c8a0",
+        "occurrence_id": "monday_opossum_convo_8021c8a0@game/scripts/_day_1/script.rpy:4178:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4196,
+        "block_id": "monday_opossum_convo_1b918652",
+        "occurrence_id": "monday_opossum_convo_1b918652@game/scripts/_day_1/script.rpy:4196:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4206,
+        "block_id": "monday_opossum_convo_bbf0c872",
+        "occurrence_id": "monday_opossum_convo_bbf0c872@game/scripts/_day_1/script.rpy:4206:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4215,
+        "block_id": "monday_opossum_convo_3a7f7877",
+        "occurrence_id": "monday_opossum_convo_3a7f7877@game/scripts/_day_1/script.rpy:4215:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4238,
+        "block_id": "opossum_which_human_monday_b7dc8b51",
+        "occurrence_id": "opossum_which_human_monday_b7dc8b51@game/scripts/_day_1/script.rpy:4238:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4247,
+        "block_id": "opossum_which_human_monday_702c3205",
+        "occurrence_id": "opossum_which_human_monday_702c3205@game/scripts/_day_1/script.rpy:4247:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4265,
+        "block_id": "opossum_which_human_monday_db39c56b",
+        "occurrence_id": "opossum_which_human_monday_db39c56b@game/scripts/_day_1/script.rpy:4265:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4281,
+        "block_id": "opossum_which_human_monday_db39c56b_1",
+        "occurrence_id": "opossum_which_human_monday_db39c56b_1@game/scripts/_day_1/script.rpy:4281:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4298,
+        "block_id": "opossum_which_human_monday_02e6474b",
+        "occurrence_id": "opossum_which_human_monday_02e6474b@game/scripts/_day_1/script.rpy:4298:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4315,
+        "block_id": "opossum_which_human_monday_07d9c8d9",
+        "occurrence_id": "opossum_which_human_monday_07d9c8d9@game/scripts/_day_1/script.rpy:4315:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4331,
+        "block_id": "monday_dustin_3d817995",
+        "occurrence_id": "monday_dustin_3d817995@game/scripts/_day_1/script.rpy:4331:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4340,
+        "block_id": "monday_dustin_1b918652",
+        "occurrence_id": "monday_dustin_1b918652@game/scripts/_day_1/script.rpy:4340:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4350,
+        "block_id": "monday_dustin_bbf0c872",
+        "occurrence_id": "monday_dustin_bbf0c872@game/scripts/_day_1/script.rpy:4350:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4359,
+        "block_id": "monday_dustin_3a7f7877",
+        "occurrence_id": "monday_dustin_3a7f7877@game/scripts/_day_1/script.rpy:4359:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4367,
+        "block_id": "monday_dustin_0b221d78",
+        "occurrence_id": "monday_dustin_0b221d78@game/scripts/_day_1/script.rpy:4367:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4383,
+        "block_id": "dustin_which_human_monday_b7dc8b51",
+        "occurrence_id": "dustin_which_human_monday_b7dc8b51@game/scripts/_day_1/script.rpy:4383:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4392,
+        "block_id": "dustin_which_human_monday_c104ac7c",
+        "occurrence_id": "dustin_which_human_monday_c104ac7c@game/scripts/_day_1/script.rpy:4392:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4401,
+        "block_id": "dustin_which_human_monday_b2620a65",
+        "occurrence_id": "dustin_which_human_monday_b2620a65@game/scripts/_day_1/script.rpy:4401:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4410,
+        "block_id": "dustin_which_human_monday_702c3205",
+        "occurrence_id": "dustin_which_human_monday_702c3205@game/scripts/_day_1/script.rpy:4410:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4420,
+        "block_id": "dustin_which_human_monday_f3bbf19d",
+        "occurrence_id": "dustin_which_human_monday_f3bbf19d@game/scripts/_day_1/script.rpy:4420:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "dustinmom",
+    "name": "dustinmom",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 311,
+        "block_id": "wednesday_dustin_enlightened_f56c37b0",
+        "occurrence_id": "wednesday_dustin_enlightened_f56c37b0@game/scripts/_day_3/wednesday_start.rpy:311:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 319,
+        "block_id": "wednesday_dustin_enlightened_c8e132cf",
+        "occurrence_id": "wednesday_dustin_enlightened_c8e132cf@game/scripts/_day_3/wednesday_start.rpy:319:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 340,
+        "block_id": "wednesday_dustin_enlightened_3c1be18d",
+        "occurrence_id": "wednesday_dustin_enlightened_3c1be18d@game/scripts/_day_3/wednesday_start.rpy:340:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 347,
+        "block_id": "wednesday_dustin_enlightened_5444096f",
+        "occurrence_id": "wednesday_dustin_enlightened_5444096f@game/scripts/_day_3/wednesday_start.rpy:347:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 370,
+        "block_id": "wednesday_dustin_enlightened_ae11d0bb",
+        "occurrence_id": "wednesday_dustin_enlightened_ae11d0bb@game/scripts/_day_3/wednesday_start.rpy:370:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 384,
+        "block_id": "wednesday_dustin_enlightened_7991e7f0",
+        "occurrence_id": "wednesday_dustin_enlightened_7991e7f0@game/scripts/_day_3/wednesday_start.rpy:384:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 389,
+        "block_id": "wednesday_dustin_enlightened_85ae02cf",
+        "occurrence_id": "wednesday_dustin_enlightened_85ae02cf@game/scripts/_day_3/wednesday_start.rpy:389:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 420,
+        "block_id": "wednesday_dustin_enlightened_33993fce",
+        "occurrence_id": "wednesday_dustin_enlightened_33993fce@game/scripts/_day_3/wednesday_start.rpy:420:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 427,
+        "block_id": "wednesday_dustin_enlightened_743e6f96",
+        "occurrence_id": "wednesday_dustin_enlightened_743e6f96@game/scripts/_day_3/wednesday_start.rpy:427:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 454,
+        "block_id": "wednesday_dustin_enlightened_c669550d",
+        "occurrence_id": "wednesday_dustin_enlightened_c669550d@game/scripts/_day_3/wednesday_start.rpy:454:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 508,
+        "block_id": "thursday_dustin_tta_e718812c",
+        "occurrence_id": "thursday_dustin_tta_e718812c@game/scripts/_day_4/thursday_start.rpy:508:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 524,
+        "block_id": "thursday_dustin_tta_menu_39cd1c9d",
+        "occurrence_id": "thursday_dustin_tta_menu_39cd1c9d@game/scripts/_day_4/thursday_start.rpy:524:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 530,
+        "block_id": "thursday_dustin_tta_menu_4f298810",
+        "occurrence_id": "thursday_dustin_tta_menu_4f298810@game/scripts/_day_4/thursday_start.rpy:530:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 539,
+        "block_id": "thursday_dustin_tta_menu_0972a535",
+        "occurrence_id": "thursday_dustin_tta_menu_0972a535@game/scripts/_day_4/thursday_start.rpy:539:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 541,
+        "block_id": "thursday_dustin_tta_menu_c44412c3",
+        "occurrence_id": "thursday_dustin_tta_menu_c44412c3@game/scripts/_day_4/thursday_start.rpy:541:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 559,
+        "block_id": "thursday_dustin_tta_menu_bfd1896d",
+        "occurrence_id": "thursday_dustin_tta_menu_bfd1896d@game/scripts/_day_4/thursday_start.rpy:559:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 567,
+        "block_id": "thursday_dustin_tta_menu_bfd1896d_1",
+        "occurrence_id": "thursday_dustin_tta_menu_bfd1896d_1@game/scripts/_day_4/thursday_start.rpy:567:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 576,
+        "block_id": "thursday_dustin_tta_menu_eabe35fc",
+        "occurrence_id": "thursday_dustin_tta_menu_eabe35fc@game/scripts/_day_4/thursday_start.rpy:576:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 583,
+        "block_id": "thursday_dustin_tta_menu_6dc0d1f8",
+        "occurrence_id": "thursday_dustin_tta_menu_6dc0d1f8@game/scripts/_day_4/thursday_start.rpy:583:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 594,
+        "block_id": "thursday_tta_squatter_default_join_d39e042e",
+        "occurrence_id": "thursday_tta_squatter_default_join_d39e042e@game/scripts/_day_4/thursday_start.rpy:594:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "froufrou",
+    "name": "froufrou",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2576,
+        "block_id": "froufrou_tour_approach_5bdaa0fe",
+        "occurrence_id": "froufrou_tour_approach_5bdaa0fe@game/scripts/_day_1/script.rpy:2576:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2589,
+        "block_id": "froufrou_tour_approach_025bbd4c",
+        "occurrence_id": "froufrou_tour_approach_025bbd4c@game/scripts/_day_1/script.rpy:2589:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2603,
+        "block_id": "froufrou_tour_approach_14849130",
+        "occurrence_id": "froufrou_tour_approach_14849130@game/scripts/_day_1/script.rpy:2603:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2614,
+        "block_id": "froufrou_tour_approach_ef8d5509",
+        "occurrence_id": "froufrou_tour_approach_ef8d5509@game/scripts/_day_1/script.rpy:2614:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2624,
+        "block_id": "froufrou_tour_approach_90b328a4",
+        "occurrence_id": "froufrou_tour_approach_90b328a4@game/scripts/_day_1/script.rpy:2624:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2626,
+        "block_id": "froufrou_tour_approach_7046b98c",
+        "occurrence_id": "froufrou_tour_approach_7046b98c@game/scripts/_day_1/script.rpy:2626:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2637,
+        "block_id": "froufrou_tour_approach_ba04085c",
+        "occurrence_id": "froufrou_tour_approach_ba04085c@game/scripts/_day_1/script.rpy:2637:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 2678,
+        "block_id": "froufrou_tour_approach_14849130_1",
+        "occurrence_id": "froufrou_tour_approach_14849130_1@game/scripts/_day_1/script.rpy:2678:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4916,
+        "block_id": "monday_make_pbj_explore_814645fc",
+        "occurrence_id": "monday_make_pbj_explore_814645fc@game/scripts/_day_1/script.rpy:4916:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4928,
+        "block_id": "monday_make_pbj_explore_814645fc_1",
+        "occurrence_id": "monday_make_pbj_explore_814645fc_1@game/scripts/_day_1/script.rpy:4928:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4943,
+        "block_id": "monday_froufrou_tta_4e5157e0",
+        "occurrence_id": "monday_froufrou_tta_4e5157e0@game/scripts/_day_1/script.rpy:4943:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4965,
+        "block_id": "monday_froufrou_tta_eecc465a",
+        "occurrence_id": "monday_froufrou_tta_eecc465a@game/scripts/_day_1/script.rpy:4965:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4975,
+        "block_id": "monday_froufrou_tta_42025e52",
+        "occurrence_id": "monday_froufrou_tta_42025e52@game/scripts/_day_1/script.rpy:4975:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4985,
+        "block_id": "monday_froufrou_tta_42a2203c",
+        "occurrence_id": "monday_froufrou_tta_42a2203c@game/scripts/_day_1/script.rpy:4985:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4995,
+        "block_id": "monday_froufrou_tta_4e18c460",
+        "occurrence_id": "monday_froufrou_tta_4e18c460@game/scripts/_day_1/script.rpy:4995:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5005,
+        "block_id": "monday_froufrou_tta_366b6f84",
+        "occurrence_id": "monday_froufrou_tta_366b6f84@game/scripts/_day_1/script.rpy:5005:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5007,
+        "block_id": "monday_froufrou_tta_2c69487f",
+        "occurrence_id": "monday_froufrou_tta_2c69487f@game/scripts/_day_1/script.rpy:5007:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5017,
+        "block_id": "monday_froufrou_tta_855f2742",
+        "occurrence_id": "monday_froufrou_tta_855f2742@game/scripts/_day_1/script.rpy:5017:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5027,
+        "block_id": "monday_froufrou_tta_4ce14509",
+        "occurrence_id": "monday_froufrou_tta_4ce14509@game/scripts/_day_1/script.rpy:5027:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 5033,
+        "block_id": "monday_froufrou_tta_6d5bc9f6",
+        "occurrence_id": "monday_froufrou_tta_6d5bc9f6@game/scripts/_day_1/script.rpy:5033:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "goat",
+    "name": "goat",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2409,
+        "block_id": "thursday_greenhouse_inside_join_animals_eab5c200",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_eab5c200@game/scripts/_day_4/thursday_start.rpy:2409:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "janey",
+    "name": "janey",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 895,
+        "block_id": "wednesday_kitchen_chat_946d479f",
+        "occurrence_id": "wednesday_kitchen_chat_946d479f@game/scripts/_day_3/wednesday_start.rpy:895:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 898,
+        "block_id": "wednesday_kitchen_chat_b0bdbb17",
+        "occurrence_id": "wednesday_kitchen_chat_b0bdbb17@game/scripts/_day_3/wednesday_start.rpy:898:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 915,
+        "block_id": "wednesday_kitchen_chat_6d2e7cb6",
+        "occurrence_id": "wednesday_kitchen_chat_6d2e7cb6@game/scripts/_day_3/wednesday_start.rpy:915:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 966,
+        "block_id": "wednesday_janey_heated_4f8b89a9",
+        "occurrence_id": "wednesday_janey_heated_4f8b89a9@game/scripts/_day_3/wednesday_start.rpy:966:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 975,
+        "block_id": "wednesday_janey_heated_59536047",
+        "occurrence_id": "wednesday_janey_heated_59536047@game/scripts/_day_3/wednesday_start.rpy:975:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1170,
+        "block_id": "wednesday_janey_heated_38da972d",
+        "occurrence_id": "wednesday_janey_heated_38da972d@game/scripts/_day_3/wednesday_start.rpy:1170:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1188,
+        "block_id": "wednesday_janey_heated_59bf99d9",
+        "occurrence_id": "wednesday_janey_heated_59bf99d9@game/scripts/_day_3/wednesday_start.rpy:1188:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1192,
+        "block_id": "wednesday_janey_meet_81094543",
+        "occurrence_id": "wednesday_janey_meet_81094543@game/scripts/_day_3/wednesday_start.rpy:1192:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1199,
+        "block_id": "wednesday_janey_meet_748d0d44",
+        "occurrence_id": "wednesday_janey_meet_748d0d44@game/scripts/_day_3/wednesday_start.rpy:1199:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1206,
+        "block_id": "wednesday_janey_meet_902981ad",
+        "occurrence_id": "wednesday_janey_meet_902981ad@game/scripts/_day_3/wednesday_start.rpy:1206:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1208,
+        "block_id": "wednesday_janey_meet_5f4d92aa",
+        "occurrence_id": "wednesday_janey_meet_5f4d92aa@game/scripts/_day_3/wednesday_start.rpy:1208:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1210,
+        "block_id": "wednesday_janey_meet_2bf1eba9",
+        "occurrence_id": "wednesday_janey_meet_2bf1eba9@game/scripts/_day_3/wednesday_start.rpy:1210:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1216,
+        "block_id": "wednesday_janey_meet_f2287903",
+        "occurrence_id": "wednesday_janey_meet_f2287903@game/scripts/_day_3/wednesday_start.rpy:1216:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1238,
+        "block_id": "wednesday_janey_meet_a658adaa",
+        "occurrence_id": "wednesday_janey_meet_a658adaa@game/scripts/_day_3/wednesday_start.rpy:1238:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1244,
+        "block_id": "wednesday_janey_meet_11fd6c5a",
+        "occurrence_id": "wednesday_janey_meet_11fd6c5a@game/scripts/_day_3/wednesday_start.rpy:1244:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1260,
+        "block_id": "wednesday_janey_meet_7ab6cafe",
+        "occurrence_id": "wednesday_janey_meet_7ab6cafe@game/scripts/_day_3/wednesday_start.rpy:1260:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1310,
+        "block_id": "wednesday_janey_meet_320b1397",
+        "occurrence_id": "wednesday_janey_meet_320b1397@game/scripts/_day_3/wednesday_start.rpy:1310:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1319,
+        "block_id": "wednesday_janey_meet_320b1397_1",
+        "occurrence_id": "wednesday_janey_meet_320b1397_1@game/scripts/_day_3/wednesday_start.rpy:1319:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1981,
+        "block_id": "wednesday_tabitha_leaving_chat_1cd7ba04",
+        "occurrence_id": "wednesday_tabitha_leaving_chat_1cd7ba04@game/scripts/_day_3/wednesday_start.rpy:1981:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1983,
+        "block_id": "wednesday_tabitha_leaving_chat_689c4e50",
+        "occurrence_id": "wednesday_tabitha_leaving_chat_689c4e50@game/scripts/_day_3/wednesday_start.rpy:1983:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "julius",
+    "name": "julius",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 331,
+        "block_id": "tuesday_avery_about_1454dc5a",
+        "occurrence_id": "tuesday_avery_about_1454dc5a@game/scripts/_day_2/tuesday_diner.rpy:331:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 364,
+        "block_id": "tuesday_avery_about_cc1db81a",
+        "occurrence_id": "tuesday_avery_about_cc1db81a@game/scripts/_day_2/tuesday_diner.rpy:364:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 366,
+        "block_id": "tuesday_avery_about_55ae79ac",
+        "occurrence_id": "tuesday_avery_about_55ae79ac@game/scripts/_day_2/tuesday_diner.rpy:366:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 370,
+        "block_id": "tuesday_avery_about_63889f09",
+        "occurrence_id": "tuesday_avery_about_63889f09@game/scripts/_day_2/tuesday_diner.rpy:370:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 376,
+        "block_id": "tuesday_avery_about_1d93fdf4",
+        "occurrence_id": "tuesday_avery_about_1d93fdf4@game/scripts/_day_2/tuesday_diner.rpy:376:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 390,
+        "block_id": "tuesday_avery_about_fd8fb04f",
+        "occurrence_id": "tuesday_avery_about_fd8fb04f@game/scripts/_day_2/tuesday_diner.rpy:390:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 396,
+        "block_id": "tuesday_avery_about_1c876441",
+        "occurrence_id": "tuesday_avery_about_1c876441@game/scripts/_day_2/tuesday_diner.rpy:396:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 417,
+        "block_id": "tuesday_avery_about_b6626915",
+        "occurrence_id": "tuesday_avery_about_b6626915@game/scripts/_day_2/tuesday_diner.rpy:417:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 430,
+        "block_id": "tuesday_avery_about_c4e3f508",
+        "occurrence_id": "tuesday_avery_about_c4e3f508@game/scripts/_day_2/tuesday_diner.rpy:430:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 436,
+        "block_id": "tuesday_avery_about_5d7a23bf",
+        "occurrence_id": "tuesday_avery_about_5d7a23bf@game/scripts/_day_2/tuesday_diner.rpy:436:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 476,
+        "block_id": "tuesday_avery_about_214aa1f7",
+        "occurrence_id": "tuesday_avery_about_214aa1f7@game/scripts/_day_2/tuesday_diner.rpy:476:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 916,
+        "block_id": "tuesday_avery_truth_menu_1454dc5a",
+        "occurrence_id": "tuesday_avery_truth_menu_1454dc5a@game/scripts/_day_2/tuesday_diner.rpy:916:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 949,
+        "block_id": "tuesday_avery_truth_menu_cc1db81a",
+        "occurrence_id": "tuesday_avery_truth_menu_cc1db81a@game/scripts/_day_2/tuesday_diner.rpy:949:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 951,
+        "block_id": "tuesday_avery_truth_menu_55ae79ac",
+        "occurrence_id": "tuesday_avery_truth_menu_55ae79ac@game/scripts/_day_2/tuesday_diner.rpy:951:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 957,
+        "block_id": "tuesday_avery_truth_menu_63889f09",
+        "occurrence_id": "tuesday_avery_truth_menu_63889f09@game/scripts/_day_2/tuesday_diner.rpy:957:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 964,
+        "block_id": "tuesday_avery_truth_menu_1d93fdf4",
+        "occurrence_id": "tuesday_avery_truth_menu_1d93fdf4@game/scripts/_day_2/tuesday_diner.rpy:964:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 977,
+        "block_id": "tuesday_avery_truth_menu_fd8fb04f",
+        "occurrence_id": "tuesday_avery_truth_menu_fd8fb04f@game/scripts/_day_2/tuesday_diner.rpy:977:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 983,
+        "block_id": "tuesday_avery_truth_menu_1c876441",
+        "occurrence_id": "tuesday_avery_truth_menu_1c876441@game/scripts/_day_2/tuesday_diner.rpy:983:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 1151,
+        "block_id": "tuesday_leaving_diner_92057b1b",
+        "occurrence_id": "tuesday_leaving_diner_92057b1b@game/scripts/_day_2/tuesday_diner.rpy:1151:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 1181,
+        "block_id": "tuesday_leaving_diner_bd3679a3",
+        "occurrence_id": "tuesday_leaving_diner_bd3679a3@game/scripts/_day_2/tuesday_diner.rpy:1181:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "kaneeka",
+    "name": "kaneeka",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 71,
+        "block_id": "thursday_start_3b893701",
+        "occurrence_id": "thursday_start_3b893701@game/scripts/_day_4/thursday_start.rpy:71:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 73,
+        "block_id": "thursday_start_7768d301",
+        "occurrence_id": "thursday_start_7768d301@game/scripts/_day_4/thursday_start.rpy:73:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 76,
+        "block_id": "thursday_start_8b176aa1",
+        "occurrence_id": "thursday_start_8b176aa1@game/scripts/_day_4/thursday_start.rpy:76:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 78,
+        "block_id": "thursday_start_da53eb0d",
+        "occurrence_id": "thursday_start_da53eb0d@game/scripts/_day_4/thursday_start.rpy:78:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 80,
+        "block_id": "thursday_start_e23a8d98",
+        "occurrence_id": "thursday_start_e23a8d98@game/scripts/_day_4/thursday_start.rpy:80:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 83,
+        "block_id": "thursday_start_e4812235",
+        "occurrence_id": "thursday_start_e4812235@game/scripts/_day_4/thursday_start.rpy:83:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 85,
+        "block_id": "thursday_start_cb2663b0",
+        "occurrence_id": "thursday_start_cb2663b0@game/scripts/_day_4/thursday_start.rpy:85:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 88,
+        "block_id": "thursday_start_126cfddd",
+        "occurrence_id": "thursday_start_126cfddd@game/scripts/_day_4/thursday_start.rpy:88:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 90,
+        "block_id": "thursday_start_3964cecd",
+        "occurrence_id": "thursday_start_3964cecd@game/scripts/_day_4/thursday_start.rpy:90:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 93,
+        "block_id": "thursday_start_1b0f8452",
+        "occurrence_id": "thursday_start_1b0f8452@game/scripts/_day_4/thursday_start.rpy:93:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 95,
+        "block_id": "thursday_start_2cf250e6",
+        "occurrence_id": "thursday_start_2cf250e6@game/scripts/_day_4/thursday_start.rpy:95:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 98,
+        "block_id": "thursday_start_55deed14",
+        "occurrence_id": "thursday_start_55deed14@game/scripts/_day_4/thursday_start.rpy:98:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 168,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_a547cc9b",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_a547cc9b@game/scripts/_day_4/thursday_start.rpy:168:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 170,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_6b3c22eb",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_6b3c22eb@game/scripts/_day_4/thursday_start.rpy:170:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 173,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_20d36d53",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_20d36d53@game/scripts/_day_4/thursday_start.rpy:173:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 175,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_551fbb32",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_551fbb32@game/scripts/_day_4/thursday_start.rpy:175:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 180,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_1acbb9a1",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_1acbb9a1@game/scripts/_day_4/thursday_start.rpy:180:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 183,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_8312fd63",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_8312fd63@game/scripts/_day_4/thursday_start.rpy:183:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 185,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_a11202e6",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_a11202e6@game/scripts/_day_4/thursday_start.rpy:185:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 198,
+        "block_id": "thursday_start_kaneeka_text_share_default_join_9ecceb46",
+        "occurrence_id": "thursday_start_kaneeka_text_share_default_join_9ecceb46@game/scripts/_day_4/thursday_start.rpy:198:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "momopossum",
+    "name": "momopossum",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 456,
+        "block_id": "wednesday_dustin_enlightened_c3cb0065",
+        "occurrence_id": "wednesday_dustin_enlightened_c3cb0065@game/scripts/_day_3/wednesday_start.rpy:456:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "opossum",
+    "name": "opossum",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4158,
+        "block_id": "monday_opossum_tta_cba98879",
+        "occurrence_id": "monday_opossum_tta_cba98879@game/scripts/_day_1/script.rpy:4158:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4170,
+        "block_id": "monday_opossum_convo_9513a264",
+        "occurrence_id": "monday_opossum_convo_9513a264@game/scripts/_day_1/script.rpy:4170:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4187,
+        "block_id": "monday_opossum_convo_4d832beb",
+        "occurrence_id": "monday_opossum_convo_4d832beb@game/scripts/_day_1/script.rpy:4187:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4223,
+        "block_id": "monday_opossum_convo_0767e039",
+        "occurrence_id": "monday_opossum_convo_0767e039@game/scripts/_day_1/script.rpy:4223:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 4255,
+        "block_id": "opossum_which_human_monday_a1b3216c",
+        "occurrence_id": "opossum_which_human_monday_a1b3216c@game/scripts/_day_1/script.rpy:4255:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "p",
+    "name": "p",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 937,
+        "block_id": "bus_26c5a4fb",
+        "occurrence_id": "bus_26c5a4fb@game/scripts/_day_1/script.rpy:937:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 943,
+        "block_id": "bus_726e4195",
+        "occurrence_id": "bus_726e4195@game/scripts/_day_1/script.rpy:943:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 950,
+        "block_id": "bus_a92677ce",
+        "occurrence_id": "bus_a92677ce@game/scripts/_day_1/script.rpy:950:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 959,
+        "block_id": "bus_5bb77393",
+        "occurrence_id": "bus_5bb77393@game/scripts/_day_1/script.rpy:959:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1001,
+        "block_id": "bus_2_f5818a88",
+        "occurrence_id": "bus_2_f5818a88@game/scripts/_day_1/script.rpy:1001:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1012,
+        "block_id": "bus_2_34c0946a",
+        "occurrence_id": "bus_2_34c0946a@game/scripts/_day_1/script.rpy:1012:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1019,
+        "block_id": "bus_2_e37982dc",
+        "occurrence_id": "bus_2_e37982dc@game/scripts/_day_1/script.rpy:1019:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1028,
+        "block_id": "bus_2_3ba20388",
+        "occurrence_id": "bus_2_3ba20388@game/scripts/_day_1/script.rpy:1028:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1034,
+        "block_id": "bus_2_b33fc274",
+        "occurrence_id": "bus_2_b33fc274@game/scripts/_day_1/script.rpy:1034:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1037,
+        "block_id": "bus_2_d27ee7ad",
+        "occurrence_id": "bus_2_d27ee7ad@game/scripts/_day_1/script.rpy:1037:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1043,
+        "block_id": "bus_2_e8c33dcb",
+        "occurrence_id": "bus_2_e8c33dcb@game/scripts/_day_1/script.rpy:1043:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1054,
+        "block_id": "bus_2_d1b2b427",
+        "occurrence_id": "bus_2_d1b2b427@game/scripts/_day_1/script.rpy:1054:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1065,
+        "block_id": "bus_2_202e2464",
+        "occurrence_id": "bus_2_202e2464@game/scripts/_day_1/script.rpy:1065:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1098,
+        "block_id": "bus_3_01c5128c",
+        "occurrence_id": "bus_3_01c5128c@game/scripts/_day_1/script.rpy:1098:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1107,
+        "block_id": "bus_3_f995d62b",
+        "occurrence_id": "bus_3_f995d62b@game/scripts/_day_1/script.rpy:1107:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1109,
+        "block_id": "bus_3_c39b59b8",
+        "occurrence_id": "bus_3_c39b59b8@game/scripts/_day_1/script.rpy:1109:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1116,
+        "block_id": "bus_3_10341338",
+        "occurrence_id": "bus_3_10341338@game/scripts/_day_1/script.rpy:1116:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1124,
+        "block_id": "bus_3_9b9bb461",
+        "occurrence_id": "bus_3_9b9bb461@game/scripts/_day_1/script.rpy:1124:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1138,
+        "block_id": "bus_3_7004f216",
+        "occurrence_id": "bus_3_7004f216@game/scripts/_day_1/script.rpy:1138:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1148,
+        "block_id": "bus_3_77157c0e",
+        "occurrence_id": "bus_3_77157c0e@game/scripts/_day_1/script.rpy:1148:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "speaker",
+    "name": "speaker",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 282,
+        "block_id": "tuesday_avery_about_4c55cdfa",
+        "occurrence_id": "tuesday_avery_about_4c55cdfa@game/scripts/_day_2/tuesday_diner.rpy:282:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 320,
+        "block_id": "tuesday_avery_about_11e00fc9",
+        "occurrence_id": "tuesday_avery_about_11e00fc9@game/scripts/_day_2/tuesday_diner.rpy:320:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 347,
+        "block_id": "tuesday_avery_about_f4e9d9a0",
+        "occurrence_id": "tuesday_avery_about_f4e9d9a0@game/scripts/_day_2/tuesday_diner.rpy:347:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 382,
+        "block_id": "tuesday_avery_about_01eee491",
+        "occurrence_id": "tuesday_avery_about_01eee491@game/scripts/_day_2/tuesday_diner.rpy:382:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 681,
+        "block_id": "tuesday_avery_diner_beans_e3124cfe",
+        "occurrence_id": "tuesday_avery_diner_beans_e3124cfe@game/scripts/_day_2/tuesday_diner.rpy:681:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 865,
+        "block_id": "tuesday_avery_truth_menu_4c55cdfa",
+        "occurrence_id": "tuesday_avery_truth_menu_4c55cdfa@game/scripts/_day_2/tuesday_diner.rpy:865:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 905,
+        "block_id": "tuesday_avery_truth_menu_11e00fc9",
+        "occurrence_id": "tuesday_avery_truth_menu_11e00fc9@game/scripts/_day_2/tuesday_diner.rpy:905:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 930,
+        "block_id": "tuesday_avery_truth_menu_f4e9d9a0",
+        "occurrence_id": "tuesday_avery_truth_menu_f4e9d9a0@game/scripts/_day_2/tuesday_diner.rpy:930:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 969,
+        "block_id": "tuesday_avery_truth_menu_01eee491",
+        "occurrence_id": "tuesday_avery_truth_menu_01eee491@game/scripts/_day_2/tuesday_diner.rpy:969:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2325,
+        "block_id": "thursday_greenhouse_inside_join_animals_5f80231e",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_5f80231e@game/scripts/_day_4/thursday_start.rpy:2325:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2334,
+        "block_id": "thursday_greenhouse_inside_join_animals_3320c0b3",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_3320c0b3@game/scripts/_day_4/thursday_start.rpy:2334:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2336,
+        "block_id": "thursday_greenhouse_inside_join_animals_4688b2f3",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_4688b2f3@game/scripts/_day_4/thursday_start.rpy:2336:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2348,
+        "block_id": "thursday_greenhouse_inside_join_animals_9ff759a7",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_9ff759a7@game/scripts/_day_4/thursday_start.rpy:2348:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2350,
+        "block_id": "thursday_greenhouse_inside_join_animals_68f529bf",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_68f529bf@game/scripts/_day_4/thursday_start.rpy:2350:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2372,
+        "block_id": "thursday_greenhouse_inside_join_animals_438995fe",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_438995fe@game/scripts/_day_4/thursday_start.rpy:2372:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2383,
+        "block_id": "thursday_greenhouse_inside_join_animals_05f58d77",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_05f58d77@game/scripts/_day_4/thursday_start.rpy:2383:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2399,
+        "block_id": "thursday_greenhouse_inside_join_animals_a2aef271",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_a2aef271@game/scripts/_day_4/thursday_start.rpy:2399:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2417,
+        "block_id": "thursday_greenhouse_inside_join_animals_c6d725a7",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_c6d725a7@game/scripts/_day_4/thursday_start.rpy:2417:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2425,
+        "block_id": "thursday_greenhouse_inside_join_animals_d7380a6e",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_d7380a6e@game/scripts/_day_4/thursday_start.rpy:2425:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 2432,
+        "block_id": "thursday_greenhouse_inside_join_animals_d3868ed3",
+        "occurrence_id": "thursday_greenhouse_inside_join_animals_d3868ed3@game/scripts/_day_4/thursday_start.rpy:2432:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "stella",
+    "name": "stella",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 114,
+        "block_id": "thursday_start_text_menu_55c7dc00",
+        "occurrence_id": "thursday_start_text_menu_55c7dc00@game/scripts/_day_4/thursday_start.rpy:114:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 115,
+        "block_id": "thursday_start_text_menu_0f49a9d0",
+        "occurrence_id": "thursday_start_text_menu_0f49a9d0@game/scripts/_day_4/thursday_start.rpy:115:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 116,
+        "block_id": "thursday_start_text_menu_73600cf3",
+        "occurrence_id": "thursday_start_text_menu_73600cf3@game/scripts/_day_4/thursday_start.rpy:116:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 117,
+        "block_id": "thursday_start_text_menu_a672b45b",
+        "occurrence_id": "thursday_start_text_menu_a672b45b@game/scripts/_day_4/thursday_start.rpy:117:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "tabitha",
+    "name": "tabitha",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1503,
+        "block_id": "kiosk_b22964ba",
+        "occurrence_id": "kiosk_b22964ba@game/scripts/_day_1/script.rpy:1503:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1509,
+        "block_id": "kiosk_c3be13f8",
+        "occurrence_id": "kiosk_c3be13f8@game/scripts/_day_1/script.rpy:1509:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1521,
+        "block_id": "kiosk_b22964ba_1",
+        "occurrence_id": "kiosk_b22964ba_1@game/scripts/_day_1/script.rpy:1521:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1527,
+        "block_id": "kiosk_c3be13f8_1",
+        "occurrence_id": "kiosk_c3be13f8_1@game/scripts/_day_1/script.rpy:1527:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1539,
+        "block_id": "kiosk_c3be13f8_2",
+        "occurrence_id": "kiosk_c3be13f8_2@game/scripts/_day_1/script.rpy:1539:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1550,
+        "block_id": "kiosk_04113405",
+        "occurrence_id": "kiosk_04113405@game/scripts/_day_1/script.rpy:1550:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1552,
+        "block_id": "kiosk_acb94144",
+        "occurrence_id": "kiosk_acb94144@game/scripts/_day_1/script.rpy:1552:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1564,
+        "block_id": "kiosk_5e8847b5",
+        "occurrence_id": "kiosk_5e8847b5@game/scripts/_day_1/script.rpy:1564:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1567,
+        "block_id": "kiosk_781483d0",
+        "occurrence_id": "kiosk_781483d0@game/scripts/_day_1/script.rpy:1567:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1571,
+        "block_id": "kiosk_d1af0bbc",
+        "occurrence_id": "kiosk_d1af0bbc@game/scripts/_day_1/script.rpy:1571:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1583,
+        "block_id": "kiosk_4e35a553",
+        "occurrence_id": "kiosk_4e35a553@game/scripts/_day_1/script.rpy:1583:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1585,
+        "block_id": "kiosk_cf5fa9ac",
+        "occurrence_id": "kiosk_cf5fa9ac@game/scripts/_day_1/script.rpy:1585:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1593,
+        "block_id": "kiosk_de319ed6",
+        "occurrence_id": "kiosk_de319ed6@game/scripts/_day_1/script.rpy:1593:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1601,
+        "block_id": "kiosk_93a3f40f",
+        "occurrence_id": "kiosk_93a3f40f@game/scripts/_day_1/script.rpy:1601:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1603,
+        "block_id": "kiosk_cf5fa9ac_1",
+        "occurrence_id": "kiosk_cf5fa9ac_1@game/scripts/_day_1/script.rpy:1603:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1609,
+        "block_id": "kiosk_90a95291",
+        "occurrence_id": "kiosk_90a95291@game/scripts/_day_1/script.rpy:1609:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1617,
+        "block_id": "kiosk_18f00fe4",
+        "occurrence_id": "kiosk_18f00fe4@game/scripts/_day_1/script.rpy:1617:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1619,
+        "block_id": "kiosk_2fe5034b",
+        "occurrence_id": "kiosk_2fe5034b@game/scripts/_day_1/script.rpy:1619:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1628,
+        "block_id": "kiosk_2fe5034b_1",
+        "occurrence_id": "kiosk_2fe5034b_1@game/scripts/_day_1/script.rpy:1628:0"
+      },
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1725,
+        "block_id": "tabitha_car_0835f07d",
+        "occurrence_id": "tabitha_car_0835f07d@game/scripts/_day_1/script.rpy:1725:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "ujaney",
+    "name": "ujaney",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 889,
+        "block_id": "wednesday_kitchen_chat_589006c0",
+        "occurrence_id": "wednesday_kitchen_chat_589006c0@game/scripts/_day_3/wednesday_start.rpy:889:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 892,
+        "block_id": "wednesday_kitchen_chat_c14e696e",
+        "occurrence_id": "wednesday_kitchen_chat_c14e696e@game/scripts/_day_3/wednesday_start.rpy:892:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 917,
+        "block_id": "wednesday_kitchen_chat_d9026403",
+        "occurrence_id": "wednesday_kitchen_chat_d9026403@game/scripts/_day_3/wednesday_start.rpy:917:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 969,
+        "block_id": "wednesday_janey_heated_31003b88",
+        "occurrence_id": "wednesday_janey_heated_31003b88@game/scripts/_day_3/wednesday_start.rpy:969:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1172,
+        "block_id": "wednesday_janey_heated_ce0aa554",
+        "occurrence_id": "wednesday_janey_heated_ce0aa554@game/scripts/_day_3/wednesday_start.rpy:1172:0"
+      },
+      {
+        "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+        "source_line": 1286,
+        "block_id": "wednesday_janey_meet_0173fd56",
+        "occurrence_id": "wednesday_janey_meet_0173fd56@game/scripts/_day_3/wednesday_start.rpy:1286:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "unknown",
+    "name": "unknown",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_1/script.rpy",
+        "source_line": 1478,
+        "block_id": "kiosk_709b0291",
+        "occurrence_id": "kiosk_709b0291@game/scripts/_day_1/script.rpy:1478:0"
+      },
+      {
+        "source_file": "game/scripts/_day_4/thursday_start.rpy",
+        "source_line": 118,
+        "block_id": "thursday_start_text_menu_fb79b995",
+        "occurrence_id": "thursday_start_text_menu_fb79b995@game/scripts/_day_4/thursday_start.rpy:118:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  },
+  {
+    "character_id": "winnie",
+    "name": "winnie",
+    "aliases": [],
+    "known_role": null,
+    "personality": null,
+    "speech_style": null,
+    "relationships": [],
+    "known_facts": [],
+    "source_refs": [
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 31,
+        "block_id": "tuesday_diner_menu_f2d8e1ec",
+        "occurrence_id": "tuesday_diner_menu_f2d8e1ec@game/scripts/_day_2/tuesday_diner.rpy:31:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 37,
+        "block_id": "tuesday_diner_menu_d898bd95",
+        "occurrence_id": "tuesday_diner_menu_d898bd95@game/scripts/_day_2/tuesday_diner.rpy:37:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 62,
+        "block_id": "tuesday_diner_menu_3115b0c5",
+        "occurrence_id": "tuesday_diner_menu_3115b0c5@game/scripts/_day_2/tuesday_diner.rpy:62:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 64,
+        "block_id": "tuesday_diner_menu_0b2d13ed",
+        "occurrence_id": "tuesday_diner_menu_0b2d13ed@game/scripts/_day_2/tuesday_diner.rpy:64:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 65,
+        "block_id": "tuesday_diner_menu_95e4226e",
+        "occurrence_id": "tuesday_diner_menu_95e4226e@game/scripts/_day_2/tuesday_diner.rpy:65:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 69,
+        "block_id": "tuesday_diner_menu_48df8d1f",
+        "occurrence_id": "tuesday_diner_menu_48df8d1f@game/scripts/_day_2/tuesday_diner.rpy:69:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 76,
+        "block_id": "tuesday_diner_menu_e5db1f97",
+        "occurrence_id": "tuesday_diner_menu_e5db1f97@game/scripts/_day_2/tuesday_diner.rpy:76:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 328,
+        "block_id": "tuesday_avery_about_13e8f20f",
+        "occurrence_id": "tuesday_avery_about_13e8f20f@game/scripts/_day_2/tuesday_diner.rpy:328:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 352,
+        "block_id": "tuesday_avery_about_8f17a166",
+        "occurrence_id": "tuesday_avery_about_8f17a166@game/scripts/_day_2/tuesday_diner.rpy:352:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 373,
+        "block_id": "tuesday_avery_about_eff416cd",
+        "occurrence_id": "tuesday_avery_about_eff416cd@game/scripts/_day_2/tuesday_diner.rpy:373:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 387,
+        "block_id": "tuesday_avery_about_14fb2520",
+        "occurrence_id": "tuesday_avery_about_14fb2520@game/scripts/_day_2/tuesday_diner.rpy:387:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 399,
+        "block_id": "tuesday_avery_about_bd2f5e62",
+        "occurrence_id": "tuesday_avery_about_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:399:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 684,
+        "block_id": "tuesday_avery_diner_beans_27c7041c",
+        "occurrence_id": "tuesday_avery_diner_beans_27c7041c@game/scripts/_day_2/tuesday_diner.rpy:684:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 913,
+        "block_id": "tuesday_avery_truth_menu_13e8f20f",
+        "occurrence_id": "tuesday_avery_truth_menu_13e8f20f@game/scripts/_day_2/tuesday_diner.rpy:913:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 935,
+        "block_id": "tuesday_avery_truth_menu_8f17a166",
+        "occurrence_id": "tuesday_avery_truth_menu_8f17a166@game/scripts/_day_2/tuesday_diner.rpy:935:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 960,
+        "block_id": "tuesday_avery_truth_menu_eff416cd",
+        "occurrence_id": "tuesday_avery_truth_menu_eff416cd@game/scripts/_day_2/tuesday_diner.rpy:960:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 974,
+        "block_id": "tuesday_avery_truth_menu_14fb2520",
+        "occurrence_id": "tuesday_avery_truth_menu_14fb2520@game/scripts/_day_2/tuesday_diner.rpy:974:0"
+      },
+      {
+        "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+        "source_line": 986,
+        "block_id": "tuesday_avery_truth_menu_bd2f5e62",
+        "occurrence_id": "tuesday_avery_truth_menu_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:986:0"
+      }
+    ],
+    "confidence": null,
+    "unresolved_items": [
+      "Role, personality, speech style, relationships, and facts require reviewed evidence."
+    ]
+  }
+]

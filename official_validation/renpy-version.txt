@@ -1,0 +1,3 @@
+Ren'Py 8.0.3.22090809
+Runtime executable: F:\SteamLibrary\steamapps\common\ScarletHollow\ScarletHollow.exe
+Runtime source: F:\SteamLibrary\steamapps\common\ScarletHollow\renpy

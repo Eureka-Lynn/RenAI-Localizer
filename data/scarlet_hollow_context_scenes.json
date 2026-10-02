@@ -1,0 +1,30 @@
+{
+  "purpose": "Small real Scarlet Hollow scenes reserved for later story-context translation tests; no LLM translation is included.",
+  "source_snapshot": "../scarlet_hollow_official/official_snapshot.json",
+  "scenes": [
+    {
+      "source_file": "game/scripts/_day_1/script.rpy",
+      "description": "Day 1 bus arrival and opening narration",
+      "official_occurrences": 1298,
+      "representative_identifiers": ["bus_6a66a01f", "bus_83aa9726", "bus_807a3578"]
+    },
+    {
+      "source_file": "game/scripts/_day_2/tuesday_diner.rpy",
+      "description": "Day 2 diner scene with narration, dialogue, and menu flow",
+      "official_occurrences": 337,
+      "representative_identifiers": ["tuesday_diner_d95c1fd3", "tuesday_diner_0d6085e8", "tuesday_diner_menu_11fdb519"]
+    },
+    {
+      "source_file": "game/scripts/_day_3/wednesday_start.rpy",
+      "description": "Day 3 opening scene with recurring character context",
+      "official_occurrences": 560,
+      "representative_identifiers": ["wednesday_start_b3925e23", "wednesday_start_b93b4574", "wednesday_start_25b5363f"]
+    },
+    {
+      "source_file": "game/scripts/_day_4/thursday_start.rpy",
+      "description": "Day 4 opening scene with state-dependent narration",
+      "official_occurrences": 716,
+      "representative_identifiers": ["thursday_start_e948aa64", "thursday_start_7cf7286c", "thursday_start_00a11d25"]
+    }
+  ]
+}
