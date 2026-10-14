@@ -9,6 +9,8 @@ htmlcov/
 .venv/
 venv/
 *.egg-info/
+build/
+dist/
 .env
 .env.*
 
@@ -39,6 +41,7 @@ scarlet_hollow_official/*.log
 
 # Large generated context output; schema and bounded summary fixtures remain trackable.
 data/reader_context_fixture.json
+data/semantic_reading_pilot/semantic_context.json
 
 # Compiled Ren'Py artifacts
 **/*.rpyc

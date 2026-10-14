@@ -1,0 +1,82 @@
+[
+  {
+    "claim_id": "claim-1c7abb0bc6eb24f1",
+    "kind": "character",
+    "subject_id": "unseen-character",
+    "value": "An unseen-character speaker is present.",
+    "source_refs": [
+      "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0"
+    ],
+    "confidence": 0.25,
+    "status": "rejected",
+    "verifier_reason": "speaker does not support claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "rejected",
+        "reason": "speaker does not support claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6e1d73178d8ca432",
+    "kind": "character",
+    "subject_id": "unseen-character",
+    "value": "An unseen-character speaker is present.",
+    "source_refs": [
+      "tuesday_diner_d95c1fd3@game/scripts/_day_2/tuesday_diner.rpy:13:0"
+    ],
+    "confidence": 0.25,
+    "status": "rejected",
+    "verifier_reason": "speaker does not support claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "rejected",
+        "reason": "speaker does not support claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-da75f910f547756d",
+    "kind": "character",
+    "subject_id": "unseen-character",
+    "value": "An unseen-character speaker is present.",
+    "source_refs": [
+      "wednesday_start_b3925e23@game/scripts/_day_3/wednesday_start.rpy:25:0"
+    ],
+    "confidence": 0.25,
+    "status": "rejected",
+    "verifier_reason": "speaker does not support claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "rejected",
+        "reason": "speaker does not support claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-7d40c4e8388ed658",
+    "kind": "character",
+    "subject_id": "unseen-character",
+    "value": "An unseen-character speaker is present.",
+    "source_refs": [
+      "thursday_start_e948aa64@game/scripts/_day_4/thursday_start.rpy:13:0"
+    ],
+    "confidence": 0.25,
+    "status": "rejected",
+    "verifier_reason": "speaker does not support claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "rejected",
+        "reason": "speaker does not support claim"
+      }
+    ]
+  }
+]

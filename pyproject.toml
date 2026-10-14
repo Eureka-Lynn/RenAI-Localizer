@@ -6,8 +6,15 @@ build-backend = "hatchling.build"
 name = "renai-localizer-v2"
 version = "0.1.0"
 description = "Official-extraction-first Ren'Py story-context localization architecture"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.urls]
+Repository = "https://github.com/Eureka-Lynn/RenAI-Localizer"
 
 [project.scripts]
 renai-localizer-v2 = "renai_localizer_v2.cli:main"

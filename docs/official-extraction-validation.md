@@ -19,7 +19,7 @@ python -c "import renpy"
 - `F:\SteamLibrary\steamapps\common\ScarletHollow\renpy`
 - 日志版本：`Ren'Py 8.0.3.22090809`
 
-读取该版本源码后确认真实命令为 `basedir translate language`，并确认了 `--no-todo` 参数。v2 随后对独立 fixture 实际执行了该命令，并进一步对 Scarlet Hollow 的 199 个隔离 `.rpy` 源文件实际执行，生成 185 个 `game/tl/schinese/` 文件。完整证据、命令、日志、覆盖比较和差异结果见 `official_validation/validation-report.md` 与 `../scarlet_hollow_official/coverage-analysis.md`。
+读取该版本源码后确认真实命令为 `basedir translate language`，并确认了 `--no-todo` 参数。v2 随后对独立 fixture 实际执行了该命令，并进一步对 Scarlet Hollow 的 199 个隔离 `.rpy` 源文件实际执行，生成 185 个 `game/tl/schinese/` 文件。完整证据见[最小验证报告](../official_validation/validation-report.md)与[覆盖分析](../scarlet_hollow_official/coverage-analysis.md)。这些结果是历史验证记录，完整游戏源码、大型 snapshot 和生成日志仅保存在本地，不随仓库分发；克隆仓库可使用 `official_validation/` 中的小型验证 fixture。
 
 ## Scarlet Hollow 实跑结果
 

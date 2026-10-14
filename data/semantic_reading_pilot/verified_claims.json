@@ -1,0 +1,3303 @@
+[
+  {
+    "claim_id": "claim-47de265be95b3490",
+    "kind": "character",
+    "subject_id": "bs",
+    "value": "bs is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "bus_61a3c5ad@game/scripts/_day_1/script.rpy:906:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-2b5bbb4385a689e5",
+    "kind": "character",
+    "subject_id": "bugs",
+    "value": "bugs is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "tour_bathroom_783ec70d@game/scripts/_day_1/script.rpy:2900:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-77cf9c6383be15cf",
+    "kind": "character",
+    "subject_id": "bus_driver",
+    "value": "bus_driver is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "bus_3_53e5839b@game/scripts/_day_1/script.rpy:1125:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-93f373ffb65f482b",
+    "kind": "character",
+    "subject_id": "cat",
+    "value": "cat is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "froufrou_tour_approach_d7dc1d81@game/scripts/_day_1/script.rpy:2699:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-9040b98f0fb330d3",
+    "kind": "character",
+    "subject_id": "dustin",
+    "value": "dustin is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "monday_opossum_convo_8021c8a0@game/scripts/_day_1/script.rpy:4178:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-fc799fb65b40415b",
+    "kind": "character",
+    "subject_id": "froufrou",
+    "value": "froufrou is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "froufrou_tour_approach_5bdaa0fe@game/scripts/_day_1/script.rpy:2576:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5d7f6b2d6a45655a",
+    "kind": "character",
+    "subject_id": "opossum",
+    "value": "opossum is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "monday_opossum_tta_cba98879@game/scripts/_day_1/script.rpy:4158:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-04c2cdc6d5e7f138",
+    "kind": "character",
+    "subject_id": "p",
+    "value": "p is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "bus_26c5a4fb@game/scripts/_day_1/script.rpy:937:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3fd40befcddd4a3f",
+    "kind": "character",
+    "subject_id": "tabitha",
+    "value": "tabitha is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "kiosk_b22964ba@game/scripts/_day_1/script.rpy:1503:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-dda6d9854ce50669",
+    "kind": "character",
+    "subject_id": "unknown",
+    "value": "unknown is a speaking character in scene scene-414224f7d5ca.",
+    "source_refs": [
+      "kiosk_709b0291@game/scripts/_day_1/script.rpy:1478:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5a1f2984fdfe0fa1",
+    "kind": "scene",
+    "subject_id": "scene-414224f7d5ca",
+    "value": "Scene scene-414224f7d5ca contains ordered narration and dialogue occurrences.",
+    "source_refs": [
+      "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0"
+    ],
+    "confidence": 0.72,
+    "status": "verified",
+    "verifier_reason": "claim is bounded to selected scene occurrences",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "claim is bounded to selected scene occurrences"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-fd8e4d2d9b3a9c59",
+    "kind": "fact",
+    "subject_id": "place:scarlet-hollow",
+    "value": "Scarlet Hollow is named in the selected source text.",
+    "source_refs": [
+      "bus_cbd3233f@game/scripts/_day_1/script.rpy:902:0"
+    ],
+    "confidence": 0.82,
+    "status": "verified",
+    "verifier_reason": "literal source text supports fact",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "literal source text supports fact"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d8a3d30cdb9ab785",
+    "kind": "term",
+    "subject_id": "term:Pearlanne",
+    "value": "Pearlanne",
+    "source_refs": [
+      "bus_7f544b1f@game/scripts/_day_1/script.rpy:898:0",
+      "tabitha_car_b22abe3d@game/scripts/_day_1/script.rpy:1916:0",
+      "opossum_which_human_monday_6a035cef@game/scripts/_day_1/script.rpy:4236:0",
+      "dustin_which_human_monday_6a035cef@game/scripts/_day_1/script.rpy:4381:0",
+      "monday_froufrou_tta_7d969382@game/scripts/_day_1/script.rpy:5025:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b2f2df9e43d6308a",
+    "kind": "term",
+    "subject_id": "term:Scarlet",
+    "value": "Scarlet",
+    "source_refs": [
+      "bus_7f544b1f@game/scripts/_day_1/script.rpy:898:0",
+      "bus_cbd3233f@game/scripts/_day_1/script.rpy:902:0",
+      "bus_2b0fba2c@game/scripts/_day_1/script.rpy:904:0",
+      "bus_4_9bb03b75@game/scripts/_day_1/script.rpy:1195:0",
+      "bus_4_035feab2@game/scripts/_day_1/script.rpy:1206:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-970fb81b8cc5a80b",
+    "kind": "term",
+    "subject_id": "term:Pearlanne Scarlet",
+    "value": "Pearlanne Scarlet",
+    "source_refs": [
+      "bus_7f544b1f@game/scripts/_day_1/script.rpy:898:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3ba8e9d2a51159c4",
+    "kind": "term",
+    "subject_id": "term:Mystical",
+    "value": "Mystical",
+    "source_refs": [
+      "bus_d1afc4b0@game/scripts/_day_1/script.rpy:901:0",
+      "tabitha_car_b22abe3d@game/scripts/_day_1/script.rpy:1916:0",
+      "tour_leave_bathroom_77ce9f3c@game/scripts/_day_1/script.rpy:3005:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-48dfa816b3a5f309",
+    "kind": "term",
+    "subject_id": "term:Hollow",
+    "value": "Hollow",
+    "source_refs": [
+      "bus_cbd3233f@game/scripts/_day_1/script.rpy:902:0",
+      "bus_2b0fba2c@game/scripts/_day_1/script.rpy:904:0",
+      "bus_4_9bb03b75@game/scripts/_day_1/script.rpy:1195:0",
+      "bus_4_035feab2@game/scripts/_day_1/script.rpy:1206:0",
+      "bus_4_1f9642c1@game/scripts/_day_1/script.rpy:1212:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8b9931701a677292",
+    "kind": "term",
+    "subject_id": "term:Scarlet Hollow",
+    "value": "Scarlet Hollow",
+    "source_refs": [
+      "bus_cbd3233f@game/scripts/_day_1/script.rpy:902:0",
+      "bus_2b0fba2c@game/scripts/_day_1/script.rpy:904:0",
+      "bus_4_9bb03b75@game/scripts/_day_1/script.rpy:1195:0",
+      "bus_4_035feab2@game/scripts/_day_1/script.rpy:1206:0",
+      "bus_4_1f9642c1@game/scripts/_day_1/script.rpy:1212:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3747019490127ba6",
+    "kind": "term",
+    "subject_id": "term:I've",
+    "value": "I've",
+    "source_refs": [
+      "bus_88b13cbe@game/scripts/_day_1/script.rpy:934:0",
+      "bus_4_340a5bb4@game/scripts/_day_1/script.rpy:1188:0",
+      "bus_5_38b28c25@game/scripts/_day_1/script.rpy:1241:0",
+      "estate_outside_9d763c83@game/scripts/_day_1/script.rpy:2101:0",
+      "tour_kitchen_5efa3ff7@game/scripts/_day_1/script.rpy:2276:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-588a8ffaeb8e701f",
+    "kind": "term",
+    "subject_id": "term:York",
+    "value": "York",
+    "source_refs": [
+      "bus_3_9b09940d@game/scripts/_day_1/script.rpy:1089:0",
+      "bus_3_52bfa6d9@game/scripts/_day_1/script.rpy:1101:0",
+      "bus_3_7004f216@game/scripts/_day_1/script.rpy:1138:0",
+      "bus_3_77157c0e@game/scripts/_day_1/script.rpy:1148:0",
+      "bus_3_b99eedc7@game/scripts/_day_1/script.rpy:1168:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b55a8ea7df0521b4",
+    "kind": "term",
+    "subject_id": "term:I'd",
+    "value": "I'd",
+    "source_refs": [
+      "bus_3_4c0d4792@game/scripts/_day_1/script.rpy:1131:0",
+      "bus_3_4c0d4792_1@game/scripts/_day_1/script.rpy:1142:0",
+      "bus_3_feeb84f5@game/scripts/_day_1/script.rpy:1153:0",
+      "bus_3_2e0a463d@game/scripts/_day_1/script.rpy:1170:0",
+      "bus_4_38427df9@game/scripts/_day_1/script.rpy:1208:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6c9a44a784caa0ce",
+    "kind": "term",
+    "subject_id": "term:Holler",
+    "value": "Holler",
+    "source_refs": [
+      "bus_4_9bb03b75@game/scripts/_day_1/script.rpy:1195:0",
+      "bus_4_035feab2@game/scripts/_day_1/script.rpy:1206:0",
+      "bus_4_5415530d@game/scripts/_day_1/script.rpy:1214:0",
+      "bus_4_3d41a646@game/scripts/_day_1/script.rpy:1221:0",
+      "bus_4_613e4460@game/scripts/_day_1/script.rpy:1230:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-febab2cd908b61d6",
+    "kind": "term",
+    "subject_id": "term:Facebook",
+    "value": "Facebook",
+    "source_refs": [
+      "bus_5_05401c6e@game/scripts/_day_1/script.rpy:1245:0",
+      "kiosk_2c6aa6bc@game/scripts/_day_1/script.rpy:1480:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ad42600a5aa0d57a",
+    "kind": "term",
+    "subject_id": "term:Tip",
+    "value": "Tip",
+    "source_refs": [
+      "bus_5_56c0e6cb@game/scripts/_day_1/script.rpy:1279:0",
+      "kiosk_2_1c73a4dd@game/scripts/_day_1/script.rpy:1701:0",
+      "estate_tour_698fae39@game/scripts/_day_1/script.rpy:2239:0",
+      "tour_end_ad27cf4e@game/scripts/_day_1/script.rpy:3304:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-73a53c5c7039a9c7",
+    "kind": "term",
+    "subject_id": "term:Moms",
+    "value": "Moms",
+    "source_refs": [
+      "tabitha_car_7d54badc@game/scripts/_day_1/script.rpy:1846:0",
+      "tabitha_car_def6d2e7@game/scripts/_day_1/script.rpy:1977:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-4bb86400ab4fe7fe",
+    "kind": "term",
+    "subject_id": "term:Club",
+    "value": "Club",
+    "source_refs": [
+      "tabitha_car_7d54badc@game/scripts/_day_1/script.rpy:1846:0",
+      "tabitha_car_def6d2e7@game/scripts/_day_1/script.rpy:1977:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-91887ca7c4e390f6",
+    "kind": "term",
+    "subject_id": "term:Moms Club",
+    "value": "Moms Club",
+    "source_refs": [
+      "tabitha_car_7d54badc@game/scripts/_day_1/script.rpy:1846:0",
+      "tabitha_car_def6d2e7@game/scripts/_day_1/script.rpy:1977:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ad869556dc8213c9",
+    "kind": "term",
+    "subject_id": "term:Tabitha's",
+    "value": "Tabitha's",
+    "source_refs": [
+      "tabitha_car_b22abe3d@game/scripts/_day_1/script.rpy:1916:0",
+      "froufrou_tour_approach_4cb32580@game/scripts/_day_1/script.rpy:2601:0",
+      "froufrou_tour_approach_8c80d98a@game/scripts/_day_1/script.rpy:2676:0",
+      "froufrou_tour_approach_829fdca1@game/scripts/_day_1/script.rpy:2686:0",
+      "tabitha_gross_mines_join_7eb2fd89@game/scripts/_day_1/script.rpy:3804:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-a4ae1f4ac0608e91",
+    "kind": "term",
+    "subject_id": "term:Biltmore",
+    "value": "Biltmore",
+    "source_refs": [
+      "estate_outside_69068813@game/scripts/_day_1/script.rpy:2089:0",
+      "estate_outside_cb8de795@game/scripts/_day_1/script.rpy:2093:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d9b7463b27cd42a4",
+    "kind": "term",
+    "subject_id": "term:Janey",
+    "value": "Janey",
+    "source_refs": [
+      "estate_tour_111e6819@game/scripts/_day_1/script.rpy:2230:0",
+      "tour_kitchen_69d69eea@game/scripts/_day_1/script.rpy:2306:0",
+      "tour_kitchen_0ae4d4e0@game/scripts/_day_1/script.rpy:2322:0",
+      "tour_kitchen_82e958b0@game/scripts/_day_1/script.rpy:2332:0",
+      "tour_bathroom_caeb5369@game/scripts/_day_1/script.rpy:2820:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-2af769ed14b4b7c9",
+    "kind": "term",
+    "subject_id": "term:PB",
+    "value": "PB",
+    "source_refs": [
+      "tour_kitchen_0c69a31a@game/scripts/_day_1/script.rpy:2401:0",
+      "tour_kitchen_cf1fdffc@game/scripts/_day_1/script.rpy:2418:0",
+      "tour_kitchen_76c541fa@game/scripts/_day_1/script.rpy:2441:0",
+      "tour_kitchen_987052b9@game/scripts/_day_1/script.rpy:2456:0",
+      "tour_kitchen_b953e715@game/scripts/_day_1/script.rpy:2501:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-26177bfaf63da919",
+    "kind": "term",
+    "subject_id": "term:Frou-frou",
+    "value": "Frou-frou",
+    "source_refs": [
+      "tour_leave_kitchen_a03a36f0@game/scripts/_day_1/script.rpy:2569:0",
+      "froufrou_tour_approach_ce9ecacf@game/scripts/_day_1/script.rpy:2656:0",
+      "froufrou_tour_approach_8c80d98a@game/scripts/_day_1/script.rpy:2676:0",
+      "froufrou_tour_approach_e357b63e@game/scripts/_day_1/script.rpy:2701:0",
+      "monday_make_pbj_explore_825e732e@game/scripts/_day_1/script.rpy:4913:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-4ce9af01585a3c7b",
+    "kind": "term",
+    "subject_id": "term:French",
+    "value": "French",
+    "source_refs": [
+      "froufrou_tour_approach_025bbd4c@game/scripts/_day_1/script.rpy:2589:0",
+      "froufrou_tour_approach_afe72752@game/scripts/_day_1/script.rpy:2591:0",
+      "froufrou_tour_approach_afe72752_1@game/scripts/_day_1/script.rpy:2616:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-069678e69a9f11cc",
+    "kind": "term",
+    "subject_id": "term:American",
+    "value": "American",
+    "source_refs": [
+      "froufrou_tour_approach_025bbd4c@game/scripts/_day_1/script.rpy:2589:0",
+      "froufrou_tour_approach_ef8d5509@game/scripts/_day_1/script.rpy:2614:0",
+      "froufrou_tour_approach_90b328a4@game/scripts/_day_1/script.rpy:2624:0",
+      "froufrou_tour_approach_ba04085c@game/scripts/_day_1/script.rpy:2637:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-9e8cb4bc14cdd5b7",
+    "kind": "term",
+    "subject_id": "term:Frou-frou's",
+    "value": "Frou-frou's",
+    "source_refs": [
+      "froufrou_tour_approach_4cb32580@game/scripts/_day_1/script.rpy:2601:0",
+      "monday_make_pbj_explore_6343d9da@game/scripts/_day_1/script.rpy:4914:0",
+      "monday_froufrou_tta_6343d9da@game/scripts/_day_1/script.rpy:5044:0",
+      "monday_froufrou_tta_6343d9da_1@game/scripts/_day_1/script.rpy:5067:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ab6c53e74a71e4c0",
+    "kind": "term",
+    "subject_id": "term:Scram",
+    "value": "Scram",
+    "source_refs": [
+      "tour_bathroom_783ec70d@game/scripts/_day_1/script.rpy:2900:0",
+      "tour_bathroom_783ec70d_1@game/scripts/_day_1/script.rpy:2932:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-e43ecb8c1f1ef86c",
+    "kind": "term",
+    "subject_id": "term:Smart",
+    "value": "Smart",
+    "source_refs": [
+      "tour_leave_bathroom_1c2ffc71@game/scripts/_day_1/script.rpy:2999:0",
+      "empty_estate_explore_ab588f22@game/scripts/_day_1/script.rpy:4129:0",
+      "top_drawer_ab588f22@game/scripts/_day_1/script.rpy:4725:0",
+      "monday_explore_cabinet_ab588f22@game/scripts/_day_1/script.rpy:5739:0",
+      "monday_explore_cabinet_ab588f22_1@game/scripts/_day_1/script.rpy:5795:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-a34ab228f331d3a9",
+    "kind": "term",
+    "subject_id": "term:IKEA",
+    "value": "IKEA",
+    "source_refs": [
+      "tour_bedroom_6e961406@game/scripts/_day_1/script.rpy:3150:0",
+      "tour_bedroom_325d9967@game/scripts/_day_1/script.rpy:3167:0",
+      "tour_bedroom_6e961406_1@game/scripts/_day_1/script.rpy:3199:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-befa160ebdeb654a",
+    "kind": "term",
+    "subject_id": "term:Excuse",
+    "value": "Excuse",
+    "source_refs": [
+      "tabitha_job_fd96647c@game/scripts/_day_1/script.rpy:3586:0",
+      "tabitha_job_fd96647c_1@game/scripts/_day_1/script.rpy:3641:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0a8967d8afa206d7",
+    "kind": "term",
+    "subject_id": "term:Dustin",
+    "value": "Dustin",
+    "source_refs": [
+      "monday_opossum_convo_8021c8a0@game/scripts/_day_1/script.rpy:4178:0",
+      "monday_opossum_convo_1b918652@game/scripts/_day_1/script.rpy:4196:0",
+      "monday_opossum_convo_3a7f7877@game/scripts/_day_1/script.rpy:4215:0",
+      "opossum_which_human_monday_b7dc8b51@game/scripts/_day_1/script.rpy:4238:0",
+      "opossum_which_human_monday_702c3205@game/scripts/_day_1/script.rpy:4247:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-cddc33a0cba1ff4c",
+    "kind": "term",
+    "subject_id": "term:Congratulations",
+    "value": "Congratulations",
+    "source_refs": [
+      "monday_make_pbj_explore_a3bc9d8e@game/scripts/_day_1/script.rpy:4863:0",
+      "monday_make_pbj_explore_4ad2aab1@game/scripts/_day_1/script.rpy:4896:0",
+      "monday_explore_cabinet_13e73465@game/scripts/_day_1/script.rpy:5717:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-48b1decb5e85405e",
+    "kind": "term",
+    "subject_id": "term:Blowing",
+    "value": "Blowing",
+    "source_refs": [
+      "monday_explore_cabinet_adbbd4d0@game/scripts/_day_1/script.rpy:5637:0",
+      "monday_explore_cabinet_9b801afb@game/scripts/_day_1/script.rpy:5638:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-1b6df7f405517936",
+    "kind": "term",
+    "subject_id": "term:Keen",
+    "value": "Keen",
+    "source_refs": [
+      "monday_explore_cabinet_90308dc0@game/scripts/_day_1/script.rpy:5653:0",
+      "monday_forbidden_wings_d2366af9@game/scripts/_day_1/script.rpy:5845:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-720c7754ac71f559",
+    "kind": "character",
+    "subject_id": "avery",
+    "value": "avery is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_diner_menu_fce5b0c1@game/scripts/_day_2/tuesday_diner.rpy:57:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5c4c5e3e078780b9",
+    "kind": "character",
+    "subject_id": "chef",
+    "value": "chef is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_diner_menu_706cdd46@game/scripts/_day_2/tuesday_diner.rpy:35:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6b18d15efdc8721a",
+    "kind": "character",
+    "subject_id": "julius",
+    "value": "julius is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_avery_about_1454dc5a@game/scripts/_day_2/tuesday_diner.rpy:331:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-344834fe796e2b7b",
+    "kind": "character",
+    "subject_id": "p",
+    "value": "p is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_diner_menu_d7f715e0@game/scripts/_day_2/tuesday_diner.rpy:28:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-33e8f0995318a881",
+    "kind": "character",
+    "subject_id": "speaker",
+    "value": "speaker is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_avery_about_4c55cdfa@game/scripts/_day_2/tuesday_diner.rpy:282:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-c3a9065f8a26008c",
+    "kind": "character",
+    "subject_id": "winnie",
+    "value": "winnie is a speaking character in scene scene-8834a8347422.",
+    "source_refs": [
+      "tuesday_diner_menu_f2d8e1ec@game/scripts/_day_2/tuesday_diner.rpy:31:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-28c7fbdffc3a9752",
+    "kind": "scene",
+    "subject_id": "scene-8834a8347422",
+    "value": "Scene scene-8834a8347422 contains ordered narration and dialogue occurrences.",
+    "source_refs": [
+      "tuesday_diner_d95c1fd3@game/scripts/_day_2/tuesday_diner.rpy:13:0"
+    ],
+    "confidence": 0.72,
+    "status": "verified",
+    "verifier_reason": "claim is bounded to selected scene occurrences",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "claim is bounded to selected scene occurrences"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-71fb4c1d86f525a4",
+    "kind": "fact",
+    "subject_id": "place:scarlet-hollow",
+    "value": "Scarlet Hollow is named in the selected source text.",
+    "source_refs": [
+      "tuesday_avery_about_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:344:0"
+    ],
+    "confidence": 0.82,
+    "status": "verified",
+    "verifier_reason": "literal source text supports fact",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "literal source text supports fact"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3e530857297c5dce",
+    "kind": "term",
+    "subject_id": "term:Avery",
+    "value": "Avery",
+    "source_refs": [
+      "tuesday_diner_menu_70727e53@game/scripts/_day_2/tuesday_diner.rpy:55:0",
+      "tuesday_diner_menu_1a1f31e8@game/scripts/_day_2/tuesday_diner.rpy:81:0",
+      "tuesday_avery_truth_menu_e64a7703@game/scripts/_day_2/tuesday_diner.rpy:1026:0",
+      "tuesday_avery_flee_02e49b4f@game/scripts/_day_2/tuesday_diner.rpy:1130:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-551acb10a39b1543",
+    "kind": "term",
+    "subject_id": "term:Winnie",
+    "value": "Winnie",
+    "source_refs": [
+      "tuesday_diner_menu_59cd37ab@game/scripts/_day_2/tuesday_diner.rpy:60:0",
+      "tuesday_avery_about_f2745b31@game/scripts/_day_2/tuesday_diner.rpy:208:0",
+      "tuesday_avery_about_5bd98b21@game/scripts/_day_2/tuesday_diner.rpy:225:0",
+      "tuesday_avery_about_099f579c@game/scripts/_day_2/tuesday_diner.rpy:355:0",
+      "tuesday_avery_truth_menu_f2745b31@game/scripts/_day_2/tuesday_diner.rpy:787:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-1109fff5e495e3ee",
+    "kind": "term",
+    "subject_id": "term:I'd",
+    "value": "I'd",
+    "source_refs": [
+      "tuesday_diner_menu_3115b0c5@game/scripts/_day_2/tuesday_diner.rpy:62:0",
+      "tuesday_avery_about_214aa1f7@game/scripts/_day_2/tuesday_diner.rpy:476:0",
+      "tuesday_leaving_diner_6bdf2199@game/scripts/_day_2/tuesday_diner.rpy:1158:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-a8193fd73393232a",
+    "kind": "term",
+    "subject_id": "term:Julius",
+    "value": "Julius",
+    "source_refs": [
+      "tuesday_avery_about_e2fae5b4@game/scripts/_day_2/tuesday_diner.rpy:137:0",
+      "tuesday_avery_about_e2f0c915@game/scripts/_day_2/tuesday_diner.rpy:288:0",
+      "tuesday_avery_about_13e8f20f@game/scripts/_day_2/tuesday_diner.rpy:328:0",
+      "tuesday_avery_about_8f17a166@game/scripts/_day_2/tuesday_diner.rpy:352:0",
+      "tuesday_avery_about_d4909a0c@game/scripts/_day_2/tuesday_diner.rpy:360:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b83023ea381cc66e",
+    "kind": "term",
+    "subject_id": "term:Mystical",
+    "value": "Mystical",
+    "source_refs": [
+      "tuesday_avery_about_f2c9936d@game/scripts/_day_2/tuesday_diner.rpy:140:0",
+      "tuesday_avery_about_f2c9936d_1@game/scripts/_day_2/tuesday_diner.rpy:557:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-776760d2b9b66771",
+    "kind": "term",
+    "subject_id": "term:Color",
+    "value": "Color",
+    "source_refs": [
+      "tuesday_avery_about_b22210c4@game/scripts/_day_2/tuesday_diner.rpy:142:0",
+      "tuesday_avery_about_b22210c4_1@game/scripts/_day_2/tuesday_diner.rpy:196:0",
+      "tuesday_avery_about_d5050d3a@game/scripts/_day_2/tuesday_diner.rpy:559:0",
+      "tuesday_avery_about_b22210c4_2@game/scripts/_day_2/tuesday_diner.rpy:613:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-eff89fc23f9915cf",
+    "kind": "term",
+    "subject_id": "term:Tabitha's",
+    "value": "Tabitha's",
+    "source_refs": [
+      "tuesday_avery_about_5d17c553@game/scripts/_day_2/tuesday_diner.rpy:192:0",
+      "tuesday_avery_about_5d17c553_1@game/scripts/_day_2/tuesday_diner.rpy:609:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8a111703730eda3a",
+    "kind": "term",
+    "subject_id": "term:Charlotte",
+    "value": "Charlotte",
+    "source_refs": [
+      "tuesday_avery_about_b4539bf3@game/scripts/_day_2/tuesday_diner.rpy:206:0",
+      "tuesday_avery_about_f89cc4cb@game/scripts/_day_2/tuesday_diner.rpy:234:0",
+      "tuesday_avery_truth_menu_7ad18a45@game/scripts/_day_2/tuesday_diner.rpy:785:0",
+      "tuesday_avery_truth_menu_f89cc4cb@game/scripts/_day_2/tuesday_diner.rpy:818:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-f4ef821c7f20d7d8",
+    "kind": "term",
+    "subject_id": "term:Why'd",
+    "value": "Why'd",
+    "source_refs": [
+      "tuesday_avery_about_f89cc4cb@game/scripts/_day_2/tuesday_diner.rpy:234:0",
+      "tuesday_avery_truth_menu_f89cc4cb@game/scripts/_day_2/tuesday_diner.rpy:818:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-dbbdbaa64d1c4b01",
+    "kind": "term",
+    "subject_id": "term:Keen",
+    "value": "Keen",
+    "source_refs": [
+      "tuesday_avery_about_a930de03@game/scripts/_day_2/tuesday_diner.rpy:257:0",
+      "tuesday_avery_about_c127fa72@game/scripts/_day_2/tuesday_diner.rpy:302:0",
+      "tuesday_avery_truth_menu_a930de03@game/scripts/_day_2/tuesday_diner.rpy:843:0",
+      "tuesday_avery_truth_menu_c127fa72@game/scripts/_day_2/tuesday_diner.rpy:886:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3c7f74fadd9c5c47",
+    "kind": "term",
+    "subject_id": "term:I've",
+    "value": "I've",
+    "source_refs": [
+      "tuesday_avery_about_ba070de8@game/scripts/_day_2/tuesday_diner.rpy:275:0",
+      "tuesday_avery_about_bc5f7e80@game/scripts/_day_2/tuesday_diner.rpy:317:0",
+      "tuesday_avery_diner_beans_b78a13da@game/scripts/_day_2/tuesday_diner.rpy:670:0",
+      "tuesday_avery_truth_menu_6d464c10@game/scripts/_day_2/tuesday_diner.rpy:806:0",
+      "tuesday_avery_truth_menu_ba070de8@game/scripts/_day_2/tuesday_diner.rpy:860:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-1ca9fceb5f044b64",
+    "kind": "term",
+    "subject_id": "term:Auntie",
+    "value": "Auntie",
+    "source_refs": [
+      "tuesday_avery_about_fda95272@game/scripts/_day_2/tuesday_diner.rpy:335:0",
+      "tuesday_avery_about_3249632b@game/scripts/_day_2/tuesday_diner.rpy:402:0",
+      "tuesday_avery_truth_menu_fda95272@game/scripts/_day_2/tuesday_diner.rpy:919:0",
+      "tuesday_avery_truth_menu_3249632b@game/scripts/_day_2/tuesday_diner.rpy:989:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-439a6cead0da4c42",
+    "kind": "term",
+    "subject_id": "term:Scarlet",
+    "value": "Scarlet",
+    "source_refs": [
+      "tuesday_avery_about_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:344:0",
+      "tuesday_avery_truth_menu_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:927:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0f32240613860e98",
+    "kind": "term",
+    "subject_id": "term:Hollow's",
+    "value": "Hollow's",
+    "source_refs": [
+      "tuesday_avery_about_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:344:0",
+      "tuesday_avery_truth_menu_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:927:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-81c284c7f46ee63c",
+    "kind": "term",
+    "subject_id": "term:Scarlet Hollow's",
+    "value": "Scarlet Hollow's",
+    "source_refs": [
+      "tuesday_avery_about_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:344:0",
+      "tuesday_avery_truth_menu_12c29ef3@game/scripts/_day_2/tuesday_diner.rpy:927:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6877102a7d6257a0",
+    "kind": "term",
+    "subject_id": "term:Tremaine",
+    "value": "Tremaine",
+    "source_refs": [
+      "tuesday_avery_about_eff416cd@game/scripts/_day_2/tuesday_diner.rpy:373:0",
+      "tuesday_avery_about_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:399:0",
+      "tuesday_avery_about_af4983b2@game/scripts/_day_2/tuesday_diner.rpy:414:0",
+      "tuesday_avery_truth_menu_eff416cd@game/scripts/_day_2/tuesday_diner.rpy:960:0",
+      "tuesday_avery_truth_menu_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:986:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-effa79de8723aa38",
+    "kind": "term",
+    "subject_id": "term:Julius Tremaine",
+    "value": "Julius Tremaine",
+    "source_refs": [
+      "tuesday_avery_about_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:399:0",
+      "tuesday_avery_about_af4983b2@game/scripts/_day_2/tuesday_diner.rpy:414:0",
+      "tuesday_avery_truth_menu_bd2f5e62@game/scripts/_day_2/tuesday_diner.rpy:986:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0528a0a18d70b58f",
+    "kind": "term",
+    "subject_id": "term:Saturday",
+    "value": "Saturday",
+    "source_refs": [
+      "tuesday_avery_about_214d6b11@game/scripts/_day_2/tuesday_diner.rpy:454:0",
+      "tuesday_leaving_diner_214d6b11@game/scripts/_day_2/tuesday_diner.rpy:1170:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b51e0921cbd3a683",
+    "kind": "term",
+    "subject_id": "term:Halloween",
+    "value": "Halloween",
+    "source_refs": [
+      "tuesday_avery_about_722801d5@game/scripts/_day_2/tuesday_diner.rpy:456:0",
+      "tuesday_leaving_diner_a528ee4d@game/scripts/_day_2/tuesday_diner.rpy:1172:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-f60ea1cd15ba33d6",
+    "kind": "term",
+    "subject_id": "term:BB",
+    "value": "BB",
+    "source_refs": [
+      "tuesday_avery_about_91c95ba0@game/scripts/_day_2/tuesday_diner.rpy:472:0",
+      "tuesday_avery_about_c2679894@game/scripts/_day_2/tuesday_diner.rpy:474:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5f80a39459e0b544",
+    "kind": "character",
+    "subject_id": "bothopossums",
+    "value": "bothopossums is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_dustin_enlightened_5cc05887@game/scripts/_day_3/wednesday_start.rpy:444:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-80b18812ae21b79e",
+    "kind": "character",
+    "subject_id": "dustin",
+    "value": "dustin is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_dustin_enlightened_9952ca78@game/scripts/_day_3/wednesday_start.rpy:304:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-9fe243467a6f538c",
+    "kind": "character",
+    "subject_id": "dustinmom",
+    "value": "dustinmom is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_dustin_enlightened_f56c37b0@game/scripts/_day_3/wednesday_start.rpy:311:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d2485a9abba2cba2",
+    "kind": "character",
+    "subject_id": "froufrou",
+    "value": "froufrou is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_kitchen_fa6f7e32@game/scripts/_day_3/wednesday_start.rpy:842:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-bfa4d979f381c077",
+    "kind": "character",
+    "subject_id": "janey",
+    "value": "janey is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_kitchen_chat_946d479f@game/scripts/_day_3/wednesday_start.rpy:895:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-862f6269cea2bcd5",
+    "kind": "character",
+    "subject_id": "momopossum",
+    "value": "momopossum is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_dustin_enlightened_c3cb0065@game/scripts/_day_3/wednesday_start.rpy:456:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5f796f2df696a54f",
+    "kind": "character",
+    "subject_id": "p",
+    "value": "p is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_dustin_enlightened_a4b27630@game/scripts/_day_3/wednesday_start.rpy:299:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-11b485d581386b42",
+    "kind": "character",
+    "subject_id": "tabitha",
+    "value": "tabitha is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_kitchen_chat_0d4095bd@game/scripts/_day_3/wednesday_start.rpy:883:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ac06adaed457b6a2",
+    "kind": "character",
+    "subject_id": "ujaney",
+    "value": "ujaney is a speaking character in scene scene-31a18e61392e.",
+    "source_refs": [
+      "wednesday_kitchen_chat_589006c0@game/scripts/_day_3/wednesday_start.rpy:889:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-e86b2d1202928fa4",
+    "kind": "scene",
+    "subject_id": "scene-31a18e61392e",
+    "value": "Scene scene-31a18e61392e contains ordered narration and dialogue occurrences.",
+    "source_refs": [
+      "wednesday_start_b3925e23@game/scripts/_day_3/wednesday_start.rpy:25:0"
+    ],
+    "confidence": 0.72,
+    "status": "verified",
+    "verifier_reason": "claim is bounded to selected scene occurrences",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "claim is bounded to selected scene occurrences"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d99888fc277f70a9",
+    "kind": "fact",
+    "subject_id": "place:scarlet-hollow",
+    "value": "Scarlet Hollow is named in the selected source text.",
+    "source_refs": [
+      "wednesday_start_25b5363f@game/scripts/_day_3/wednesday_start.rpy:29:0"
+    ],
+    "confidence": 0.82,
+    "status": "verified",
+    "verifier_reason": "literal source text supports fact",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "literal source text supports fact"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b4be126f0199e8aa",
+    "kind": "term",
+    "subject_id": "term:Scarlet Hollow",
+    "value": "Scarlet Hollow",
+    "source_refs": [
+      "wednesday_start_25b5363f@game/scripts/_day_3/wednesday_start.rpy:29:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-23dcc22bfbaf7ef2",
+    "kind": "term",
+    "subject_id": "term:Gretchen",
+    "value": "Gretchen",
+    "source_refs": [
+      "wednesday_start_d5a95ef7@game/scripts/_day_3/wednesday_start.rpy:96:0",
+      "wednesday_start_feffda51@game/scripts/_day_3/wednesday_start.rpy:100:0",
+      "wednesday_start_5eac598a@game/scripts/_day_3/wednesday_start.rpy:104:0",
+      "wednesday_start_0f1c16f6@game/scripts/_day_3/wednesday_start.rpy:211:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-fa44487d7278c358",
+    "kind": "term",
+    "subject_id": "term:Stella's",
+    "value": "Stella's",
+    "source_refs": [
+      "wednesday_start_d5a95ef7@game/scripts/_day_3/wednesday_start.rpy:96:0",
+      "wednesday_start_feffda51@game/scripts/_day_3/wednesday_start.rpy:100:0",
+      "wednesday_start_5eac598a@game/scripts/_day_3/wednesday_start.rpy:104:0",
+      "wednesday_start_d89365ea@game/scripts/_day_3/wednesday_start.rpy:155:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-32b08d5dfd9b9e0a",
+    "kind": "term",
+    "subject_id": "term:Wayne",
+    "value": "Wayne",
+    "source_refs": [
+      "wednesday_start_a653affe@game/scripts/_day_3/wednesday_start.rpy:116:0",
+      "wednesday_start_a653affe_1@game/scripts/_day_3/wednesday_start.rpy:159:0",
+      "tuesday_kitchen_leaving_tabitha_interrupt_25d853bf@game/scripts/_day_3/wednesday_start.rpy:2366:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6f853fce705d157c",
+    "kind": "term",
+    "subject_id": "term:Kaneeka",
+    "value": "Kaneeka",
+    "source_refs": [
+      "wednesday_start_a5efbd14@game/scripts/_day_3/wednesday_start.rpy:131:0",
+      "wednesday_start_2674c534@game/scripts/_day_3/wednesday_start.rpy:152:0",
+      "wednesday_dustin_normie_520eedf7@game/scripts/_day_3/wednesday_start.rpy:640:0",
+      "wednesday_dustin_normie_6a9305d7@game/scripts/_day_3/wednesday_start.rpy:761:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-a3263ed939d6adfb",
+    "kind": "term",
+    "subject_id": "term:Doctor",
+    "value": "Doctor",
+    "source_refs": [
+      "wednesday_start_a715ad03@game/scripts/_day_3/wednesday_start.rpy:146:0",
+      "wednesday_start_2674c534@game/scripts/_day_3/wednesday_start.rpy:152:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-be6c02dc3558315c",
+    "kind": "term",
+    "subject_id": "term:Kelly",
+    "value": "Kelly",
+    "source_refs": [
+      "wednesday_start_a715ad03@game/scripts/_day_3/wednesday_start.rpy:146:0",
+      "wednesday_start_2674c534@game/scripts/_day_3/wednesday_start.rpy:152:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5c062b06c318a77d",
+    "kind": "term",
+    "subject_id": "term:Doctor Kelly",
+    "value": "Doctor Kelly",
+    "source_refs": [
+      "wednesday_start_a715ad03@game/scripts/_day_3/wednesday_start.rpy:146:0",
+      "wednesday_start_2674c534@game/scripts/_day_3/wednesday_start.rpy:152:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b5966e3ca5226086",
+    "kind": "term",
+    "subject_id": "term:Rosalina",
+    "value": "Rosalina",
+    "source_refs": [
+      "wednesday_start_b32ecf2d@game/scripts/_day_3/wednesday_start.rpy:205:0",
+      "wednesday_janey_meet_8be248c7@game/scripts/_day_3/wednesday_start.rpy:1417:0",
+      "wednesday_tabitha_leaving_chat_f2d508bf@game/scripts/_day_3/wednesday_start.rpy:1761:0",
+      "wednesday_tabitha_leaving_chat_af657fc8@game/scripts/_day_3/wednesday_start.rpy:1989:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-421e88f86fe14553",
+    "kind": "term",
+    "subject_id": "term:Dustin",
+    "value": "Dustin",
+    "source_refs": [
+      "wednesday_dustin_enlightened_a4b27630@game/scripts/_day_3/wednesday_start.rpy:299:0",
+      "wednesday_dustin_enlightened_f56c37b0@game/scripts/_day_3/wednesday_start.rpy:311:0",
+      "wednesday_dustin_enlightened_c8e132cf@game/scripts/_day_3/wednesday_start.rpy:319:0",
+      "wednesday_dustin_enlightened_5444096f@game/scripts/_day_3/wednesday_start.rpy:347:0",
+      "wednesday_dustin_enlightened_4982d09c@game/scripts/_day_3/wednesday_start.rpy:349:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-da78558dcfcf7c50",
+    "kind": "term",
+    "subject_id": "term:I've",
+    "value": "I've",
+    "source_refs": [
+      "wednesday_dustin_enlightened_9e88ae77@game/scripts/_day_3/wednesday_start.rpy:437:0",
+      "wednesday_janey_meet_cfbd44d2@game/scripts/_day_3/wednesday_start.rpy:1615:0",
+      "wednesday_tabitha_leaving_8a7c686f@game/scripts/_day_3/wednesday_start.rpy:1744:0",
+      "wednesday_janey_chat_tabitha_preacher_6919e86f@game/scripts/_day_3/wednesday_start.rpy:2068:0",
+      "wednesday_kitchen_not_religious_tabitha_c11091a2@game/scripts/_day_3/wednesday_start.rpy:2265:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-e68ae7102142dac1",
+    "kind": "term",
+    "subject_id": "term:Monday",
+    "value": "Monday",
+    "source_refs": [
+      "wednesday_dustin_normie_ea694212@game/scripts/_day_3/wednesday_start.rpy:553:0",
+      "wednesday_janey_meet_748d0d44@game/scripts/_day_3/wednesday_start.rpy:1199:0",
+      "wednesday_janey_meet_510bd21b@game/scripts/_day_3/wednesday_start.rpy:1356:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0aecd70a863ea29b",
+    "kind": "term",
+    "subject_id": "term:Ben Affleck",
+    "value": "Ben Affleck",
+    "source_refs": [
+      "wednesday_dustin_normie_63ca2991@game/scripts/_day_3/wednesday_start.rpy:805:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8e8091231fd67c47",
+    "kind": "term",
+    "subject_id": "term:Janey",
+    "value": "Janey",
+    "source_refs": [
+      "wednesday_kitchen_d35c3813@game/scripts/_day_3/wednesday_start.rpy:840:0",
+      "wednesday_kitchen_squatter_talk_7d915516@game/scripts/_day_3/wednesday_start.rpy:953:0",
+      "wednesday_janey_heated_e5c5de6d@game/scripts/_day_3/wednesday_start.rpy:972:0",
+      "wednesday_janey_heated_befa7e27@game/scripts/_day_3/wednesday_start.rpy:1185:0",
+      "wednesday_janey_meet_dc188013@game/scripts/_day_3/wednesday_start.rpy:1202:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-23173ac96dd08d38",
+    "kind": "term",
+    "subject_id": "term:Alrighty",
+    "value": "Alrighty",
+    "source_refs": [
+      "wednesday_janey_heated_59536047@game/scripts/_day_3/wednesday_start.rpy:975:0",
+      "wednesday_kitchen_not_religious_tabitha_e67e903a@game/scripts/_day_3/wednesday_start.rpy:2330:0",
+      "tuesday_kitchen_leaving_tabitha_interrupt_e67e903a@game/scripts/_day_3/wednesday_start.rpy:2357:0",
+      "tuesday_kitchen_leaving_tabitha_interrupt_e67e903a_1@game/scripts/_day_3/wednesday_start.rpy:2389:0",
+      "tuesday_kitchen_leaving_tabitha_interrupt_e67e903a_2@game/scripts/_day_3/wednesday_start.rpy:2408:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-dce57e8b32b1146c",
+    "kind": "term",
+    "subject_id": "term:I'd",
+    "value": "I'd",
+    "source_refs": [
+      "wednesday_janey_heated_934d9e2f@game/scripts/_day_3/wednesday_start.rpy:1077:0",
+      "wednesday_kitchen_not_religious_tabitha_2191bf57@game/scripts/_day_3/wednesday_start.rpy:2163:0",
+      "wednesday_kitchen_not_religious_tabitha_16f4277c@game/scripts/_day_3/wednesday_start.rpy:2286:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-930d97d57f414385",
+    "kind": "term",
+    "subject_id": "term:Summer",
+    "value": "Summer",
+    "source_refs": [
+      "wednesday_janey_meet_7ab6cafe@game/scripts/_day_3/wednesday_start.rpy:1260:0",
+      "wednesday_janey_meet_0173fd56@game/scripts/_day_3/wednesday_start.rpy:1286:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-652cf6a699a27ce8",
+    "kind": "term",
+    "subject_id": "term:Tulip",
+    "value": "Tulip",
+    "source_refs": [
+      "wednesday_janey_meet_7ab6cafe@game/scripts/_day_3/wednesday_start.rpy:1260:0",
+      "wednesday_janey_meet_0173fd56@game/scripts/_day_3/wednesday_start.rpy:1286:0",
+      "wednesday_janey_chat_tabitha_preacher_9c6f5f35@game/scripts/_day_3/wednesday_start.rpy:2074:0",
+      "wednesday_kitchen_not_religious_tabitha_9cf18112@game/scripts/_day_3/wednesday_start.rpy:2345:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0af0ef0ebf53982f",
+    "kind": "term",
+    "subject_id": "term:Blowing",
+    "value": "Blowing",
+    "source_refs": [
+      "wednesday_janey_meet_7ab6cafe@game/scripts/_day_3/wednesday_start.rpy:1260:0",
+      "wednesday_janey_meet_0173fd56@game/scripts/_day_3/wednesday_start.rpy:1286:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6ae19418625c630f",
+    "kind": "term",
+    "subject_id": "term:How's",
+    "value": "How's",
+    "source_refs": [
+      "wednesday_janey_meet_d807c800@game/scripts/_day_3/wednesday_start.rpy:1469:0",
+      "wednesday_janey_meet_54e8c079@game/scripts/_day_3/wednesday_start.rpy:1506:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-366295d53c5bb1ce",
+    "kind": "term",
+    "subject_id": "term:Daniel",
+    "value": "Daniel",
+    "source_refs": [
+      "wednesday_janey_chat_tabitha_preacher_8105e540@game/scripts/_day_3/wednesday_start.rpy:2099:0",
+      "wednesday_kitchen_not_religious_tabitha_d056642d@game/scripts/_day_3/wednesday_start.rpy:2144:0",
+      "wednesday_kitchen_not_religious_tabitha_e841ba21@game/scripts/_day_3/wednesday_start.rpy:2191:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-08b6d5196db3d9a1",
+    "kind": "term",
+    "subject_id": "term:Tabitha's",
+    "value": "Tabitha's",
+    "source_refs": [
+      "wednesday_kitchen_not_religious_tabitha_e946a7c5@game/scripts/_day_3/wednesday_start.rpy:2311:0",
+      "tuesday_kitchen_leaving_tabitha_interrupt_3507fd4a@game/scripts/_day_3/wednesday_start.rpy:2395:0",
+      "wednesday_estate_leaving_574dbd35@game/scripts/_day_3/wednesday_start.rpy:2452:0",
+      "wednesday_estate_leaving_7b500435@game/scripts/_day_3/wednesday_start.rpy:2477:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d2309cbee2e1ff78",
+    "kind": "term",
+    "subject_id": "term:Nancy Drew",
+    "value": "Nancy Drew",
+    "source_refs": [
+      "tuesday_kitchen_leaving_tabitha_interrupt_51495392@game/scripts/_day_3/wednesday_start.rpy:2352:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-be14cd16c91bda39",
+    "kind": "character",
+    "subject_id": "bothopossums",
+    "value": "bothopossums is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_tta_squatter_default_join_5cc05887@game/scripts/_day_4/thursday_start.rpy:653:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-f634e57bcb70dca2",
+    "kind": "character",
+    "subject_id": "dustin",
+    "value": "dustin is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_dustin_tta_043bae0e@game/scripts/_day_4/thursday_start.rpy:500:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-2747e909055c4830",
+    "kind": "character",
+    "subject_id": "dustinmom",
+    "value": "dustinmom is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_dustin_tta_e718812c@game/scripts/_day_4/thursday_start.rpy:508:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-c39c780abb23c210",
+    "kind": "character",
+    "subject_id": "froufrou",
+    "value": "froufrou is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_kitchen_explore_5ec8155e@game/scripts/_day_4/thursday_start.rpy:1897:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6f7053132707de45",
+    "kind": "character",
+    "subject_id": "goat",
+    "value": "goat is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_greenhouse_inside_join_animals_eab5c200@game/scripts/_day_4/thursday_start.rpy:2409:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-174c224a1f22cdf3",
+    "kind": "character",
+    "subject_id": "kaneeka",
+    "value": "kaneeka is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_start_3b893701@game/scripts/_day_4/thursday_start.rpy:71:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-588eececa83bd49b",
+    "kind": "character",
+    "subject_id": "p",
+    "value": "p is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_start_text_menu_329a8d2e@game/scripts/_day_4/thursday_start.rpy:129:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-df84b54d01014239",
+    "kind": "character",
+    "subject_id": "speaker",
+    "value": "speaker is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_greenhouse_inside_join_animals_5f80231e@game/scripts/_day_4/thursday_start.rpy:2325:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-bd141c52a4a779c9",
+    "kind": "character",
+    "subject_id": "stella",
+    "value": "stella is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_start_text_menu_55c7dc00@game/scripts/_day_4/thursday_start.rpy:114:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-012cbedd46c8740b",
+    "kind": "character",
+    "subject_id": "tabitha",
+    "value": "tabitha is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_kitchen_25cc2da8@game/scripts/_day_4/thursday_start.rpy:794:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-80a4dc578ee0c91d",
+    "kind": "character",
+    "subject_id": "unknown",
+    "value": "unknown is a speaking character in scene scene-56ada4368e53.",
+    "source_refs": [
+      "thursday_start_text_menu_fb79b995@game/scripts/_day_4/thursday_start.rpy:118:0"
+    ],
+    "confidence": 0.78,
+    "status": "verified",
+    "verifier_reason": "speaker metadata supports claim",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "speaker metadata supports claim"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-e01294f83ed8e811",
+    "kind": "scene",
+    "subject_id": "scene-56ada4368e53",
+    "value": "Scene scene-56ada4368e53 contains ordered narration and dialogue occurrences.",
+    "source_refs": [
+      "thursday_start_e948aa64@game/scripts/_day_4/thursday_start.rpy:13:0"
+    ],
+    "confidence": 0.72,
+    "status": "verified",
+    "verifier_reason": "claim is bounded to selected scene occurrences",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "claim is bounded to selected scene occurrences"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-a3e7c0b696d107d9",
+    "kind": "fact",
+    "subject_id": "place:scarlet-hollow",
+    "value": "Scarlet Hollow is named in the selected source text.",
+    "source_refs": [
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0"
+    ],
+    "confidence": 0.82,
+    "status": "verified",
+    "verifier_reason": "literal source text supports fact",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "literal source text supports fact"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-c05c51807dc596b8",
+    "kind": "term",
+    "subject_id": "term:Mystical",
+    "value": "Mystical",
+    "source_refs": [
+      "thursday_start_00a11d25@game/scripts/_day_4/thursday_start.rpy:17:0",
+      "thursday_kitchen_book_join_f7f754c2@game/scripts/_day_4/thursday_start.rpy:884:0",
+      "thursday_kitchen_mystical_join_0652fef4@game/scripts/_day_4/thursday_start.rpy:890:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-765f6b1592b373ee",
+    "kind": "term",
+    "subject_id": "term:Smart",
+    "value": "Smart",
+    "source_refs": [
+      "thursday_start_7cc92184@game/scripts/_day_4/thursday_start.rpy:26:0",
+      "thursday_closet_b2f0da5b@game/scripts/_day_4/thursday_start.rpy:737:0",
+      "thursday_kitchen_e0511a91@game/scripts/_day_4/thursday_start.rpy:837:0",
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0",
+      "thursday_kitchen_59f302ed@game/scripts/_day_4/thursday_start.rpy:842:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5cd67640fc751062",
+    "kind": "term",
+    "subject_id": "term:Doctor",
+    "value": "Doctor",
+    "source_refs": [
+      "thursday_start_7cc92184@game/scripts/_day_4/thursday_start.rpy:26:0",
+      "thursday_room_explore_32a28df6@game/scripts/_day_4/thursday_start.rpy:424:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-4ce8628a75bc7086",
+    "kind": "term",
+    "subject_id": "term:Kelly",
+    "value": "Kelly",
+    "source_refs": [
+      "thursday_start_7cc92184@game/scripts/_day_4/thursday_start.rpy:26:0",
+      "thursday_room_explore_32a28df6@game/scripts/_day_4/thursday_start.rpy:424:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-f3ed764e19605918",
+    "kind": "term",
+    "subject_id": "term:Doctor Kelly",
+    "value": "Doctor Kelly",
+    "source_refs": [
+      "thursday_start_7cc92184@game/scripts/_day_4/thursday_start.rpy:26:0",
+      "thursday_room_explore_32a28df6@game/scripts/_day_4/thursday_start.rpy:424:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b680ab77ee7ec3ac",
+    "kind": "term",
+    "subject_id": "term:Charles",
+    "value": "Charles",
+    "source_refs": [
+      "thursday_start_a8936b0f@game/scripts/_day_4/thursday_start.rpy:55:0",
+      "thursday_start_1faf0945@game/scripts/_day_4/thursday_start.rpy:57:0",
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ce4101a6f87cf2b4",
+    "kind": "term",
+    "subject_id": "term:Shaw",
+    "value": "Shaw",
+    "source_refs": [
+      "thursday_start_a8936b0f@game/scripts/_day_4/thursday_start.rpy:55:0",
+      "thursday_start_1faf0945@game/scripts/_day_4/thursday_start.rpy:57:0",
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-7aa65080f7bfdafb",
+    "kind": "term",
+    "subject_id": "term:Junior",
+    "value": "Junior",
+    "source_refs": [
+      "thursday_start_a8936b0f@game/scripts/_day_4/thursday_start.rpy:55:0",
+      "thursday_start_1faf0945@game/scripts/_day_4/thursday_start.rpy:57:0",
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-4ba6d8b0757480a3",
+    "kind": "term",
+    "subject_id": "term:Charles Shaw Junior",
+    "value": "Charles Shaw Junior",
+    "source_refs": [
+      "thursday_start_a8936b0f@game/scripts/_day_4/thursday_start.rpy:55:0",
+      "thursday_start_1faf0945@game/scripts/_day_4/thursday_start.rpy:57:0",
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-9bdeb8b168521eff",
+    "kind": "term",
+    "subject_id": "term:Wayne",
+    "value": "Wayne",
+    "source_refs": [
+      "thursday_start_text_menu_da7298b0@game/scripts/_day_4/thursday_start.rpy:138:0",
+      "thursday_start_kaneeka_text_share_default_join_c4560a38@game/scripts/_day_4/thursday_start.rpy:261:0",
+      "thursday_room_explore_f2fe3db7@game/scripts/_day_4/thursday_start.rpy:384:0",
+      "thursday_room_explore_75f534eb@game/scripts/_day_4/thursday_start.rpy:427:0",
+      "thursday_shower_wayne_hot_join_69a4e119@game/scripts/_day_4/thursday_start.rpy:433:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8225f84f4592a542",
+    "kind": "term",
+    "subject_id": "term:Kaneeka",
+    "value": "Kaneeka",
+    "source_refs": [
+      "thursday_start_text_menu_11303b5f@game/scripts/_day_4/thursday_start.rpy:141:0",
+      "thursday_room_explore_a5efbd14@game/scripts/_day_4/thursday_start.rpy:398:0",
+      "thursday_kitchen_book_join_16b3a24b@game/scripts/_day_4/thursday_start.rpy:879:0",
+      "thursday_tabby_kitchen_wednesday_chat_6f50e7be@game/scripts/_day_4/thursday_start.rpy:1771:0",
+      "thursday_tabby_kitchen_wednesday_chat_9ee4a383@game/scripts/_day_4/thursday_start.rpy:1788:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-13e9631b1eed50d6",
+    "kind": "term",
+    "subject_id": "term:Charlie",
+    "value": "Charlie",
+    "source_refs": [
+      "thursday_room_explore_50b8562f@game/scripts/_day_4/thursday_start.rpy:345:0",
+      "thursday_tabby_kitchen_wednesday_chat_9ef9d361@game/scripts/_day_4/thursday_start.rpy:1631:0",
+      "thursday_tabby_kitchen_wednesday_chat_30b724c6@game/scripts/_day_4/thursday_start.rpy:1647:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-7a8f6d689572a642",
+    "kind": "term",
+    "subject_id": "term:Oscar",
+    "value": "Oscar",
+    "source_refs": [
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0",
+      "thursday_room_explore_b64b31bb@game/scripts/_day_4/thursday_start.rpy:409:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0c8c0182c834f1b9",
+    "kind": "term",
+    "subject_id": "term:Rosalina",
+    "value": "Rosalina",
+    "source_refs": [
+      "thursday_room_explore_d853e611@game/scripts/_day_4/thursday_start.rpy:351:0",
+      "thursday_tabby_kitchen_strike_menu_c86229ed@game/scripts/_day_4/thursday_start.rpy:1310:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-446f0234d62e119d",
+    "kind": "term",
+    "subject_id": "term:Gretchen",
+    "value": "Gretchen",
+    "source_refs": [
+      "thursday_room_explore_d5a95ef7@game/scripts/_day_4/thursday_start.rpy:369:0",
+      "thursday_room_explore_feffda51@game/scripts/_day_4/thursday_start.rpy:372:0",
+      "thursday_room_explore_5eac598a@game/scripts/_day_4/thursday_start.rpy:375:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8a290ceec665418e",
+    "kind": "term",
+    "subject_id": "term:Stella's",
+    "value": "Stella's",
+    "source_refs": [
+      "thursday_room_explore_d5a95ef7@game/scripts/_day_4/thursday_start.rpy:369:0",
+      "thursday_room_explore_feffda51@game/scripts/_day_4/thursday_start.rpy:372:0",
+      "thursday_room_explore_5eac598a@game/scripts/_day_4/thursday_start.rpy:375:0",
+      "thursday_tabby_kitchen_strike_menu_059cbd20@game/scripts/_day_4/thursday_start.rpy:996:0",
+      "thursday_greenhouse_return_9380dc45@game/scripts/_day_4/thursday_start.rpy:2566:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b57914d8170cc671",
+    "kind": "term",
+    "subject_id": "term:Avery",
+    "value": "Avery",
+    "source_refs": [
+      "thursday_room_explore_d56c1657@game/scripts/_day_4/thursday_start.rpy:403:0",
+      "thursday_room_explore_43cf0222@game/scripts/_day_4/thursday_start.rpy:406:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b1904c50995bf46f",
+    "kind": "term",
+    "subject_id": "term:Dustin",
+    "value": "Dustin",
+    "source_refs": [
+      "thursday_dustin_tta_e718812c@game/scripts/_day_4/thursday_start.rpy:508:0",
+      "thursday_dustin_tta_menu_39cd1c9d@game/scripts/_day_4/thursday_start.rpy:524:0",
+      "thursday_dustin_tta_menu_3c6c0550@game/scripts/_day_4/thursday_start.rpy:527:0",
+      "thursday_dustin_tta_menu_4f298810@game/scripts/_day_4/thursday_start.rpy:530:0",
+      "thursday_dustin_tta_menu_0972a535@game/scripts/_day_4/thursday_start.rpy:539:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-5469d50d83b7de0e",
+    "kind": "term",
+    "subject_id": "term:Keen",
+    "value": "Keen",
+    "source_refs": [
+      "thursday_closet_f6a088d0@game/scripts/_day_4/thursday_start.rpy:731:0",
+      "thursday_closet_f614b496@game/scripts/_day_4/thursday_start.rpy:739:0",
+      "thursday_kitchen_1611095b@game/scripts/_day_4/thursday_start.rpy:851:0",
+      "thursday_kitchen_38a3faea@game/scripts/_day_4/thursday_start.rpy:856:0",
+      "thursday_kitchen_45d1a123@game/scripts/_day_4/thursday_start.rpy:861:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-12372cc84279a041",
+    "kind": "term",
+    "subject_id": "term:I've",
+    "value": "I've",
+    "source_refs": [
+      "thursday_kitchen_c90afb75@game/scripts/_day_4/thursday_start.rpy:824:0",
+      "thursday_tabby_kitchen_strike_menu_80ff305f@game/scripts/_day_4/thursday_start.rpy:1120:0",
+      "thursday_tabby_kitchen_strike_menu_77ae3864@game/scripts/_day_4/thursday_start.rpy:1152:0",
+      "thursday_tabby_kitchen_wednesday_chat_b15caecf@game/scripts/_day_4/thursday_start.rpy:1717:0",
+      "thursday_kitchen_tabitha_leaves_0ceba43d@game/scripts/_day_4/thursday_start.rpy:1860:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-6542fcd7d508b91d",
+    "kind": "term",
+    "subject_id": "term:Tabitha's",
+    "value": "Tabitha's",
+    "source_refs": [
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0",
+      "thursday_kitchen_b1a27634@game/scripts/_day_4/thursday_start.rpy:853:0",
+      "thursday_kitchen_2ce47671@game/scripts/_day_4/thursday_start.rpy:865:0",
+      "thursday_kitchen_441d8c02@game/scripts/_day_4/thursday_start.rpy:872:0",
+      "thursday_froufrou_menu_2cfd5cef@game/scripts/_day_4/thursday_start.rpy:2006:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ad869c4af2ea416f",
+    "kind": "term",
+    "subject_id": "term:Scarlet",
+    "value": "Scarlet",
+    "source_refs": [
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0",
+      "thursday_kitchen_b1a27634@game/scripts/_day_4/thursday_start.rpy:853:0",
+      "thursday_kitchen_2ce47671@game/scripts/_day_4/thursday_start.rpy:865:0",
+      "thursday_kitchen_441d8c02@game/scripts/_day_4/thursday_start.rpy:872:0",
+      "thursday_kitchen_book_join_16b3a24b@game/scripts/_day_4/thursday_start.rpy:879:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-34695204a82ca0e0",
+    "kind": "term",
+    "subject_id": "term:Hollow",
+    "value": "Hollow",
+    "source_refs": [
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0",
+      "thursday_kitchen_b1a27634@game/scripts/_day_4/thursday_start.rpy:853:0",
+      "thursday_kitchen_2ce47671@game/scripts/_day_4/thursday_start.rpy:865:0",
+      "thursday_kitchen_441d8c02@game/scripts/_day_4/thursday_start.rpy:872:0",
+      "thursday_kitchen_book_join_16b3a24b@game/scripts/_day_4/thursday_start.rpy:879:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-00cf5e86379b03ec",
+    "kind": "term",
+    "subject_id": "term:Scarlet Hollow",
+    "value": "Scarlet Hollow",
+    "source_refs": [
+      "thursday_kitchen_6472b0a4@game/scripts/_day_4/thursday_start.rpy:839:0",
+      "thursday_kitchen_b1a27634@game/scripts/_day_4/thursday_start.rpy:853:0",
+      "thursday_kitchen_2ce47671@game/scripts/_day_4/thursday_start.rpy:865:0",
+      "thursday_kitchen_441d8c02@game/scripts/_day_4/thursday_start.rpy:872:0",
+      "thursday_kitchen_book_join_16b3a24b@game/scripts/_day_4/thursday_start.rpy:879:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-0ece791c84aea605",
+    "kind": "term",
+    "subject_id": "term:Sybil",
+    "value": "Sybil",
+    "source_refs": [
+      "thursday_tabby_kitchen_strike_menu_3a639b87@game/scripts/_day_4/thursday_start.rpy:975:0",
+      "thursday_tabby_kitchen_strike_menu_a462faab@game/scripts/_day_4/thursday_start.rpy:999:0",
+      "thursday_tabby_kitchen_wednesday_chat_399ba42f@game/scripts/_day_4/thursday_start.rpy:1554:0",
+      "thursday_greenhouse_inside_join_8525092c@game/scripts/_day_4/thursday_start.rpy:2153:0",
+      "thursday_greenhouse_inside_join_animals_8525092c@game/scripts/_day_4/thursday_start.rpy:2308:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-8d357a9c1c426245",
+    "kind": "term",
+    "subject_id": "term:Pearlanne",
+    "value": "Pearlanne",
+    "source_refs": [
+      "thursday_tabby_kitchen_strike_menu_2f583be7@game/scripts/_day_4/thursday_start.rpy:1291:0",
+      "thursday_tabby_kitchen_strike_menu_2f583be7_1@game/scripts/_day_4/thursday_start.rpy:1423:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-09a749a1d4037f1a",
+    "kind": "term",
+    "subject_id": "term:I'd",
+    "value": "I'd",
+    "source_refs": [
+      "thursday_tabby_kitchen_wednesday_chat_17dcab0c@game/scripts/_day_4/thursday_start.rpy:1541:0",
+      "thursday_tabby_kitchen_wednesday_chat_8660b148@game/scripts/_day_4/thursday_start.rpy:1568:0",
+      "thursday_tabby_kitchen_wednesday_chat_723cb439@game/scripts/_day_4/thursday_start.rpy:1615:0",
+      "thursday_tabby_kitchen_wednesday_chat_4616c245@game/scripts/_day_4/thursday_start.rpy:1753:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-fd02b21499a33b51",
+    "kind": "term",
+    "subject_id": "term:Gramma",
+    "value": "Gramma",
+    "source_refs": [
+      "thursday_tabby_kitchen_wednesday_chat_a6e2a125@game/scripts/_day_4/thursday_start.rpy:1633:0",
+      "thursday_tabby_kitchen_wednesday_chat_c49e683f@game/scripts/_day_4/thursday_start.rpy:1649:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-b1a06188bb3a69d5",
+    "kind": "term",
+    "subject_id": "term:Eddie",
+    "value": "Eddie",
+    "source_refs": [
+      "thursday_tabby_kitchen_wednesday_chat_a6e2a125@game/scripts/_day_4/thursday_start.rpy:1633:0",
+      "thursday_tabby_kitchen_wednesday_chat_c49e683f@game/scripts/_day_4/thursday_start.rpy:1649:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-86fdb21e4df42d22",
+    "kind": "term",
+    "subject_id": "term:Gramma Eddie",
+    "value": "Gramma Eddie",
+    "source_refs": [
+      "thursday_tabby_kitchen_wednesday_chat_a6e2a125@game/scripts/_day_4/thursday_start.rpy:1633:0",
+      "thursday_tabby_kitchen_wednesday_chat_c49e683f@game/scripts/_day_4/thursday_start.rpy:1649:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-ebfa519fd00b4e57",
+    "kind": "term",
+    "subject_id": "term:Frou-frou",
+    "value": "Frou-frou",
+    "source_refs": [
+      "thursday_froufrou_menu_7b89ca2e@game/scripts/_day_4/thursday_start.rpy:1927:0",
+      "thursday_froufrou_menu_13338d67@game/scripts/_day_4/thursday_start.rpy:1966:0",
+      "thursday_froufrou_menu_eaa80f9f@game/scripts/_day_4/thursday_start.rpy:1972:0",
+      "thursday_froufrou_menu_d98dd1a8@game/scripts/_day_4/thursday_start.rpy:1982:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-325e7730419bf8a5",
+    "kind": "term",
+    "subject_id": "term:Dustin's",
+    "value": "Dustin's",
+    "source_refs": [
+      "thursday_froufrou_menu_da70a220@game/scripts/_day_4/thursday_start.rpy:2000:0",
+      "thursday_froufrou_menu_f057ae78@game/scripts/_day_4/thursday_start.rpy:2002:0",
+      "thursday_froufrou_menu_f057ae78_1@game/scripts/_day_4/thursday_start.rpy:2004:0",
+      "thursday_greenhouse_join_0a248211@game/scripts/_day_4/thursday_start.rpy:2097:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-48b557f0dde0a432",
+    "kind": "term",
+    "subject_id": "term:MIA",
+    "value": "MIA",
+    "source_refs": [
+      "thursday_greenhouse_return_9380dc45@game/scripts/_day_4/thursday_start.rpy:2566:0",
+      "thursday_greenhouse_return_eb3555d3@game/scripts/_day_4/thursday_start.rpy:2568:0",
+      "thursday_greenhouse_return_15cb9d08@game/scripts/_day_4/thursday_start.rpy:2585:0",
+      "thursday_greenhouse_return_0f3ea3df@game/scripts/_day_4/thursday_start.rpy:2587:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-bbdf3c744619ec20",
+    "kind": "term",
+    "subject_id": "term:PB",
+    "value": "PB",
+    "source_refs": [
+      "thursday_greenhouse_return_9380dc45@game/scripts/_day_4/thursday_start.rpy:2566:0",
+      "thursday_greenhouse_return_eb3555d3@game/scripts/_day_4/thursday_start.rpy:2568:0",
+      "thursday_greenhouse_return_6ac0f09e@game/scripts/_day_4/thursday_start.rpy:2571:0",
+      "thursday_greenhouse_return_973ef13c@game/scripts/_day_4/thursday_start.rpy:2573:0"
+    ],
+    "confidence": 0.7,
+    "status": "verified",
+    "verifier_reason": "controlled term repeats in selected scene",
+    "unresolved_reason": "",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "verified",
+        "reason": "controlled term repeats in selected scene"
+      }
+    ]
+  }
+]

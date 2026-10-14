@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pipeline": "semantic-reading-v1",
+  "selected_scenes": [
+    "game/scripts/_day_1/script.rpy",
+    "game/scripts/_day_2/tuesday_diner.rpy",
+    "game/scripts/_day_3/wednesday_start.rpy",
+    "game/scripts/_day_4/thursday_start.rpy"
+  ],
+  "occurrence_count": 2911,
+  "candidate_count": 160,
+  "verified_count": 152,
+  "rejected_count": 4,
+  "unresolved_count": 4,
+  "character_card_count": 36,
+  "scene_summary_count": 4,
+  "verified_term_count": 108,
+  "story_bible_hard_fact_count": 4,
+  "timeline_count": 0,
+  "llm_used": false,
+  "model": "fixture-reader",
+  "adapter": "fixture",
+  "temperature": 0.0,
+  "prompt_version": "semantic-reading-v1",
+  "generated_at": "2026-10-02T10:42:56.229445+00:00",
+  "input_sha256": "cc7244d625f1e10821470fd9b7f2fd91008eece344b5ef979f301967e981c2f4",
+  "validation_errors": []
+}

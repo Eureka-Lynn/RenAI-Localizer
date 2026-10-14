@@ -21,7 +21,15 @@ from .coverage import (
 )
 from .official_adapter import parse_translation_directory
 from .prompts import build_prompt_fixtures
-from .reader_context import build_reader_context_artifacts
+from .reader_context import _selected_snapshot, build_reader_context_artifacts
+from .semantic_reading import (
+    HTTPJsonVerifier,
+    HTTPJsonReader,
+    FixtureReader,
+    build_semantic_pilot,
+    claims_by_status,
+    validate_claims,
+)
 from .validation import validate_translation_response
 
 
@@ -59,6 +67,11 @@ def main() -> int:
     prompts.add_argument("--occurrence-id", action="append", dest="occurrence_ids")
     prompts.add_argument("--sample-count", type=int, default=1)
     prompts.add_argument("--language", default="简体中文")
+    prompts.add_argument(
+        "--reader-context-dir",
+        type=Path,
+        help="directory containing Reader Context fixture JSON files",
+    )
     prompts.add_argument("-o", "--output", type=Path, required=True)
     validate = sub.add_parser("validate-response", help="validate one translation JSON response")
     validate.add_argument("response", type=Path, help="JSON file containing the provider response")
@@ -73,6 +86,14 @@ def main() -> int:
     reader.add_argument("--scene-manifest", type=Path, required=True)
     reader.add_argument("--run-metadata", type=Path)
     reader.add_argument("-o", "--output-dir", type=Path, required=True)
+    pilot = sub.add_parser("semantic-pilot", help="run bounded semantic reading and automatic verification")
+    pilot.add_argument("official_json", type=Path)
+    pilot.add_argument("--mtool", type=Path, required=True)
+    pilot.add_argument("--game-root", type=Path)
+    pilot.add_argument("--scene-manifest", type=Path, required=True)
+    pilot.add_argument("--run-metadata", type=Path)
+    pilot.add_argument("--llm", choices=("fixture", "http"), default="fixture")
+    pilot.add_argument("-o", "--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
     if args.command == "probe-official":
@@ -82,6 +103,7 @@ def main() -> int:
 
     if args.command == "adapt-official":
         snapshot = parse_translation_directory(args.tl_dir, source=args.source)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(snapshot.to_dict(), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"wrote {args.output} ({len(snapshot.blocks)} blocks)")
         return 0
@@ -140,7 +162,13 @@ def main() -> int:
             if args.occurrence_ids
             else records[: max(0, args.sample_count)]
         )
-        fixture = build_prompt_fixtures(selected, index, target_language=args.language)
+        reader_inputs = _load_reader_context_inputs(args.reader_context_dir)
+        fixture = build_prompt_fixtures(
+            selected,
+            index,
+            target_language=args.language,
+            **reader_inputs,
+        )
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(fixture, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"wrote {args.output} ({len(selected)} selected occurrences)")
@@ -215,6 +243,73 @@ def main() -> int:
         )
         return 0
 
+    if args.command == "semantic-pilot":
+        snapshot = _snapshot_from_json(args.official_json)
+        baseline = load_mtool_baseline(args.mtool)
+        manifest_payload = json.loads(args.scene_manifest.read_text(encoding="utf-8"))
+        scenes = manifest_payload.get("scenes") if isinstance(manifest_payload, dict) else manifest_payload
+        if not isinstance(scenes, list) or not all(isinstance(scene, dict) for scene in scenes):
+            parser.error("scene manifest must contain a JSON object with a scenes array")
+        source_files = {str(scene["source_file"]) for scene in scenes}
+        snapshot = _selected_snapshot(snapshot, source_files)
+        if args.game_root:
+            snapshot = enrich_snapshot(snapshot, args.game_root)
+        records = build_occurrence_records(snapshot, baseline)
+        index = build_context_index(snapshot, baseline)
+        selected_records = [row for row in records if row["source_file"] in source_files]
+        import hashlib
+        input_hash = hashlib.sha256(
+            json.dumps(selected_records, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        ).hexdigest()
+        if args.llm == "http":
+            reader = HTTPJsonReader.from_environment()
+            verifier = HTTPJsonVerifier.from_environment(
+                {row["occurrence_id"]: row for row in selected_records},
+                {row["occurrence_id"] for row in selected_records},
+            )
+        else:
+            reader = FixtureReader()
+            verifier = None
+        pilot_result = build_semantic_pilot(
+            selected_records,
+            index,
+            scenes,
+            reader=reader,
+            verifier=verifier,
+            input_hash=input_hash,
+        )
+        status_groups = claims_by_status(pilot_result["claims"])
+        pilot_result["metadata"]["validation_errors"] = validate_claims(
+            pilot_result["claims"],
+            {row["occurrence_id"]: row for row in selected_records},
+        )
+        output_dir = args.output_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
+        outputs = {
+            "reading_candidates.json": pilot_result["reading_candidates"],
+            "verified_claims.json": status_groups["verified"],
+            "rejected_claims.json": status_groups["rejected"],
+            "unresolved_claims.json": status_groups["unresolved"],
+            "semantic_context.json": {"contexts": list(pilot_result["semantic_context"].values()), "metadata": pilot_result["metadata"]},
+            "pilot_metadata.json": pilot_result["metadata"],
+        }
+        sample_records = []
+        for candidate in selected_records:
+            if candidate.get("speaker") and not any(row.get("speaker") for row in sample_records):
+                sample_records.append(candidate)
+                break
+        sample_records.extend(selected_records[:3])
+        prompt_sample = build_prompt_fixtures(
+            sample_records[:3],
+            index,
+            semantic_contexts=pilot_result["semantic_context"],
+        )
+        outputs["prompt_sample.json"] = prompt_sample
+        for name, payload in outputs.items():
+            (output_dir / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(json.dumps(pilot_result["metadata"], ensure_ascii=False))
+        return 0
+
     official_path = args.official_json or args.source
     if official_path is None:
         parser.error("compare requires an official snapshot path or --official-json")
@@ -228,6 +323,7 @@ def main() -> int:
     report["mtool_alignment"] = assess_alignment(official, mtool or {})
     text = json.dumps(report, ensure_ascii=False, indent=2)
     if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(text + "\n", encoding="utf-8")
     else:
         print(text)
@@ -237,6 +333,43 @@ def main() -> int:
 def _snapshot_from_json(path: Path):
     data = json.loads(path.read_text(encoding="utf-8"))
     return snapshot_from_mapping(data)
+
+
+def _load_reader_context_inputs(directory: Path | None) -> dict[str, object]:
+    if directory is None:
+        return {}
+    def load(name: str, default: object) -> object:
+        path = directory / name
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+    wrapper = load("reader_context_fixture.json", {})
+    contexts = wrapper.get("reader_contexts", []) if isinstance(wrapper, dict) else []
+    return {
+        "reader_contexts": {
+            str(item["occurrence_id"]): item
+            for item in contexts
+            if isinstance(item, dict) and item.get("occurrence_id")
+        },
+        "story_bible": load("story_bible_fixture.json", None),
+        "character_cards": load("character_cards_fixture.json", []),
+        "scene_summaries": load("scene_summaries_fixture.json", []),
+        "timeline_events": load("timeline_fixture.json", []),
+        "glossary": load("glossary_fixture.json", []),
+        "semantic_contexts": _load_semantic_contexts(directory),
+    }
+
+
+def _load_semantic_contexts(directory: Path) -> dict[str, dict[str, object]]:
+    path = directory / "semantic_context.json"
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    items = payload.get("contexts", []) if isinstance(payload, dict) else payload
+    return {
+        str(item["occurrence_id"]): item
+        for item in items
+        if isinstance(item, dict) and item.get("occurrence_id")
+    }
 
 
 if __name__ == "__main__":

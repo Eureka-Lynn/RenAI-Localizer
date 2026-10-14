@@ -1,0 +1,82 @@
+[
+  {
+    "claim_id": "claim-9c035b033ce95ab5",
+    "kind": "fact",
+    "subject_id": "fact:protagonist-intent",
+    "value": "The protagonist definitely intended the events.",
+    "source_refs": [
+      "bus_6a66a01f@game/scripts/_day_1/script.rpy:892:0"
+    ],
+    "confidence": 0.3,
+    "status": "unresolved",
+    "verifier_reason": "fact needs interpretation beyond source",
+    "unresolved_reason": "fact needs interpretation beyond source",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "unresolved",
+        "reason": "fact needs interpretation beyond source"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3d6b4956bdf1a94f",
+    "kind": "fact",
+    "subject_id": "fact:protagonist-intent",
+    "value": "The protagonist definitely intended the events.",
+    "source_refs": [
+      "tuesday_diner_d95c1fd3@game/scripts/_day_2/tuesday_diner.rpy:13:0"
+    ],
+    "confidence": 0.3,
+    "status": "unresolved",
+    "verifier_reason": "fact needs interpretation beyond source",
+    "unresolved_reason": "fact needs interpretation beyond source",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "unresolved",
+        "reason": "fact needs interpretation beyond source"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-fc849cf904be8e59",
+    "kind": "fact",
+    "subject_id": "fact:protagonist-intent",
+    "value": "The protagonist definitely intended the events.",
+    "source_refs": [
+      "wednesday_start_b3925e23@game/scripts/_day_3/wednesday_start.rpy:25:0"
+    ],
+    "confidence": 0.3,
+    "status": "unresolved",
+    "verifier_reason": "fact needs interpretation beyond source",
+    "unresolved_reason": "fact needs interpretation beyond source",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "unresolved",
+        "reason": "fact needs interpretation beyond source"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-d2ed75780ffd5e70",
+    "kind": "fact",
+    "subject_id": "fact:protagonist-intent",
+    "value": "The protagonist definitely intended the events.",
+    "source_refs": [
+      "thursday_start_e948aa64@game/scripts/_day_4/thursday_start.rpy:13:0"
+    ],
+    "confidence": 0.3,
+    "status": "unresolved",
+    "verifier_reason": "fact needs interpretation beyond source",
+    "unresolved_reason": "fact needs interpretation beyond source",
+    "status_history": [
+      {
+        "from": "candidate",
+        "to": "unresolved",
+        "reason": "fact needs interpretation beyond source"
+      }
+    ]
+  }
+]

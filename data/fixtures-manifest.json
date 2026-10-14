@@ -1,17 +1,84 @@
 {
   "policy": "small, auditable fixtures only; never copy legacy .cache",
   "fixtures": [
-    {"path": "tests/fixtures/sample.rpy", "purpose": "say, menu, marked string, interpolation"},
-    {"path": "tests/fixtures/sprint3b.rpy", "purpose": "say identifier and multi-form statement regression"},
-    {"path": "data/prompt_fixtures.json", "purpose": "selected Scarlet Hollow occurrence single-unit and context-aware prompt fixtures"},
-    {"path": "data/reader_context_schema.json", "purpose": "Stage 3 source-traceable Reader Context contracts"},
-    {"path": "data/story_bible_fixture.json", "purpose": "bounded Stage 3 story bible with unknown interpretive fields"},
-    {"path": "data/character_cards_fixture.json", "purpose": "source-backed character identities with unresolved facts"},
-    {"path": "data/scene_summaries_fixture.json", "purpose": "selected Scarlet Hollow scene contracts"},
-    {"path": "data/timeline_fixture.json", "purpose": "empty until reviewed timeline evidence exists"},
-    {"path": "data/glossary_fixture.json", "purpose": "deterministic source-term candidates without translations"},
-    {"path": "data/reader_context_fixture.json", "purpose": "occurrence-level bounded reader contexts"},
-    {"path": "data/stage12_acceptance_report.json", "purpose": "auditable Stage 1/2 contract acceptance results"}
+    {
+      "path": "tests/fixtures/sample.rpy",
+      "purpose": "say, menu, marked string, interpolation"
+    },
+    {
+      "path": "tests/fixtures/sprint3b.rpy",
+      "purpose": "say identifier and multi-form statement regression"
+    },
+    {
+      "path": "data/prompt_fixtures.json",
+      "purpose": "selected Scarlet Hollow occurrence single-unit and context-aware prompt fixtures"
+    },
+    {
+      "path": "data/reader_context_schema.json",
+      "purpose": "Stage 3 source-traceable Reader Context contracts"
+    },
+    {
+      "path": "data/story_bible_fixture.json",
+      "purpose": "bounded Stage 3 story bible with unknown interpretive fields"
+    },
+    {
+      "path": "data/character_cards_fixture.json",
+      "purpose": "source-backed character identities with unresolved facts"
+    },
+    {
+      "path": "data/scene_summaries_fixture.json",
+      "purpose": "selected Scarlet Hollow scene contracts"
+    },
+    {
+      "path": "data/timeline_fixture.json",
+      "purpose": "empty until reviewed timeline evidence exists"
+    },
+    {
+      "path": "data/glossary_fixture.json",
+      "purpose": "deterministic source-term candidates without translations"
+    },
+    {
+      "path": "data/reader_context_fixture.json",
+      "purpose": "occurrence-level bounded reader contexts",
+      "storage": "local-only; gitignored; regenerate with reader-fixtures"
+    },
+    {
+      "path": "data/stage12_acceptance_report.json",
+      "purpose": "auditable Stage 1/2 contract acceptance results"
+    },
+    {
+      "path": "data/semantic_claim_schema.json",
+      "purpose": "Semantic reading claim and verifier contracts"
+    },
+    {
+      "path": "data/semantic_reading_pilot/pilot_metadata.json",
+      "purpose": "Offline bounded semantic reading run metadata and validation counts"
+    },
+    {
+      "path": "data/semantic_reading_pilot/reading_candidates.json",
+      "purpose": "Bounded candidate claims with occurrence references and status transitions"
+    },
+    {
+      "path": "data/semantic_reading_pilot/verified_claims.json",
+      "purpose": "Verified bounded claims; not a real LLM quality acceptance result"
+    },
+    {
+      "path": "data/semantic_reading_pilot/rejected_claims.json",
+      "purpose": "Rejected claim diagnostics and offline negative controls"
+    },
+    {
+      "path": "data/semantic_reading_pilot/unresolved_claims.json",
+      "purpose": "Unresolved claim diagnostics"
+    },
+    {
+      "path": "data/semantic_reading_pilot/prompt_sample.json",
+      "purpose": "Small semantic context prompt sample"
+    },
+    {
+      "path": "data/semantic_reading_pilot/semantic_context.json",
+      "purpose": "Locally generated full occurrence semantic context",
+      "storage": "local-only; gitignored; regenerate with semantic-pilot"
+    }
   ],
   "external_baseline": {
     "path": "external/ManualTransFile.json",

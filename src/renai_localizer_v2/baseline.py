@@ -15,6 +15,8 @@ from .models import ExtractionSnapshot
 
 def load_mtool_baseline(path: Path) -> dict[str, str]:
     data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict) and isinstance(data.get("data"), dict):
+        data = data["data"]
     if not isinstance(data, dict) or not all(isinstance(k, str) and isinstance(v, str) for k, v in data.items()):
         raise ValueError("MTool extraction baseline must contain a JSON object of string -> string entries")
     return data
